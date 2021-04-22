@@ -1,0 +1,10 @@
+22/4/21
+
+    research on issues around cypress FX2LP Power circuit 
+
+       Implementing an SPI Master on EZ-USB/FX2LP https://www.cypress.com/file/125791/download
+
+    SD card on SPI doesn't need licensing
+
+
+    Considering RPi Pico as power/ MCU . main downside is we are sacrifice some undetermined latency.
