@@ -7,4 +7,4 @@
     SD card on SPI doesn't need licensing
 
 
-    Considering RPi Pico as power/ MCU . main downside is we are sacrifice some undetermined latency.
+    Considering RPi Pico as power/ MCU . main downside is we sacrifice some undetermined latency.
