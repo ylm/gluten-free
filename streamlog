@@ -1,3 +1,8 @@
+20210423
+	Have to think about Human device interface.
+	We'll bounce ideas for the board: `https://pad.lamyne.org/gatin00b#`
+	We talked about why the FPGA should NEVER be driving a clock to a peripheral.
+	power circuit inspired by: `https://github.com/nsec/nsec-badge/tree/master/hw/2019/schematics`
 22/4/21
 
     research on issues around cypress FX2LP Power circuit 
