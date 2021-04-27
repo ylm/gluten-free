@@ -1,4 +1,135 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 29 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L up5k-synth:10118194-0001LF J?
+U 1 1 60882CC3
+P 1000 4500
+F 0 "J?" H 1064 5245 60  0000 C CNN
+F 1 "10118194-0001LF" H 1064 5139 60  0000 C CNN
+F 2 "digikey-footprints:USB_Micro_B_Female_10118194-0001LF" H 1200 4700 60  0001 L CNN
+F 3 "http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118194.pdf" H 1200 4800 60  0001 L CNN
+F 4 "609-4618-1-ND" H 1200 4900 60  0001 L CNN "Digi-Key_PN"
+F 5 "10118194-0001LF" H 1200 5000 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1200 5100 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 1200 5200 60  0001 L CNN "Family"
+F 8 "http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118194.pdf" H 1200 5300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/amphenol-icc-fci/10118194-0001LF/609-4618-1-ND/2785382" H 1200 5400 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB2.0 MICRO B SMD R/A" H 1200 5500 60  0001 L CNN "Description"
+F 11 "Amphenol ICC (FCI)" H 1200 5600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1200 5700 60  0001 L CNN "Status"
+	1    1000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:DRA818_iCE40-UP5K-SG48 U?
+U 1 1 60883FA2
+P 8550 1850
+F 0 "U?" H 8550 2315 50  0000 C CNN
+F 1 "DRA818_iCE40-UP5K-SG48" H 8550 2224 50  0000 C CNN
+F 2 "" H 11150 1150 50  0001 C CNN
+F 3 "" H 11150 1150 50  0001 C CNN
+	1    8550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:SiT1602B U?
+U 1 1 60884BD2
+P 6850 2050
+F 0 "U?" H 6850 2425 50  0000 C CNN
+F 1 "SiT1602B" H 6850 2334 50  0000 C CNN
+F 2 "" H 6850 1950 50  0001 C CNN
+F 3 "" H 6850 1950 50  0001 C CNN
+	1    6850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:CY7C68016A U?
+U 1 1 60884E3A
+P 4050 3050
+F 0 "U?" H 4050 4865 50  0000 C CNN
+F 1 "CY7C68016A" H 4050 4774 50  0000 C CNN
+F 2 "" H 3850 3200 50  0001 C CNN
+F 3 "" H 3850 3200 50  0001 C CNN
+	1    4050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:CSTNE24M0VH3C000R0 Y?
+U 1 1 60885B7C
+P 1050 3150
+F 0 "Y?" H 992 2835 50  0000 C CNN
+F 1 "CSTNE24M0VH3C000R0" H 992 2926 50  0000 C CNN
+F 2 "" H 1050 3100 50  0001 C CNN
+F 3 "" H 1050 3100 50  0001 C CNN
+	1    1050 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L up5k-synth:TPS63031 U?
+U 1 1 60886A76
+P 4450 6300
+F 0 "U?" H 4450 6775 50  0000 C CNN
+F 1 "TPS63031" H 4450 6684 50  0000 C CNN
+F 2 "" H 4450 6100 50  0001 C CNN
+F 3 "" H 4450 6100 50  0001 C CNN
+	1    4450 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:TPS62120DCNR U?
+U 1 1 6088719F
+P 6800 3350
+F 0 "U?" H 6825 4115 50  0000 C CNN
+F 1 "TPS62120DCNR" H 6825 4024 50  0000 C CNN
+F 2 "" H 6800 3350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps62120.pdf" H 6800 3350 50  0001 C CNN
+	1    6800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:BQ24074 U?
+U 1 1 60887B83
+P 2150 5850
+F 0 "U?" H 2155 6325 50  0000 C CNN
+F 1 "BQ24074" H 2155 6234 50  0000 C CNN
+F 2 "" H 2150 5850 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/bq24074.pdf" H 2150 5850 50  0001 C CNN
+	1    2150 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:MEM2061-01-188-00-A J?
+U 1 1 60888483
+P 1250 1450
+F 0 "J?" H 1250 1875 50  0000 C CNN
+F 1 "MEM2061-01-188-00-A" H 1250 1784 50  0000 C CNN
+F 2 "" H 1150 1400 50  0001 C CNN
+F 3 "" H 1150 1400 50  0001 C CNN
+	1    1250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:DMG1016V-7 Q?
+U 1 1 608B2469
+P 5750 5250
+F 0 "Q?" H 5750 5625 50  0000 C CNN
+F 1 "DMG1016V-7" H 5750 5534 50  0000 C CNN
+F 2 "" H 5750 5150 50  0001 C CNN
+F 3 "" H 5750 5150 50  0001 C CNN
+	1    5750 5250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
