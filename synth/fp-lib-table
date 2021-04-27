@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name digikey-footprints)(type KiCad)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name TinyFPGA-UP)(type KiCad)(uri /home/ylamarre/Documents/code/fpgadev/TinyFPGA-UP)(options "")(descr ""))
+)

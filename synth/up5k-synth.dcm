@@ -1,0 +1,17 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 10118194-0001LF
+D CONN RCPT USB2.0 MICRO B SMD R/A
+K 609-4618-1-ND
+F http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118194.pdf
+$ENDCMP
+#
+$CMP BQ24074
+F https://www.ti.com/lit/ds/symlink/bq24074.pdf
+$ENDCMP
+#
+$CMP TPS62120DCNR
+F https://www.ti.com/lit/ds/symlink/tps62120.pdf
+$ENDCMP
+#
+#End Doc Library
