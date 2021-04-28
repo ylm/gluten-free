@@ -6,12 +6,20 @@ K 609-4618-1-ND
 F http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118194.pdf
 $ENDCMP
 #
+$CMP 1043P
+F http://www.keyelco.com/product-pdf.cfm?p=13958
+$ENDCMP
+#
 $CMP 74LVC2G14
 F https://assets.nexperia.com/documents/data-sheet/74LVC2G14.pdf
 $ENDCMP
 #
 $CMP BQ24074
 F https://www.ti.com/lit/ds/symlink/bq24074.pdf
+$ENDCMP
+#
+$CMP MEM2061-01-188-00-A
+F https://gct.co/files/drawings/mem2061.pdf
 $ENDCMP
 #
 $CMP TPS62120DCNR

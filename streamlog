@@ -1,3 +1,7 @@
+20210428
+	Progressed on the schematic
+	Need to look into KiCad tutorial for symbol and schematic entry
+	Maybe look into better libraries and footprints too
 20210427
 	Done the core of parts library. Missing passive discrete components
 	Continued discussion about synth interface w/ alelondon (Linnstrument, willowISP's The Wisp, laptop track pads, silicone keypad?)
