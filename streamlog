@@ -1,3 +1,7 @@
+20210429
+	Worked on the power distribution part of the schematic. Still need a good KiCad tutorial
+	Missing the analog portion of our DAC and a good UI on the board
+	Next will be the MCU/FPGA interface
 20210428
 	Progressed on the schematic
 	Need to look into KiCad tutorial for symbol and schematic entry
