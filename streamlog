@@ -1,3 +1,9 @@
+20210504
+	Still more debate on the interfaces.
+	Semi-final decision is the following:
+		buttons and LEDs to be multiplexed through SRs
+		Cutting half the FX2LP to FPGA data bus
+		bit banging SPI 
 20210503
 	Debated how best to configure the FPGA and interface the FX2LP. Still a bit uncertain, but bit banging w/ the FX2LP seems inevitable.
 	alelondon pointed me to glip.io as a framework for communication interface from host to FPGA.

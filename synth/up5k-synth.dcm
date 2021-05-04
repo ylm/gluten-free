@@ -10,12 +10,96 @@ $CMP 1043P
 F http://www.keyelco.com/product-pdf.cfm?p=13958
 $ENDCMP
 #
+$CMP 24LC00
+D I2C Serial EEPROM, 128 Bits, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C Serial EEPROM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21178G.pdf
+$ENDCMP
+#
+$CMP 24LC01
+D I2C Serial EEPROM, 1Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C Serial EEPROM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21711J.pdf
+$ENDCMP
+#
+$CMP 24LC02
+D I2C Serial EEPROM, 2Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C Serial EEPROM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21709c.pdf
+$ENDCMP
+#
+$CMP 24LC04
+D I2C Serial EEPROM, 4Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C Serial EEPROM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21708K.pdf
+$ENDCMP
+#
+$CMP 24LC08
+D I2C Serial EEPROM, 8Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C Serial EEPROM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21710J.pdf
+$ENDCMP
+#
+$CMP 24LC1025
+D I2C Serial EEPROM, 1024Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C Serial EEPROM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf
+$ENDCMP
+#
+$CMP 24LC128
+D I2C Serial EEPROM, 128Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C Serial EEPROM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21191s.pdf
+$ENDCMP
+#
+$CMP 24LC16
+D I2C Serial EEPROM, 16Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C Serial EEPROM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21703d.pdf
+$ENDCMP
+#
+$CMP 24LC256
+D I2C Serial EEPROM, 256Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C Serial EEPROM
+F http://ww1.microchip.com/downloads/en/devicedoc/21203m.pdf
+$ENDCMP
+#
+$CMP 24LC32
+D I2C Serial EEPROM, 32Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C Serial EEPROM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21072G.pdf
+$ENDCMP
+#
+$CMP 24LC512
+D I2C Serial EEPROM, 512Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C Serial EEPROM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21754M.pdf
+$ENDCMP
+#
+$CMP 24LC64
+D I2C Serial EEPROM, 64Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C Serial EEPROM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21189f.pdf
+$ENDCMP
+#
 $CMP 74LVC2G14
 F https://assets.nexperia.com/documents/data-sheet/74LVC2G14.pdf
 $ENDCMP
 #
 $CMP BQ24074
 F https://www.ti.com/lit/ds/symlink/bq24074.pdf
+$ENDCMP
+#
+$CMP CAT24C128
+D 128 kb CMOS Serial EEPROM, SOIC-8/TSSOP-8/DFN-8
+K I2C EEPROM Serial 128kb
+F https://www.onsemi.com/pub/Collateral/CAT24C128-D.PDF
+$ENDCMP
+#
+$CMP CAT24C256
+D 256 kb CMOS Serial EEPROM, DIP-8/SOIC-8/TSSOP-8/DFN-8
+K I2C EEPROM Serial 256kb
+F https://www.onsemi.cn/PowerSolutions/document/CAT24C256-D.PDF
 $ENDCMP
 #
 $CMP MEM2061-01-188-00-A

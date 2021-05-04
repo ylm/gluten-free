@@ -40,3 +40,10 @@
 * FX2LP to UP5K interface
 * Make a decision on synth interface
 * Select jack interfaces (TRS 1/4? 3.5mm?)
+
+## Issues
+
+* PCB form factor: 4 layers larger than 100mm is too expansive, but 2 layers is hard to route
+* Communication interface: Low latency and high enough
+* Price
+* Number of IOs available
