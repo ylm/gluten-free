@@ -34,4 +34,9 @@
 
 ##TODO
 
-* TBD
+* SD card interface
+* Undervoltage comparator
+* R-2R DAC
+* FX2LP to UP5K interface
+* Make a decision on synth interface
+* Select jack interfaces (TRS 1/4? 3.5mm?)

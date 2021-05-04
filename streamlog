@@ -1,3 +1,7 @@
+20210503
+	Debated how best to configure the FPGA and interface the FX2LP. Still a bit uncertain, but bit banging w/ the FX2LP seems inevitable.
+	alelondon pointed me to glip.io as a framework for communication interface from host to FPGA.
+	Tomorrow, we'll do the design on the interfacing.
 20210429
 	Worked on the power distribution part of the schematic. Still need a good KiCad tutorial
 	Missing the analog portion of our DAC and a good UI on the board
