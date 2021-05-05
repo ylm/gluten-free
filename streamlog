@@ -1,3 +1,9 @@
+20210505
+	Made a decision on the interfaces:
+	same as semi-final.
+	Did prelim routing: see prelim_route.jpg
+	Next stream we connect the pins in the schematic
+	Next stream to review FPGA IOs assignment as vmttmv pointed out that UP5K has horrible IO arrangement.
 20210504
 	Still more debate on the interfaces.
 	Semi-final decision is the following:

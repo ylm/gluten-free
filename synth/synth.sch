@@ -1182,4 +1182,108 @@ Wire Wire Line
 	7650 1250 7900 1250
 Wire Wire Line
 	7650 1150 7900 1150
+Wire Wire Line
+	1900 1300 2100 1300
+Wire Wire Line
+	1900 1400 2100 1400
+Wire Wire Line
+	1900 1500 2100 1500
+Wire Wire Line
+	1900 1600 2100 1600
+Wire Wire Line
+	1100 1300 800  1300
+Wire Wire Line
+	1100 1600 850  1600
+Wire Wire Line
+	1100 1700 850  1700
+Wire Wire Line
+	6750 3950 6750 4000
+Wire Wire Line
+	6750 4000 7050 4000
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 609ABA7E
+P 7050 4000
+F 0 "#PWR?" H 7050 3800 50  0001 C CNN
+F 1 "GNDPWR" H 7054 3846 50  0000 C CNN
+F 2 "" H 7050 3950 50  0001 C CNN
+F 3 "" H 7050 3950 50  0001 C CNN
+	1    7050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3050 3150 3050
+Wire Wire Line
+	3450 3150 3150 3150
+Wire Wire Line
+	3450 3650 3150 3650
+Wire Wire Line
+	3450 3750 3150 3750
+Wire Wire Line
+	3450 3900 3150 3900
+Wire Wire Line
+	3450 4000 3150 4000
+Wire Wire Line
+	3450 4200 3150 4200
+Wire Wire Line
+	3450 4300 3150 4300
+Wire Wire Line
+	4650 3500 4850 3500
+Wire Wire Line
+	4650 3600 4850 3600
+Wire Wire Line
+	4650 3700 4850 3700
+Wire Wire Line
+	4650 3900 4850 3900
+Wire Wire Line
+	4650 4000 4850 4000
+Wire Wire Line
+	4650 4100 4850 4100
+Wire Wire Line
+	4650 4200 4850 4200
+Wire Wire Line
+	4650 4300 4850 4300
+Wire Wire Line
+	4650 4400 4850 4400
+Wire Wire Line
+	4650 4500 4850 4500
+Wire Wire Line
+	4650 4600 4850 4600
+Text Label 4700 3500 0    50   ~ 0
+CTL[2]
+Text Label 4700 3600 0    50   ~ 0
+CTL[1]
+Text Label 4700 3700 0    50   ~ 0
+CTL[0]
+Text Label 4700 3900 0    50   ~ 0
+INT0#
+Text Label 4700 4000 0    50   ~ 0
+INT1#
+Text Label 4700 4200 0    50   ~ 0
+WU2
+$Comp
+L up5k-synth:24LC256 U?
+U 1 1 60B68DD1
+P 1500 2600
+F 0 "U?" H 1500 3081 50  0000 C CNN
+F 1 "24LC256" H 1500 2990 50  0000 C CNN
+F 2 "" H 1500 2600 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21203m.pdf" H 1500 2600 50  0001 C CNN
+	1    1500 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2500 2150 2500
+Wire Wire Line
+	1900 2600 2150 2600
+Wire Wire Line
+	1900 2700 2150 2700
+Text Label 2000 2500 0    50   ~ 0
+SDA
+Text Label 3200 4000 0    50   ~ 0
+SDA
+Text Label 2000 2600 0    50   ~ 0
+SCL
+Text Label 3200 3900 0    50   ~ 0
+SCL
 $EndSCHEMATC
