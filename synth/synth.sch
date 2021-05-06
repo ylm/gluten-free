@@ -1099,34 +1099,6 @@ FD[6]
 Text Label 4700 2300 0    50   ~ 0
 FD[7]
 Wire Wire Line
-	5850 1900 5650 1900
-Wire Wire Line
-	5850 2000 5650 2000
-Wire Wire Line
-	5850 2100 5650 2100
-Wire Wire Line
-	5850 2200 5650 2200
-Wire Wire Line
-	5850 2350 5650 2350
-Wire Wire Line
-	5850 2450 5650 2450
-Wire Wire Line
-	5850 2550 5650 2550
-Wire Wire Line
-	5850 2650 5650 2650
-Wire Wire Line
-	5850 2750 5650 2750
-Wire Wire Line
-	5850 2850 5650 2850
-Wire Wire Line
-	5850 2950 5650 2950
-Wire Wire Line
-	5850 3050 5650 3050
-Wire Wire Line
-	5850 3150 5650 3150
-Wire Wire Line
-	5850 3250 5650 3250
-Wire Wire Line
 	5850 1200 5600 1200
 Wire Wire Line
 	5850 1400 5600 1400
@@ -1149,19 +1121,13 @@ Wire Wire Line
 Wire Wire Line
 	7650 2650 7900 2650
 Wire Wire Line
-	5850 3400 5650 3400
+	7650 3000 7900 3000
 Wire Wire Line
-	5850 3500 5650 3500
+	7650 3100 7900 3100
 Wire Wire Line
-	5850 3600 5650 3600
+	7650 3200 7900 3200
 Wire Wire Line
-	7650 3050 7900 3050
-Wire Wire Line
-	7650 3150 7900 3150
-Wire Wire Line
-	7650 3250 7900 3250
-Wire Wire Line
-	7650 3350 7900 3350
+	7650 3300 7900 3300
 Wire Wire Line
 	7650 3450 7900 3450
 Wire Wire Line
@@ -1286,4 +1252,92 @@ Text Label 2000 2600 0    50   ~ 0
 SCL
 Text Label 3200 3900 0    50   ~ 0
 SCL
+Text Label 5350 1900 0    50   ~ 0
+FD[0]
+Text Label 5350 2000 0    50   ~ 0
+FD[1]
+Text Label 5350 2100 0    50   ~ 0
+FD[2]
+Text Label 5350 2200 0    50   ~ 0
+FD[3]
+Text Label 5350 2300 0    50   ~ 0
+FD[4]
+Text Label 5350 2400 0    50   ~ 0
+FD[5]
+Text Label 5350 2500 0    50   ~ 0
+FD[6]
+Text Label 5350 2600 0    50   ~ 0
+FD[7]
+Text Label 5350 2750 0    50   ~ 0
+CTL[0]
+Text Label 5350 2850 0    50   ~ 0
+CTL[1]
+Text Label 5350 2950 0    50   ~ 0
+CTL[2]
+Text Label 4700 4100 0    50   ~ 0
+SLOE
+Text Label 5350 3050 0    50   ~ 0
+SLOE
+Text Label 4700 4300 0    50   ~ 0
+FIFOADDR[0]
+Text Label 5350 3150 0    50   ~ 0
+FIFOADDR[0]
+Wire Wire Line
+	5350 1900 5850 1900
+Wire Wire Line
+	5350 2000 5850 2000
+Wire Wire Line
+	5350 2100 5850 2100
+Wire Wire Line
+	5350 2200 5850 2200
+Wire Wire Line
+	5350 2300 5850 2300
+Wire Wire Line
+	5350 2400 5850 2400
+Wire Wire Line
+	5350 2500 5850 2500
+Wire Wire Line
+	5350 2600 5850 2600
+Wire Wire Line
+	5350 2750 5850 2750
+Wire Wire Line
+	5350 2850 5850 2850
+Wire Wire Line
+	5350 2950 5850 2950
+Wire Wire Line
+	5350 3050 5850 3050
+Wire Wire Line
+	5350 3150 5850 3150
+Wire Wire Line
+	5350 3250 5850 3250
+Wire Wire Line
+	5350 3350 5850 3350
+Wire Wire Line
+	5350 3450 5850 3450
+Wire Wire Line
+	5350 3600 5850 3600
+Text Label 4700 4400 0    50   ~ 0
+FIFOADDR[1]
+Text Label 5350 3250 0    50   ~ 0
+FIFOADDR[1]
+Text Label 4700 4500 0    50   ~ 0
+PKTEND
+Text Label 4700 4600 0    50   ~ 0
+FLAGD
+Text Label 5350 3350 0    50   ~ 0
+PKTEND
+Text Label 5350 3450 0    50   ~ 0
+FLAGD
+Text Label 7700 3750 0    50   ~ 0
+INT0#
+Text Label 7700 3650 0    50   ~ 0
+INT1#
+Text Label 7700 3550 0    50   ~ 0
+SLRD
+Text Label 7700 3450 0    50   ~ 0
+SLWR
+Text Label 3150 3050 0    50   ~ 0
+SLRD
+Text Label 3150 3150 0    50   ~ 0
+SLWR
 $EndSCHEMATC

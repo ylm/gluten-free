@@ -1,3 +1,7 @@
+20210506
+	Made the FX2LP to UP5K connections
+	Dropped the R-2R ladder in favor of a PMOD connector
+	Next on the list is SPI connections, the PMODs, audio if and a small display
 20210505
 	Made a decision on the interfaces:
 	same as semi-final.
