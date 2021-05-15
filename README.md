@@ -30,7 +30,7 @@
 * Crystal (0.75) `https://www.digikey.ca/en/products/detail/murata-electronics/CSTNE24M0VH3C000R0/13553242`
 * SD Card connector (1.56) `https://www.digikey.ca/en/products/detail/gct/MEM2061-01-188-00-A/9859612`
 * Comparator (0.41) `https://www.digikey.ca/en/products/detail/nexperia-usa-inc/74LVC2G14GW-125/1231583`
-* Clock (1.50) `https://www.digikey.ca/en/products/detail/sitime/SIT1602BC-83-33E-48-000000/11588368`
+* Clock (1.23) `https://www.mouser.ca/ProductDetail/Microchip-Technology/DSC6003JI2A-0480000?qs=sGAEpiMZZMsBj6bBr9Q9aa53dfhiSZy6HyD2biU23IhN9DU7PpWSmA%3D%3D`
 
 ##TODO
 
