@@ -1,5 +1,6 @@
 20210517
-	Dummy
+	Finished MCU symbol.
+	Need to add the connectors, connect the MII interface to the FPGA
 20210507
 	Revised the FX2 to UP5K if connections due to RGB pins eing open-drain
 	While not commited, we're going to add a PMOD wired like the iceSugar
