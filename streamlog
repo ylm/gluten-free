@@ -1,3 +1,8 @@
+20210518
+	Added RESET pin
+	Selected SPI interface
+	Had a good laugh with the Errata
+	Need a plan for the encoders
 20210517
 	Finished MCU symbol.
 	Need to add the connectors, connect the MII interface to the FPGA

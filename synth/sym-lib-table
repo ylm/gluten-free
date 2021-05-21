@@ -1,5 +1,5 @@
 (sym_lib_table
-  (lib (name dk_Embedded-Microcontrollers)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-symbols/dk_Embedded-Microcontrollers.lib)(options "")(descr ""))
+  (lib (name dk_Embedded-Microcontrollers)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-symbols/dk_Embedded-Microcontrollers.lib)(options "")(descr "")(disabled))
   (lib (name dk_Interface-Controllers)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-symbols/dk_Interface-Controllers.lib)(options "")(descr "")(disabled))
   (lib (name dk_Interface-Drivers-Receivers-Transceivers)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-symbols/dk_Interface-Drivers-Receivers-Transceivers.lib)(options "")(descr "")(disabled))
   (lib (name dk_Linear-Amplifiers-Audio)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-symbols/dk_Linear-Amplifiers-Audio.lib)(options "")(descr "")(disabled))
