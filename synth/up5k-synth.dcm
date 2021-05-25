@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 1.5uH
+F https://www.mouser.com/datasheet/2/597/lps3015-270734.pdf
+$ENDCMP
+#
 $CMP 10118194-0001LF
 D CONN RCPT USB2.0 MICRO B SMD R/A
 K 609-4618-1-ND
@@ -8,6 +12,14 @@ $ENDCMP
 #
 $CMP 1043P
 F http://www.keyelco.com/product-pdf.cfm?p=13958
+$ENDCMP
+#
+$CMP 10uH
+F https://www.mouser.com/datasheet/2/597/lps3015-270734.pdf
+$ENDCMP
+#
+$CMP 22uH
+F https://www.mouser.com/datasheet/2/597/lps3015-270734.pdf
 $ENDCMP
 #
 $CMP 24LC00
@@ -114,8 +126,24 @@ K I2C EEPROM Serial 256kb
 F https://www.onsemi.cn/PowerSolutions/document/CAT24C256-D.PDF
 $ENDCMP
 #
+$CMP CSTNE24M0VH3C000R0
+F https://www.mouser.com/datasheet/2/281/SPEC_CSTNE24M0VH3C000R0-1923846.pdf
+$ENDCMP
+#
+$CMP DRA818_iCE40-UP5K-SG48
+F https://www.mouser.com/datasheet/2/225/iCE40%20UltraPlus%20Family%20Data%20Sheet-1149905.pdf
+$ENDCMP
+#
 $CMP DSC6003JI2A
 F https://www.mouser.ca/datasheet/2/268/20005625B-1149229.pdf
+$ENDCMP
+#
+$CMP LED
+F https://cree-led.com/media/documents/1374-CLM2D-RCC-ACC.pdf
+$ENDCMP
+#
+$CMP LMS33460
+F https://www.ti.com/lit/ds/symlink/lms33460.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1621884414832&ref_url=https%253A%252F%252Fwww.mouser.com%252F
 $ENDCMP
 #
 $CMP MEM2061-01-188-00-A
@@ -130,6 +158,10 @@ $ENDCMP
 #
 $CMP TPS62120DCNR
 F https://www.ti.com/lit/ds/symlink/tps62120.pdf
+$ENDCMP
+#
+$CMP TPS63031
+F https://www.ti.com/lit/ds/symlink/tps63031.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1621624572273
 $ENDCMP
 #
 #End Doc Library

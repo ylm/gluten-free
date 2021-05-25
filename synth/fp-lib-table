@@ -1,5 +1,5 @@
 (fp_lib_table
-  (lib (name digikey-footprints)(type KiCad)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
-  (lib (name TinyFPGA-UP)(type KiCad)(uri /home/ylamarre/Documents/code/fpgadev/TinyFPGA-UP)(options "")(descr ""))
+  (lib (name digikey-footprints)(type KiCad)(uri C:/Users/yanla/Documents/code/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name TinyFPGA-UP)(type KiCad)(uri /home/ylamarre/Documents/code/fpgadev/TinyFPGA-UP)(options "")(descr "")(disabled))
   (lib (name up5k-synth)(type KiCad)(uri ${KIPRJMOD}/up5k-synth.pretty)(options "")(descr ""))
 )
