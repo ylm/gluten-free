@@ -1,3 +1,17 @@
+20210604
+	Did symbole for digital pot.
+	Made a bit of progress on the analog backend.
+	Ale found a project that ported the Arduino to our MCU (https://github.com/Teknic-Inc)
+20210603
+	Reviewed headphones/line in/out levels and 3.3Vpp should be within spec
+	Next stream finish analog backend
+20210602
+	Gotta check my audio
+
+20210531
+	Got raided by Bynaris! Thanks again Bynaris!!
+	Did the symbols and footprints for the audio jack and the rotary encoders
+	Overtinkerer proved that silly putty w/ graphite powder could be good enough for prototyping.
 20210528
 	Switched to larger page for schematic as A4 format was too cramped
 	Added some pull-ups to the SD card interface ;)

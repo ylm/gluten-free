@@ -110,6 +110,16 @@ $CMP 74LVC2G14
 F https://assets.nexperia.com/documents/data-sheet/74LVC2G14.pdf
 $ENDCMP
 #
+$CMP AD8531
+F https://datasheet.octopart.com/AD8534ARZ-REEL-Analog-Devices-datasheet-5333818.pdf
+$ENDCMP
+#
+$CMP AudioJack3_SwitchTR
+D Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)
+K audio jack receptacle stereo headphones phones TRS connector
+F http://anacapa.kycon.com/Pub_Eng_Draw/STX-3120-5B.pdf
+$ENDCMP
+#
 $CMP BQ24074
 F https://www.ti.com/lit/ds/symlink/bq24074.pdf
 $ENDCMP
@@ -132,6 +142,10 @@ $ENDCMP
 #
 $CMP DRA818_iCE40-UP5K-SG48
 F https://www.mouser.com/datasheet/2/225/iCE40%20UltraPlus%20Family%20Data%20Sheet-1149905.pdf
+$ENDCMP
+#
+$CMP DS1881
+F https://datasheets.maximintegrated.com/en/ds/DS1881.pdf#page=7
 $ENDCMP
 #
 $CMP DSC6003JI2A
@@ -162,6 +176,12 @@ $ENDCMP
 #
 $CMP TPS63031
 F https://www.ti.com/lit/ds/symlink/tps63031.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1621624572273
+$ENDCMP
+#
+$CMP rot_encoder_switch
+D Push button switch, generic, two pins
+K switch normally-open pushbutton push-button
+F https://www.mouser.ca/datasheet/2/54/PEC12R-777795.pdf
 $ENDCMP
 #
 #End Doc Library

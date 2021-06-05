@@ -1,4 +1,4 @@
-29192670809556
+35682694512977
 up5k-synth
 BatteryHolder_Keystone_1043_1x18650
 Battery holder for 18650 cylindrical cells http://www.keyelco.com/product.cfm/product_id/918
@@ -53,8 +53,8 @@ MEM2061-01-188-00-A
 
 
 0
-8
-8
+12
+12
 up5k-synth
 Oscillator_SMD_TXC_7C-4Pin_5.0x3.2mm_HandSoldering
 Miniature Crystal Clock Oscillator TXC 7C series, http://www.txccorp.com/download/products/osc/7C_o.pdf, hand-soldering, 5.0x3.2mm^2 package
@@ -62,6 +62,20 @@ SMD SMT crystal oscillator hand-soldering
 0
 4
 4
+up5k-synth
+PEC12R-4xxxF-Sxx
+
+
+0
+7
+7
+up5k-synth
+PinHeader_2x06_P2.54mm_Horizontal
+Through hole angled pin header, 2x06, 2.54mm pitch, 6mm pin length, double rows
+Through hole angled pin header THT 2x06 2.54mm double row
+0
+12
+12
 up5k-synth
 QFN-16-1EP_3x3mm_P0.5mm_EP1.9x1.9mm_ThermalVias
 QFN, 16 Pin (https://www.nxp.com/docs/en/package-information/98ASA00525D.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
@@ -98,9 +112,23 @@ SC-70-5
 5
 5
 up5k-synth
+SOIC-8_W3.9mm
+
+
+0
+8
+8
+up5k-synth
 SOT-23-8_Handsoldering
 8-pin SOT-23 package, Handsoldering, http://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/sot-23rj/rj_8.pdf
 SOT-23-8 Handsoldering
+0
+8
+8
+up5k-synth
+STX-3120-5B-577C
+
+
 0
 8
 8

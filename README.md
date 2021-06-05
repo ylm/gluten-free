@@ -2,21 +2,21 @@
 
 ##Board features
 
-* Stereo 4bits R-2R ladder DAC
+* Stereo Sigma-Delta DAC
 * 3.5mm headphone jack
-* On board mixer
+* Multiple output jacks for different levels of output: headphone vs line out for live.
 * Price target: ~50$CAN
 * I2S DAC?
 * Powered by: USB! Battery!
-* Connectors: USB! MIDI IN/OUT? TRS?
+* Connectors: USB! PMOD and some debug
 * Communication: USB!
-* ADC?
 * FPGA Configuration: Host! On SD Card
 * Clock source?
 * Input protection
 * Expansion Header
 * Screen?
 * SD Card
+* AD8531 for op-amp and DS1881 as digital pot
 
 ##Featured ICs
 
@@ -31,12 +31,11 @@
 
 ##TODO
 
-* Make a decision on synth interface
-* Makes symbols for:
-** Audio jack
-** Rotary Encoders
 * Select push buttons and more LEDs for interface
-* Find op-amp for audio output
+** Chose how many buttons (on top of the keypads)
+** Chose how many LEDs
+* Make a decision on synth interface
+* Design DAC LPF
 
 ## Issues
 

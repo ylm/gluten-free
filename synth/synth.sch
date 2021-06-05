@@ -962,9 +962,9 @@ PMOD[6]
 Text Label 4850 2750 0    50   ~ 0
 PMOD[7]
 Text Label 4850 2650 0    50   ~ 0
-PDM_L
+PDM0_L
 Text Label 4850 2550 0    50   ~ 0
-PDM_R
+PDM0_R
 Text Label 7150 1650 0    50   ~ 0
 CFG_RESET_B
 Wire Wire Line
@@ -1076,28 +1076,28 @@ Wire Wire Line
 $Comp
 L up5k-synth:LMS33460 U4
 U 1 1 6156A23A
-P 4850 8100
-F 0 "U4" H 4825 8425 50  0000 C CNN
-F 1 "LMS33460" H 4825 8334 50  0000 C CNN
-F 2 "up5k-synth:SC-70-5" H 4800 8000 50  0001 C CNN
-F 3 "" H 4800 8000 50  0001 C CNN
-	1    4850 8100
+P 8350 9850
+F 0 "U4" H 8325 10175 50  0000 C CNN
+F 1 "LMS33460" H 8325 10084 50  0000 C CNN
+F 2 "up5k-synth:SC-70-5" H 8300 9750 50  0001 C CNN
+F 3 "" H 8300 9750 50  0001 C CNN
+	1    8350 9850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 8100 4450 8100
+	8000 9850 7950 9850
 Wire Wire Line
-	4450 8100 4450 8200
+	7950 9850 7950 9950
 Wire Wire Line
-	4500 8200 4450 8200
-Connection ~ 4450 8200
+	8000 9950 7950 9950
+Connection ~ 7950 9950
 Wire Wire Line
-	4450 8200 4450 8300
+	7950 9950 7950 10050
 Wire Wire Line
-	5150 8000 5450 8000
+	8650 9750 8950 9750
 Wire Wire Line
-	5150 8200 5450 8200
-Text Label 5200 8000 0    50   ~ 0
+	8650 9950 8950 9950
+Text Label 8700 9750 0    50   ~ 0
 Vout
 $Comp
 L up5k-synth:360kR R7
@@ -1146,27 +1146,27 @@ Wire Wire Line
 	1950 9850 1700 9850
 Text Label 1700 9850 0    50   ~ 0
 BGD
-Text Label 5200 8200 0    50   ~ 0
+Text Label 8700 9950 0    50   ~ 0
 BGD
 $Comp
 L up5k-synth:360kR R3
 U 1 1 61652A7C
-P 5700 8100
-F 0 "R3" V 5800 8000 50  0000 C CNN
-F 1 "360kR" H 5700 8200 50  0000 C CNN
-F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5700 8100 50  0001 C CNN
-F 3 "" H 5700 8100 50  0001 C CNN
-	1    5700 8100
+P 9200 9850
+F 0 "R3" V 9300 9750 50  0000 C CNN
+F 1 "360kR" H 9200 9950 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9200 9850 50  0001 C CNN
+F 3 "" H 9200 9850 50  0001 C CNN
+	1    9200 9850
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5700 7950 5450 7950
+	9200 9700 8950 9700
 Wire Wire Line
-	5450 7950 5450 8000
+	8950 9700 8950 9750
 Wire Wire Line
-	5450 8200 5450 8250
+	8950 9950 8950 10000
 Wire Wire Line
-	5450 8250 5700 8250
+	8950 10000 9200 10000
 Connection ~ 1250 9950
 Wire Wire Line
 	14150 4400 14550 4400
@@ -1460,12 +1460,12 @@ MII_GCOL
 $Comp
 L power:GND #PWR045
 U 1 1 614488E6
-P 4450 8300
-F 0 "#PWR045" H 4450 8050 50  0001 C CNN
-F 1 "GND" H 4455 8127 50  0000 C CNN
-F 2 "" H 4450 8300 50  0001 C CNN
-F 3 "" H 4450 8300 50  0001 C CNN
-	1    4450 8300
+P 7950 10050
+F 0 "#PWR045" H 7950 9800 50  0001 C CNN
+F 1 "GND" H 7955 9877 50  0000 C CNN
+F 2 "" H 7950 10050 50  0001 C CNN
+F 3 "" H 7950 10050 50  0001 C CNN
+	1    7950 10050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2406,4 +2406,1455 @@ Wire Wire Line
 	16250 850  16250 1100
 Wire Wire Line
 	16150 850  16250 850 
+$Comp
+L up5k-synth:AudioJack3_SwitchTR J5
+U 1 1 60BC86E7
+P 1000 4600
+F 0 "J5" H 982 4925 50  0000 C CNN
+F 1 "AudioJack3_SwitchTR" H 982 4834 50  0000 C CNN
+F 2 "up5k-synth:STX-3120-5B-577C" H 1000 4150 50  0001 C CNN
+F 3 "http://anacapa.kycon.com/Pub_Eng_Draw/STX-3120-5B.pdf" H 1000 4600 50  0001 C CNN
+	1    1000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:rot_encoder_switch ENC1
+U 1 1 60BCA858
+P 11300 7700
+F 0 "ENC1" H 11300 7985 50  0000 C CNN
+F 1 "rot_encoder_switch" H 11300 7894 50  0000 C CNN
+F 2 "up5k-synth:PEC12R-4xxxF-Sxx" H 11300 7900 50  0001 C CNN
+F 3 "https://www.mouser.ca/datasheet/2/54/PEC12R-777795.pdf" H 11300 7900 50  0001 C CNN
+	1    11300 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:rot_encoder_switch ENC2
+U 1 1 60BCD2E7
+P 12200 7700
+F 0 "ENC2" H 12200 7985 50  0000 C CNN
+F 1 "rot_encoder_switch" H 12200 7894 50  0000 C CNN
+F 2 "up5k-synth:PEC12R-4xxxF-Sxx" H 12200 7900 50  0001 C CNN
+F 3 "https://www.mouser.ca/datasheet/2/54/PEC12R-777795.pdf" H 12200 7900 50  0001 C CNN
+	1    12200 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P2
+U 1 1 60BD33C3
+P 9150 5000
+F 0 "P2" H 9150 5245 50  0000 C CNN
+F 1 "keypad" H 9150 5154 50  0000 C CNN
+F 2 "" H 9150 5000 50  0001 C CNN
+F 3 "" H 9150 5000 50  0001 C CNN
+	1    9150 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P4
+U 1 1 60BD95C8
+P 9150 5350
+F 0 "P4" H 9150 5595 50  0000 C CNN
+F 1 "keypad" H 9150 5504 50  0000 C CNN
+F 2 "" H 9150 5350 50  0001 C CNN
+F 3 "" H 9150 5350 50  0001 C CNN
+	1    9150 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P6
+U 1 1 60BDB524
+P 9150 5700
+F 0 "P6" H 9150 5945 50  0000 C CNN
+F 1 "keypad" H 9150 5854 50  0000 C CNN
+F 2 "" H 9150 5700 50  0001 C CNN
+F 3 "" H 9150 5700 50  0001 C CNN
+	1    9150 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P8
+U 1 1 60BDB52A
+P 9150 6050
+F 0 "P8" H 9150 6295 50  0000 C CNN
+F 1 "keypad" H 9150 6204 50  0000 C CNN
+F 2 "" H 9150 6050 50  0001 C CNN
+F 3 "" H 9150 6050 50  0001 C CNN
+	1    9150 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P10
+U 1 1 60C08BE5
+P 9150 6400
+F 0 "P10" H 9150 6645 50  0000 C CNN
+F 1 "keypad" H 9150 6554 50  0000 C CNN
+F 2 "" H 9150 6400 50  0001 C CNN
+F 3 "" H 9150 6400 50  0001 C CNN
+	1    9150 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P12
+U 1 1 60C08BEB
+P 9150 6750
+F 0 "P12" H 9150 6995 50  0000 C CNN
+F 1 "keypad" H 9150 6904 50  0000 C CNN
+F 2 "" H 9150 6750 50  0001 C CNN
+F 3 "" H 9150 6750 50  0001 C CNN
+	1    9150 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P14
+U 1 1 60C08BF1
+P 9150 7100
+F 0 "P14" H 9150 7345 50  0000 C CNN
+F 1 "keypad" H 9150 7254 50  0000 C CNN
+F 2 "" H 9150 7100 50  0001 C CNN
+F 3 "" H 9150 7100 50  0001 C CNN
+	1    9150 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P16
+U 1 1 60C08BF7
+P 9150 7450
+F 0 "P16" H 9150 7695 50  0000 C CNN
+F 1 "keypad" H 9150 7604 50  0000 C CNN
+F 2 "" H 9150 7450 50  0001 C CNN
+F 3 "" H 9150 7450 50  0001 C CNN
+	1    9150 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P18
+U 1 1 60C41CC0
+P 9150 7850
+F 0 "P18" H 9150 8095 50  0000 C CNN
+F 1 "keypad" H 9150 8004 50  0000 C CNN
+F 2 "" H 9150 7850 50  0001 C CNN
+F 3 "" H 9150 7850 50  0001 C CNN
+	1    9150 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P20
+U 1 1 60C41CC6
+P 9150 8200
+F 0 "P20" H 9150 8445 50  0000 C CNN
+F 1 "keypad" H 9150 8354 50  0000 C CNN
+F 2 "" H 9150 8200 50  0001 C CNN
+F 3 "" H 9150 8200 50  0001 C CNN
+	1    9150 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P22
+U 1 1 60C41CCC
+P 9150 8550
+F 0 "P22" H 9150 8795 50  0000 C CNN
+F 1 "keypad" H 9150 8704 50  0000 C CNN
+F 2 "" H 9150 8550 50  0001 C CNN
+F 3 "" H 9150 8550 50  0001 C CNN
+	1    9150 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P24
+U 1 1 60C41CD2
+P 9150 8900
+F 0 "P24" H 9150 9145 50  0000 C CNN
+F 1 "keypad" H 9150 9054 50  0000 C CNN
+F 2 "" H 9150 8900 50  0001 C CNN
+F 3 "" H 9150 8900 50  0001 C CNN
+	1    9150 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P17
+U 1 1 60C41CD8
+P 8000 7850
+F 0 "P17" H 8000 8095 50  0000 C CNN
+F 1 "keypad" H 8000 8004 50  0000 C CNN
+F 2 "" H 8000 7850 50  0001 C CNN
+F 3 "" H 8000 7850 50  0001 C CNN
+	1    8000 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P19
+U 1 1 60C41CDE
+P 8000 8200
+F 0 "P19" H 8000 8445 50  0000 C CNN
+F 1 "keypad" H 8000 8354 50  0000 C CNN
+F 2 "" H 8000 8200 50  0001 C CNN
+F 3 "" H 8000 8200 50  0001 C CNN
+	1    8000 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P21
+U 1 1 60C41CE4
+P 8000 8550
+F 0 "P21" H 8000 8795 50  0000 C CNN
+F 1 "keypad" H 8000 8704 50  0000 C CNN
+F 2 "" H 8000 8550 50  0001 C CNN
+F 3 "" H 8000 8550 50  0001 C CNN
+	1    8000 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P23
+U 1 1 60C41CEA
+P 8000 8900
+F 0 "P23" H 8000 9145 50  0000 C CNN
+F 1 "keypad" H 8000 9054 50  0000 C CNN
+F 2 "" H 8000 8900 50  0001 C CNN
+F 3 "" H 8000 8900 50  0001 C CNN
+	1    8000 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P1
+U 1 1 60C81175
+P 8000 5000
+F 0 "P1" H 8000 5245 50  0000 C CNN
+F 1 "keypad" H 8000 5154 50  0000 C CNN
+F 2 "" H 8000 5000 50  0001 C CNN
+F 3 "" H 8000 5000 50  0001 C CNN
+	1    8000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P3
+U 1 1 60C8117B
+P 8000 5350
+F 0 "P3" H 8000 5595 50  0000 C CNN
+F 1 "keypad" H 8000 5504 50  0000 C CNN
+F 2 "" H 8000 5350 50  0001 C CNN
+F 3 "" H 8000 5350 50  0001 C CNN
+	1    8000 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P5
+U 1 1 60C81181
+P 8000 5700
+F 0 "P5" H 8000 5945 50  0000 C CNN
+F 1 "keypad" H 8000 5854 50  0000 C CNN
+F 2 "" H 8000 5700 50  0001 C CNN
+F 3 "" H 8000 5700 50  0001 C CNN
+	1    8000 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P7
+U 1 1 60C81187
+P 8000 6050
+F 0 "P7" H 8000 6295 50  0000 C CNN
+F 1 "keypad" H 8000 6204 50  0000 C CNN
+F 2 "" H 8000 6050 50  0001 C CNN
+F 3 "" H 8000 6050 50  0001 C CNN
+	1    8000 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P9
+U 1 1 60C8118D
+P 8000 6400
+F 0 "P9" H 8000 6645 50  0000 C CNN
+F 1 "keypad" H 8000 6554 50  0000 C CNN
+F 2 "" H 8000 6400 50  0001 C CNN
+F 3 "" H 8000 6400 50  0001 C CNN
+	1    8000 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P11
+U 1 1 60C81193
+P 8000 6750
+F 0 "P11" H 8000 6995 50  0000 C CNN
+F 1 "keypad" H 8000 6904 50  0000 C CNN
+F 2 "" H 8000 6750 50  0001 C CNN
+F 3 "" H 8000 6750 50  0001 C CNN
+	1    8000 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P13
+U 1 1 60C81199
+P 8000 7100
+F 0 "P13" H 8000 7345 50  0000 C CNN
+F 1 "keypad" H 8000 7254 50  0000 C CNN
+F 2 "" H 8000 7100 50  0001 C CNN
+F 3 "" H 8000 7100 50  0001 C CNN
+	1    8000 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:keypad P15
+U 1 1 60C8119F
+P 8000 7450
+F 0 "P15" H 8000 7695 50  0000 C CNN
+F 1 "keypad" H 8000 7604 50  0000 C CNN
+F 2 "" H 8000 7450 50  0001 C CNN
+F 3 "" H 8000 7450 50  0001 C CNN
+	1    8000 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:AudioJack3_SwitchTR J6
+U 1 1 60D4EFC7
+P 1000 5450
+F 0 "J6" H 982 5775 50  0000 C CNN
+F 1 "AudioJack3_SwitchTR" H 982 5684 50  0000 C CNN
+F 2 "up5k-synth:STX-3120-5B-577C" H 1000 5000 50  0001 C CNN
+F 3 "http://anacapa.kycon.com/Pub_Eng_Draw/STX-3120-5B.pdf" H 1000 5450 50  0001 C CNN
+	1    1000 5450
+	1    0    0    -1  
+$EndComp
+Text Label 4850 2050 0    50   ~ 0
+PDM1_R
+Text Label 4850 2150 0    50   ~ 0
+PDM1_L
+Wire Wire Line
+	7850 8900 7700 8900
+Wire Wire Line
+	7850 5000 7700 5000
+Connection ~ 7700 5000
+Wire Wire Line
+	7700 5000 7700 4850
+Wire Wire Line
+	7850 5350 7700 5350
+Connection ~ 7700 5350
+Wire Wire Line
+	7700 5350 7700 5000
+Wire Wire Line
+	7850 5700 7700 5700
+Connection ~ 7700 5700
+Wire Wire Line
+	7700 5700 7700 5350
+Wire Wire Line
+	7850 6050 7700 6050
+Connection ~ 7700 6050
+Wire Wire Line
+	7700 6050 7700 5700
+Wire Wire Line
+	7850 6400 7700 6400
+Connection ~ 7700 6400
+Wire Wire Line
+	7700 6400 7700 6050
+Wire Wire Line
+	7850 6750 7700 6750
+Connection ~ 7700 6750
+Wire Wire Line
+	7700 6750 7700 6400
+Wire Wire Line
+	7850 7100 7700 7100
+Connection ~ 7700 7100
+Wire Wire Line
+	7700 7100 7700 6750
+Wire Wire Line
+	7850 7450 7700 7450
+Connection ~ 7700 7450
+Wire Wire Line
+	7700 7450 7700 7100
+Wire Wire Line
+	7850 7850 7700 7850
+Connection ~ 7700 7850
+Wire Wire Line
+	7700 7850 7700 7450
+Wire Wire Line
+	7850 8200 7700 8200
+Wire Wire Line
+	7700 7850 7700 8200
+Connection ~ 7700 8200
+Wire Wire Line
+	7700 8200 7700 8550
+Wire Wire Line
+	7850 8550 7700 8550
+Connection ~ 7700 8550
+Wire Wire Line
+	7700 8550 7700 8900
+Wire Wire Line
+	9000 8900 8850 8900
+Wire Wire Line
+	9000 5000 8850 5000
+Connection ~ 8850 5000
+Wire Wire Line
+	8850 5000 8850 4850
+Wire Wire Line
+	9000 5350 8850 5350
+Connection ~ 8850 5350
+Wire Wire Line
+	8850 5350 8850 5000
+Wire Wire Line
+	9000 5700 8850 5700
+Connection ~ 8850 5700
+Wire Wire Line
+	8850 5700 8850 5350
+Wire Wire Line
+	9000 6050 8850 6050
+Connection ~ 8850 6050
+Wire Wire Line
+	8850 6050 8850 5700
+Wire Wire Line
+	9000 6400 8850 6400
+Connection ~ 8850 6400
+Wire Wire Line
+	8850 6400 8850 6050
+Wire Wire Line
+	9000 6750 8850 6750
+Connection ~ 8850 6750
+Wire Wire Line
+	8850 6750 8850 6400
+Wire Wire Line
+	9000 7100 8850 7100
+Connection ~ 8850 7100
+Wire Wire Line
+	8850 7100 8850 6750
+Wire Wire Line
+	9000 7450 8850 7450
+Connection ~ 8850 7450
+Wire Wire Line
+	8850 7450 8850 7100
+Wire Wire Line
+	9000 7850 8850 7850
+Connection ~ 8850 7850
+Wire Wire Line
+	8850 7850 8850 7450
+Wire Wire Line
+	9000 8200 8850 8200
+Wire Wire Line
+	8850 7850 8850 8200
+Connection ~ 8850 8200
+Wire Wire Line
+	8850 8200 8850 8550
+Wire Wire Line
+	9000 8550 8850 8550
+Connection ~ 8850 8550
+Wire Wire Line
+	8850 8550 8850 8900
+$Comp
+L power:+3V3 #PWR052
+U 1 1 60E6851C
+P 7700 4850
+F 0 "#PWR052" H 7700 4700 50  0001 C CNN
+F 1 "+3V3" H 7715 5023 50  0000 C CNN
+F 2 "" H 7700 4850 50  0001 C CNN
+F 3 "" H 7700 4850 50  0001 C CNN
+	1    7700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR053
+U 1 1 60E69514
+P 8850 4850
+F 0 "#PWR053" H 8850 4700 50  0001 C CNN
+F 1 "+3V3" H 8865 5023 50  0000 C CNN
+F 2 "" H 8850 4850 50  0001 C CNN
+F 3 "" H 8850 4850 50  0001 C CNN
+	1    8850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 5000 8500 5000
+Wire Wire Line
+	8500 5350 8150 5350
+Wire Wire Line
+	8150 5700 8500 5700
+Wire Wire Line
+	8500 6050 8150 6050
+Wire Wire Line
+	8150 6400 8500 6400
+Wire Wire Line
+	8500 6750 8150 6750
+Wire Wire Line
+	8150 7100 8500 7100
+Wire Wire Line
+	8500 7450 8150 7450
+Wire Wire Line
+	8150 7850 8500 7850
+Wire Wire Line
+	8500 8200 8150 8200
+Wire Wire Line
+	8150 8550 8500 8550
+Wire Wire Line
+	8500 8900 8150 8900
+Wire Wire Line
+	9300 5000 9650 5000
+Wire Wire Line
+	9650 5350 9300 5350
+Wire Wire Line
+	9300 5700 9650 5700
+Wire Wire Line
+	9650 6050 9300 6050
+Wire Wire Line
+	9300 6400 9650 6400
+Wire Wire Line
+	9650 6750 9300 6750
+Wire Wire Line
+	9300 7100 9650 7100
+Wire Wire Line
+	9650 7450 9300 7450
+Wire Wire Line
+	9300 7850 9650 7850
+Wire Wire Line
+	9650 8200 9300 8200
+Wire Wire Line
+	9300 8550 9650 8550
+Wire Wire Line
+	9650 8900 9300 8900
+Wire Wire Line
+	5500 8800 5350 8800
+Wire Wire Line
+	5500 4950 5350 4950
+Wire Wire Line
+	5500 5300 5350 5300
+Connection ~ 5350 5300
+Wire Wire Line
+	5350 5300 5350 4950
+Wire Wire Line
+	5500 5650 5350 5650
+Connection ~ 5350 5650
+Wire Wire Line
+	5350 5650 5350 5300
+Wire Wire Line
+	5500 6000 5350 6000
+Connection ~ 5350 6000
+Wire Wire Line
+	5350 6000 5350 5650
+Wire Wire Line
+	5500 6350 5350 6350
+Connection ~ 5350 6350
+Wire Wire Line
+	5350 6350 5350 6000
+Wire Wire Line
+	5500 6700 5350 6700
+Connection ~ 5350 6700
+Wire Wire Line
+	5350 6700 5350 6350
+Wire Wire Line
+	5500 7050 5350 7050
+Connection ~ 5350 7050
+Wire Wire Line
+	5350 7050 5350 6700
+Wire Wire Line
+	5500 7400 5350 7400
+Connection ~ 5350 7400
+Wire Wire Line
+	5350 7400 5350 7050
+Wire Wire Line
+	5500 7750 5350 7750
+Connection ~ 5350 7750
+Wire Wire Line
+	5350 7750 5350 7400
+Wire Wire Line
+	5500 8100 5350 8100
+Wire Wire Line
+	5350 7750 5350 8100
+Wire Wire Line
+	5500 8450 5350 8450
+Wire Wire Line
+	6650 8800 6500 8800
+Wire Wire Line
+	6650 4950 6500 4950
+Wire Wire Line
+	6650 5300 6500 5300
+Connection ~ 6500 5300
+Wire Wire Line
+	6500 5300 6500 4950
+Wire Wire Line
+	6650 5650 6500 5650
+Connection ~ 6500 5650
+Wire Wire Line
+	6500 5650 6500 5300
+Wire Wire Line
+	6650 6000 6500 6000
+Connection ~ 6500 6000
+Wire Wire Line
+	6500 6000 6500 5650
+Wire Wire Line
+	6650 6350 6500 6350
+Connection ~ 6500 6350
+Wire Wire Line
+	6500 6350 6500 6000
+Wire Wire Line
+	6650 6700 6500 6700
+Connection ~ 6500 6700
+Wire Wire Line
+	6500 6700 6500 6350
+Wire Wire Line
+	6650 7050 6500 7050
+Connection ~ 6500 7050
+Wire Wire Line
+	6500 7050 6500 6700
+Wire Wire Line
+	6650 7400 6500 7400
+Connection ~ 6500 7400
+Wire Wire Line
+	6500 7400 6500 7050
+Wire Wire Line
+	6650 7750 6500 7750
+Connection ~ 6500 7750
+Wire Wire Line
+	6500 7750 6500 7400
+Wire Wire Line
+	6650 8100 6500 8100
+Wire Wire Line
+	6500 7750 6500 8100
+Connection ~ 6500 8100
+Wire Wire Line
+	6500 8100 6500 8450
+Wire Wire Line
+	6650 8450 6500 8450
+Connection ~ 6500 8450
+Wire Wire Line
+	6500 8450 6500 8800
+Wire Wire Line
+	5800 4950 6150 4950
+Wire Wire Line
+	6150 5300 5800 5300
+Wire Wire Line
+	5800 5650 6150 5650
+Wire Wire Line
+	6150 6000 5800 6000
+Wire Wire Line
+	5800 6350 6150 6350
+Wire Wire Line
+	6150 6700 5800 6700
+Wire Wire Line
+	5800 7050 6150 7050
+Wire Wire Line
+	6150 7400 5800 7400
+Wire Wire Line
+	5800 7750 6150 7750
+Wire Wire Line
+	6150 8100 5800 8100
+Wire Wire Line
+	5800 8450 6150 8450
+Wire Wire Line
+	6150 8800 5800 8800
+Wire Wire Line
+	6950 4950 7300 4950
+Wire Wire Line
+	7300 5300 6950 5300
+Wire Wire Line
+	6950 5650 7300 5650
+Wire Wire Line
+	7300 6000 6950 6000
+Wire Wire Line
+	6950 6350 7300 6350
+Wire Wire Line
+	7300 6700 6950 6700
+Wire Wire Line
+	6950 7050 7300 7050
+Wire Wire Line
+	7300 7400 6950 7400
+Wire Wire Line
+	6950 7750 7300 7750
+Wire Wire Line
+	7300 8100 6950 8100
+Wire Wire Line
+	6950 8450 7300 8450
+Wire Wire Line
+	7300 8800 6950 8800
+$Comp
+L up5k-synth:1kR R27
+U 1 1 6126A70C
+P 5650 4950
+F 0 "R27" H 5650 5175 50  0000 C CNN
+F 1 "1kR" H 5650 5084 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5650 4950 50  0001 C CNN
+F 3 "" H 5650 4950 50  0001 C CNN
+	1    5650 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R29
+U 1 1 612E0067
+P 5650 5300
+F 0 "R29" H 5650 5525 50  0000 C CNN
+F 1 "1kR" H 5650 5434 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5650 5300 50  0001 C CNN
+F 3 "" H 5650 5300 50  0001 C CNN
+	1    5650 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R31
+U 1 1 61334D2F
+P 5650 5650
+F 0 "R31" H 5650 5875 50  0000 C CNN
+F 1 "1kR" H 5650 5784 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5650 5650 50  0001 C CNN
+F 3 "" H 5650 5650 50  0001 C CNN
+	1    5650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R33
+U 1 1 613899C9
+P 5650 6000
+F 0 "R33" H 5650 6225 50  0000 C CNN
+F 1 "1kR" H 5650 6134 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5650 6000 50  0001 C CNN
+F 3 "" H 5650 6000 50  0001 C CNN
+	1    5650 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R35
+U 1 1 613DE679
+P 5650 6350
+F 0 "R35" H 5650 6575 50  0000 C CNN
+F 1 "1kR" H 5650 6484 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5650 6350 50  0001 C CNN
+F 3 "" H 5650 6350 50  0001 C CNN
+	1    5650 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R37
+U 1 1 6143344F
+P 5650 6700
+F 0 "R37" H 5650 6925 50  0000 C CNN
+F 1 "1kR" H 5650 6834 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5650 6700 50  0001 C CNN
+F 3 "" H 5650 6700 50  0001 C CNN
+	1    5650 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R39
+U 1 1 6148FD37
+P 5650 7050
+F 0 "R39" H 5650 7275 50  0000 C CNN
+F 1 "1kR" H 5650 7184 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5650 7050 50  0001 C CNN
+F 3 "" H 5650 7050 50  0001 C CNN
+	1    5650 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R41
+U 1 1 6148FD3D
+P 5650 7400
+F 0 "R41" H 5650 7625 50  0000 C CNN
+F 1 "1kR" H 5650 7534 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5650 7400 50  0001 C CNN
+F 3 "" H 5650 7400 50  0001 C CNN
+	1    5650 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R43
+U 1 1 6148FD43
+P 5650 7750
+F 0 "R43" H 5650 7975 50  0000 C CNN
+F 1 "1kR" H 5650 7884 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5650 7750 50  0001 C CNN
+F 3 "" H 5650 7750 50  0001 C CNN
+	1    5650 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R45
+U 1 1 6148FD49
+P 5650 8100
+F 0 "R45" H 5650 8325 50  0000 C CNN
+F 1 "1kR" H 5650 8234 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5650 8100 50  0001 C CNN
+F 3 "" H 5650 8100 50  0001 C CNN
+	1    5650 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R47
+U 1 1 6148FD4F
+P 5650 8450
+F 0 "R47" H 5650 8675 50  0000 C CNN
+F 1 "1kR" H 5650 8584 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5650 8450 50  0001 C CNN
+F 3 "" H 5650 8450 50  0001 C CNN
+	1    5650 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R49
+U 1 1 6148FD55
+P 5650 8800
+F 0 "R49" H 5650 9025 50  0000 C CNN
+F 1 "1kR" H 5650 8934 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5650 8800 50  0001 C CNN
+F 3 "" H 5650 8800 50  0001 C CNN
+	1    5650 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:AD8531 U11
+U 2 1 6154D1D9
+P 2500 5050
+F 0 "U11" H 2650 5400 50  0000 C CNN
+F 1 "AD8531" H 2700 5300 50  0000 C CNN
+F 2 "up5k-synth:SOIC-8_W3.9mm" H 2500 4770 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/AD8534ARZ-REEL-Analog-Devices-datasheet-5333818.pdf" H 2500 5050 50  0001 C CNN
+	2    2500 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L up5k-synth:AD8531 U10
+U 2 1 6154DDD4
+P 2500 4400
+F 0 "U10" H 2500 4767 50  0000 C CNN
+F 1 "AD8531" H 2500 4676 50  0000 C CNN
+F 2 "up5k-synth:SOIC-8_W3.9mm" H 2500 4120 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/AD8534ARZ-REEL-Analog-Devices-datasheet-5333818.pdf" H 2500 4400 50  0001 C CNN
+	2    2500 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L up5k-synth:AD8531 U11
+U 1 1 61550482
+P 3800 5200
+F 0 "U11" H 3950 5300 50  0000 C CNN
+F 1 "AD8531" H 4000 5400 50  0000 C CNN
+F 2 "up5k-synth:SOIC-8_W3.9mm" H 3800 4920 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/AD8534ARZ-REEL-Analog-Devices-datasheet-5333818.pdf" H 3800 5200 50  0001 C CNN
+	1    3800 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L up5k-synth:AD8531 U10
+U 1 1 61551D00
+P 3800 4350
+F 0 "U10" H 4050 4600 50  0000 C CNN
+F 1 "AD8531" H 4050 4500 50  0000 C CNN
+F 2 "up5k-synth:SOIC-8_W3.9mm" H 3800 4070 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/AD8534ARZ-REEL-Analog-Devices-datasheet-5333818.pdf" H 3800 4350 50  0001 C CNN
+	1    3800 4350
+	-1   0    0    1   
+$EndComp
+Connection ~ 5350 8100
+Connection ~ 5350 8450
+Wire Wire Line
+	5350 8100 5350 8450
+Wire Wire Line
+	5350 8450 5350 8800
+$Comp
+L up5k-synth:1kR R28
+U 1 1 6170780B
+P 6800 4950
+F 0 "R28" H 6800 5175 50  0000 C CNN
+F 1 "1kR" H 6800 5084 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 4950 50  0001 C CNN
+F 3 "" H 6800 4950 50  0001 C CNN
+	1    6800 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R30
+U 1 1 61707811
+P 6800 5300
+F 0 "R30" H 6800 5525 50  0000 C CNN
+F 1 "1kR" H 6800 5434 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 5300 50  0001 C CNN
+F 3 "" H 6800 5300 50  0001 C CNN
+	1    6800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R32
+U 1 1 61707817
+P 6800 5650
+F 0 "R32" H 6800 5875 50  0000 C CNN
+F 1 "1kR" H 6800 5784 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 5650 50  0001 C CNN
+F 3 "" H 6800 5650 50  0001 C CNN
+	1    6800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R34
+U 1 1 6170781D
+P 6800 6000
+F 0 "R34" H 6800 6225 50  0000 C CNN
+F 1 "1kR" H 6800 6134 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 6000 50  0001 C CNN
+F 3 "" H 6800 6000 50  0001 C CNN
+	1    6800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R36
+U 1 1 61707823
+P 6800 6350
+F 0 "R36" H 6800 6575 50  0000 C CNN
+F 1 "1kR" H 6800 6484 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 6350 50  0001 C CNN
+F 3 "" H 6800 6350 50  0001 C CNN
+	1    6800 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R38
+U 1 1 61707829
+P 6800 6700
+F 0 "R38" H 6800 6925 50  0000 C CNN
+F 1 "1kR" H 6800 6834 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 6700 50  0001 C CNN
+F 3 "" H 6800 6700 50  0001 C CNN
+	1    6800 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R40
+U 1 1 6170782F
+P 6800 7050
+F 0 "R40" H 6800 7275 50  0000 C CNN
+F 1 "1kR" H 6800 7184 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 7050 50  0001 C CNN
+F 3 "" H 6800 7050 50  0001 C CNN
+	1    6800 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R42
+U 1 1 61707835
+P 6800 7400
+F 0 "R42" H 6800 7625 50  0000 C CNN
+F 1 "1kR" H 6800 7534 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 7400 50  0001 C CNN
+F 3 "" H 6800 7400 50  0001 C CNN
+	1    6800 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R44
+U 1 1 6170783B
+P 6800 7750
+F 0 "R44" H 6800 7975 50  0000 C CNN
+F 1 "1kR" H 6800 7884 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 7750 50  0001 C CNN
+F 3 "" H 6800 7750 50  0001 C CNN
+	1    6800 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R46
+U 1 1 61707841
+P 6800 8100
+F 0 "R46" H 6800 8325 50  0000 C CNN
+F 1 "1kR" H 6800 8234 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 8100 50  0001 C CNN
+F 3 "" H 6800 8100 50  0001 C CNN
+	1    6800 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R48
+U 1 1 61707847
+P 6800 8450
+F 0 "R48" H 6800 8675 50  0000 C CNN
+F 1 "1kR" H 6800 8584 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 8450 50  0001 C CNN
+F 3 "" H 6800 8450 50  0001 C CNN
+	1    6800 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:1kR R50
+U 1 1 6170784D
+P 6800 8800
+F 0 "R50" H 6800 9025 50  0000 C CNN
+F 1 "1kR" H 6800 8934 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6800 8800 50  0001 C CNN
+F 3 "" H 6800 8800 50  0001 C CNN
+	1    6800 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR054
+U 1 1 61905E1A
+P 5350 8800
+F 0 "#PWR054" H 5350 8600 50  0001 C CNN
+F 1 "GNDPWR" H 5354 8646 50  0000 C CNN
+F 2 "" H 5350 8750 50  0001 C CNN
+F 3 "" H 5350 8750 50  0001 C CNN
+	1    5350 8800
+	1    0    0    -1  
+$EndComp
+Connection ~ 5350 8800
+$Comp
+L power:GNDPWR #PWR055
+U 1 1 619067EE
+P 6500 8800
+F 0 "#PWR055" H 6500 8600 50  0001 C CNN
+F 1 "GNDPWR" H 6504 8646 50  0000 C CNN
+F 2 "" H 6500 8750 50  0001 C CNN
+F 3 "" H 6500 8750 50  0001 C CNN
+	1    6500 8800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 8800
+$Comp
+L up5k-synth:DS1881 U3
+U 1 1 60C6D451
+P 3300 1300
+F 0 "U3" H 3300 1725 50  0000 C CNN
+F 1 "DS1881" H 3300 1634 50  0000 C CNN
+F 2 "up5k-synth:TSSOP-16_4.4x5mm_P0.65mm" H 3300 1000 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1881.pdf#page=7" H 3210 1310 50  0001 C CNN
+	1    3300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:DS1881 U9
+U 2 1 60C6E1F2
+P 4150 3200
+F 0 "U9" H 4228 3251 50  0000 L CNN
+F 1 "DS1881" H 4228 3160 50  0000 L CNN
+F 2 "up5k-synth:TSSOP-16_4.4x5mm_P0.65mm" H 4150 2900 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1881.pdf#page=7" H 4060 3210 50  0001 C CNN
+	2    4150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:DS1881 U9
+U 3 1 60C7068F
+P 4100 3550
+F 0 "U9" H 4228 3601 50  0000 L CNN
+F 1 "DS1881" H 4228 3510 50  0000 L CNN
+F 2 "up5k-synth:TSSOP-16_4.4x5mm_P0.65mm" H 4100 3250 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1881.pdf#page=7" H 4010 3560 50  0001 C CNN
+	3    4100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:DS1881 U9
+U 1 1 60C72DC9
+P 3300 2050
+F 0 "U9" H 3300 2475 50  0000 C CNN
+F 1 "DS1881" H 3300 2384 50  0000 C CNN
+F 2 "up5k-synth:TSSOP-16_4.4x5mm_P0.65mm" H 3300 1750 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1881.pdf#page=7" H 3210 2060 50  0001 C CNN
+	1    3300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:DS1881 U3
+U 2 1 60C75F2A
+P 3150 3200
+F 0 "U3" H 3228 3251 50  0000 L CNN
+F 1 "DS1881" H 3228 3160 50  0000 L CNN
+F 2 "up5k-synth:TSSOP-16_4.4x5mm_P0.65mm" H 3150 2900 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1881.pdf#page=7" H 3060 3210 50  0001 C CNN
+	2    3150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:DS1881 U3
+U 3 1 60C77132
+P 3100 3550
+F 0 "U3" H 3228 3601 50  0000 L CNN
+F 1 "DS1881" H 3228 3510 50  0000 L CNN
+F 2 "up5k-synth:TSSOP-16_4.4x5mm_P0.65mm" H 3100 3250 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1881.pdf#page=7" H 3010 3560 50  0001 C CNN
+	3    3100 3550
+	1    0    0    -1  
+$EndComp
+Text Label 3600 1200 0    50   ~ 0
+SC0_SCL_PAD[1]
+Wire Wire Line
+	3600 1200 4250 1200
+Text Label 3600 1100 0    50   ~ 0
+SC0_SDA_PAD[0]
+Wire Wire Line
+	3600 1100 4250 1100
+Text Label 3600 1950 0    50   ~ 0
+SC0_SCL_PAD[1]
+Wire Wire Line
+	3600 1950 4250 1950
+Text Label 3600 1850 0    50   ~ 0
+SC0_SDA_PAD[0]
+Wire Wire Line
+	3600 1850 4250 1850
+$Comp
+L power:GNDPWR #PWR048
+U 1 1 611AB0EA
+P 2850 1950
+F 0 "#PWR048" H 2850 1750 50  0001 C CNN
+F 1 "GNDPWR" H 2855 1795 50  0000 C CNN
+F 2 "" H 2850 1900 50  0001 C CNN
+F 3 "" H 2850 1900 50  0001 C CNN
+	1    2850 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDPWR #PWR015
+U 1 1 611AB508
+P 2850 1200
+F 0 "#PWR015" H 2850 1000 50  0001 C CNN
+F 1 "GNDPWR" H 2855 1045 50  0000 C CNN
+F 2 "" H 2850 1150 50  0001 C CNN
+F 3 "" H 2850 1150 50  0001 C CNN
+	1    2850 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 1200 3000 1200
+Wire Wire Line
+	2850 1950 3000 1950
+$Comp
+L up5k-synth:360kR R24
+U 1 1 613BD2E1
+P 3850 2050
+F 0 "R24" H 4200 1950 50  0000 C CNN
+F 1 "360kR" H 4250 2050 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3850 1800 50  0001 C CNN
+F 3 "" H 3850 2050 50  0001 C CNN
+	1    3850 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2050 3700 2050
+$Comp
+L power:GNDPWR #PWR049
+U 1 1 6141B9C6
+P 4000 2150
+F 0 "#PWR049" H 4000 1950 50  0001 C CNN
+F 1 "GNDPWR" H 4004 1996 50  0000 C CNN
+F 2 "" H 4000 2100 50  0001 C CNN
+F 3 "" H 4000 2100 50  0001 C CNN
+	1    4000 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2150 3600 2150
+Wire Wire Line
+	4000 2050 4000 2150
+Connection ~ 4000 2150
+$Comp
+L up5k-synth:360kR R20
+U 1 1 614D2FB8
+P 3850 1300
+F 0 "R20" H 4200 1200 50  0000 C CNN
+F 1 "360kR" H 4250 1300 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3850 1050 50  0001 C CNN
+F 3 "" H 3850 1300 50  0001 C CNN
+	1    3850 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1300 3700 1300
+$Comp
+L power:GNDPWR #PWR018
+U 1 1 614D2FBF
+P 4000 1400
+F 0 "#PWR018" H 4000 1200 50  0001 C CNN
+F 1 "GNDPWR" H 4004 1246 50  0000 C CNN
+F 2 "" H 4000 1350 50  0001 C CNN
+F 3 "" H 4000 1350 50  0001 C CNN
+	1    4000 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1400 3600 1400
+Wire Wire Line
+	4000 1300 4000 1400
+Connection ~ 4000 1400
+$Comp
+L up5k-synth:360kR R22
+U 1 1 61536A72
+P 2850 1500
+F 0 "R22" H 3150 1500 50  0000 C CNN
+F 1 "360kR" H 3350 1500 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2850 1250 50  0001 C CNN
+F 3 "" H 2850 1500 50  0001 C CNN
+	1    2850 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L up5k-synth:360kR R21
+U 1 1 61592C1D
+P 2850 1400
+F 0 "R21" H 3150 1400 50  0000 C CNN
+F 1 "360kR" H 3350 1400 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2850 1150 50  0001 C CNN
+F 3 "" H 2850 1400 50  0001 C CNN
+	1    2850 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L up5k-synth:360kR R19
+U 1 1 615ED254
+P 2850 1300
+F 0 "R19" H 3150 1300 50  0000 C CNN
+F 1 "360kR" H 3350 1600 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2850 1050 50  0001 C CNN
+F 3 "" H 2850 1300 50  0001 C CNN
+	1    2850 1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 1500 2650 1500
+Wire Wire Line
+	2650 1500 2650 1400
+Wire Wire Line
+	2650 1200 2850 1200
+Connection ~ 2850 1200
+Wire Wire Line
+	2700 1300 2650 1300
+Connection ~ 2650 1300
+Wire Wire Line
+	2650 1300 2650 1200
+Wire Wire Line
+	2700 1400 2650 1400
+Connection ~ 2650 1400
+Wire Wire Line
+	2650 1400 2650 1300
+$Comp
+L up5k-synth:360kR R26
+U 1 1 61765BE8
+P 2850 2250
+F 0 "R26" H 3150 2250 50  0000 C CNN
+F 1 "360kR" H 3200 1850 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2850 2000 50  0001 C CNN
+F 3 "" H 2850 2250 50  0001 C CNN
+	1    2850 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L up5k-synth:360kR R25
+U 1 1 61765BEE
+P 2850 2150
+F 0 "R25" H 3150 2150 50  0000 C CNN
+F 1 "360kR" H 3200 1950 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2850 1900 50  0001 C CNN
+F 3 "" H 2850 2150 50  0001 C CNN
+	1    2850 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L up5k-synth:360kR R23
+U 1 1 61765BF4
+P 2850 2050
+F 0 "R23" H 3150 2050 50  0000 C CNN
+F 1 "360kR" H 3200 1750 50  0000 C CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2850 1800 50  0001 C CNN
+F 3 "" H 2850 2050 50  0001 C CNN
+	1    2850 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 2250 2650 2250
+Wire Wire Line
+	2650 2250 2650 2150
+Wire Wire Line
+	2700 2050 2650 2050
+Wire Wire Line
+	2650 2050 2650 1950
+Wire Wire Line
+	2700 2150 2650 2150
+$Comp
+L power:+3V3 #PWR047
+U 1 1 617CAB9F
+P 2650 1950
+F 0 "#PWR047" H 2650 1800 50  0001 C CNN
+F 1 "+3V3" V 2665 2078 50  0000 L CNN
+F 2 "" H 2650 1950 50  0001 C CNN
+F 3 "" H 2650 1950 50  0001 C CNN
+	1    2650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR050
+U 1 1 6182ADC8
+P 2650 2250
+F 0 "#PWR050" H 2650 2050 50  0001 C CNN
+F 1 "GNDPWR" H 2655 2095 50  0000 C CNN
+F 2 "" H 2650 2200 50  0001 C CNN
+F 3 "" H 2650 2200 50  0001 C CNN
+	1    2650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR051
+U 1 1 6188BE66
+P 3600 2250
+F 0 "#PWR051" H 3600 2100 50  0001 C CNN
+F 1 "+3V3" V 3615 2378 50  0000 L CNN
+F 2 "" H 3600 2250 50  0001 C CNN
+F 3 "" H 3600 2250 50  0001 C CNN
+	1    3600 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR046
+U 1 1 618EBB8D
+P 3600 1500
+F 0 "#PWR046" H 3600 1350 50  0001 C CNN
+F 1 "+3V3" V 3615 1628 50  0000 L CNN
+F 2 "" H 3600 1500 50  0001 C CNN
+F 3 "" H 3600 1500 50  0001 C CNN
+	1    3600 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0104
+U 1 1 61AD9D28
+P 3650 3300
+F 0 "#PWR0104" H 3650 3100 50  0001 C CNN
+F 1 "GNDPWR" V 3600 3600 50  0000 R CNN
+F 2 "" H 3650 3250 50  0001 C CNN
+F 3 "" H 3650 3250 50  0001 C CNN
+	1    3650 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 3300 3950 3300
+$Comp
+L power:GNDPWR #PWR0105
+U 1 1 61BA0771
+P 3650 3650
+F 0 "#PWR0105" H 3650 3450 50  0001 C CNN
+F 1 "GNDPWR" V 3600 3950 50  0000 R CNN
+F 2 "" H 3650 3600 50  0001 C CNN
+F 3 "" H 3650 3600 50  0001 C CNN
+	1    3650 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 3650 3950 3650
+$Comp
+L power:GNDPWR #PWR0106
+U 1 1 61C03387
+P 2650 3650
+F 0 "#PWR0106" H 2650 3450 50  0001 C CNN
+F 1 "GNDPWR" V 2600 3950 50  0000 R CNN
+F 2 "" H 2650 3600 50  0001 C CNN
+F 3 "" H 2650 3600 50  0001 C CNN
+	1    2650 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 3650 2950 3650
+$Comp
+L power:GNDPWR #PWR0107
+U 1 1 61C66999
+P 2650 3300
+F 0 "#PWR0107" H 2650 3100 50  0001 C CNN
+F 1 "GNDPWR" V 2600 3600 50  0000 R CNN
+F 2 "" H 2650 3250 50  0001 C CNN
+F 3 "" H 2650 3250 50  0001 C CNN
+	1    2650 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 3300 2950 3300
+Text Label 3650 3100 0    50   ~ 0
+PDM0_L
+Text Label 3650 3450 0    50   ~ 0
+PDM0_R
+Text Label 2600 3100 0    50   ~ 0
+PDM1_L
+Text Label 2600 3450 0    50   ~ 0
+PDM1_R
+Wire Wire Line
+	2600 3100 2950 3100
+Wire Wire Line
+	2600 3450 2950 3450
+Wire Wire Line
+	3650 3450 3950 3450
+Wire Wire Line
+	3650 3100 3950 3100
+Wire Wire Line
+	2600 3200 2950 3200
+Wire Wire Line
+	2600 3550 2950 3550
+Wire Wire Line
+	3650 3200 3950 3200
+Wire Wire Line
+	3650 3550 3950 3550
+$Comp
+L up5k-synth:0.1uF_10V_0603 C?
+U 1 1 6202B33D
+P 4050 5550
+F 0 "C?" H 4150 5475 50  0000 C CNN
+F 1 "0.1uF_10V_0603" H 4325 5650 50  0000 C CNN
+F 2 "up5k-synth:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4050 5450 50  0001 C CNN
+F 3 "" H 4050 5550 50  0001 C CNN
+	1    4050 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5450 3900 5550
+Wire Wire Line
+	3900 5550 3800 5550
+Connection ~ 3900 5550
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 62174157
+P 4500 5550
+F 0 "#PWR?" H 4500 5350 50  0001 C CNN
+F 1 "GNDPWR" H 4504 5396 50  0000 C CNN
+F 2 "" H 4500 5500 50  0001 C CNN
+F 3 "" H 4500 5500 50  0001 C CNN
+	1    4500 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5550 4500 5550
+$Comp
+L power:+3V3 #PWR?
+U 1 1 621E1D87
+P 3800 5550
+F 0 "#PWR?" H 3800 5400 50  0001 C CNN
+F 1 "+3V3" H 3675 5550 50  0000 C CNN
+F 2 "" H 3800 5550 50  0001 C CNN
+F 3 "" H 3800 5550 50  0001 C CNN
+	1    3800 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:0.1uF_10V_0603 C?
+U 1 1 621E52B5
+P 4050 4700
+F 0 "C?" H 4150 4625 50  0000 C CNN
+F 1 "0.1uF_10V_0603" H 4325 4800 50  0000 C CNN
+F 2 "up5k-synth:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4050 4600 50  0001 C CNN
+F 3 "" H 4050 4700 50  0001 C CNN
+	1    4050 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4600 3900 4700
+Wire Wire Line
+	3900 4700 3800 4700
+Connection ~ 3900 4700
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 621E52BE
+P 4500 4700
+F 0 "#PWR?" H 4500 4500 50  0001 C CNN
+F 1 "GNDPWR" H 4504 4546 50  0000 C CNN
+F 2 "" H 4500 4650 50  0001 C CNN
+F 3 "" H 4500 4650 50  0001 C CNN
+	1    4500 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4700 4500 4700
+$Comp
+L power:+3V3 #PWR?
+U 1 1 621E52C5
+P 3800 4700
+F 0 "#PWR?" H 3800 4550 50  0001 C CNN
+F 1 "+3V3" H 3675 4700 50  0000 C CNN
+F 2 "" H 3800 4700 50  0001 C CNN
+F 3 "" H 3800 4700 50  0001 C CNN
+	1    3800 4700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

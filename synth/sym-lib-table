@@ -18,4 +18,8 @@
   (lib (name dk_PMIC-Voltage-Regulators-Linear)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-symbols/dk_PMIC-Voltage-Regulators-Linear.lib)(options "")(descr "")(disabled))
   (lib (name dk_PMIC-Voltage-Regulators-Special-Purpose)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-symbols/dk_PMIC-Voltage-Regulators-Special-Purpose.lib)(options "")(descr "")(disabled))
   (lib (name synth-rescue)(type Legacy)(uri ${KIPRJMOD}/synth-rescue.lib)(options "")(descr "")(disabled))
+  (lib (name dk_Navigation-Switches-Joystick)(type Legacy)(uri C:/Users/yanla/Documents/code/digikey-kicad-library/digikey-symbols/dk_Navigation-Switches-Joystick.lib)(options "")(descr "")(disabled))
+  (lib (name dk_Pushbutton-Switches)(type Legacy)(uri C:/Users/yanla/Documents/code/digikey-kicad-library/digikey-symbols/dk_Pushbutton-Switches.lib)(options "")(descr "")(disabled))
+  (lib (name dk_Rotary-Potentiometers-Rheostats)(type Legacy)(uri C:/Users/yanla/Documents/code/digikey-kicad-library/digikey-symbols/dk_Rotary-Potentiometers-Rheostats.lib)(options "")(descr "")(disabled))
+  (lib (name dk_Toggle-Switches)(type Legacy)(uri C:/Users/yanla/Documents/code/digikey-kicad-library/digikey-symbols/dk_Toggle-Switches.lib)(options "")(descr "")(disabled))
 )
