@@ -136,6 +136,24 @@ K I2C EEPROM Serial 256kb
 F https://www.onsemi.cn/PowerSolutions/document/CAT24C256-D.PDF
 $ENDCMP
 #
+$CMP CP_10uF_10v_0805
+D Polarized capacitor, US symbol
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP CP_270uF_10v_PXF
+D Polarized capacitor, US symbol
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP CP_270uF_10v_WCAP-PSLP
+D Polarized capacitor, US symbol
+K cap capacitor
+F ~
+$ENDCMP
+#
 $CMP CSTNE24M0VH3C000R0
 F https://www.mouser.com/datasheet/2/281/SPEC_CSTNE24M0VH3C000R0-1923846.pdf
 $ENDCMP
@@ -162,6 +180,24 @@ $ENDCMP
 #
 $CMP MEM2061-01-188-00-A
 F https://gct.co/files/drawings/mem2061.pdf
+$ENDCMP
+#
+$CMP R_100kR_0603_copy
+D Resistor, US symbol
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP R_16R_0603
+D Resistor, US symbol
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP R_50kR_0603
+D Resistor, US symbol
+K R res resistor
+F ~
 $ENDCMP
 #
 $CMP SW_Push
