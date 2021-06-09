@@ -148,12 +148,6 @@ K cap capacitor
 F ~
 $ENDCMP
 #
-$CMP CP_270uF_10v_WCAP-PSLP
-D Polarized capacitor, US symbol
-K cap capacitor
-F ~
-$ENDCMP
-#
 $CMP CSTNE24M0VH3C000R0
 F https://www.mouser.com/datasheet/2/281/SPEC_CSTNE24M0VH3C000R0-1923846.pdf
 $ENDCMP
@@ -212,6 +206,12 @@ $ENDCMP
 #
 $CMP TPS63031
 F https://www.ti.com/lit/ds/symlink/tps63031.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1621624572273
+$ENDCMP
+#
+$CMP WS2812B
+D RGB LED with integrated controller
+K RGB LED NeoPixel addressable
+F https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
 $ENDCMP
 #
 $CMP rot_encoder_switch

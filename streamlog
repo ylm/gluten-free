@@ -1,3 +1,8 @@
+20210609
+	Added some LEDs
+	Need to rework the PS design for battery monitoriing
+	Need about 23 push buttons for the interface
+	Removed the ac coupling on op-amp input stage as suggested by vmttmv
 20210607
 	Finished the op-amp part of the design.
 20210604

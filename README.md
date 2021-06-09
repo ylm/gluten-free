@@ -36,6 +36,9 @@
 ** Chose how many LEDs
 * Make a decision on synth interface
 * Design DAC LPF
+* Improve PS design for battery monitoring
+* Add power switch
+* Might replace ws2812b with SK9822
 
 ## Issues
 

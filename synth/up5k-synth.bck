@@ -110,6 +110,10 @@ $CMP 74LVC2G14
 F https://assets.nexperia.com/documents/data-sheet/74LVC2G14.pdf
 $ENDCMP
 #
+$CMP AD8531
+F https://datasheet.octopart.com/AD8534ARZ-REEL-Analog-Devices-datasheet-5333818.pdf
+$ENDCMP
+#
 $CMP AudioJack3_SwitchTR
 D Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)
 K audio jack receptacle stereo headphones phones TRS connector
@@ -132,12 +136,28 @@ K I2C EEPROM Serial 256kb
 F https://www.onsemi.cn/PowerSolutions/document/CAT24C256-D.PDF
 $ENDCMP
 #
+$CMP CP_10uF_10v_0805
+D Polarized capacitor, US symbol
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP CP_270uF_10v_PXF
+D Polarized capacitor, US symbol
+K cap capacitor
+F ~
+$ENDCMP
+#
 $CMP CSTNE24M0VH3C000R0
 F https://www.mouser.com/datasheet/2/281/SPEC_CSTNE24M0VH3C000R0-1923846.pdf
 $ENDCMP
 #
 $CMP DRA818_iCE40-UP5K-SG48
 F https://www.mouser.com/datasheet/2/225/iCE40%20UltraPlus%20Family%20Data%20Sheet-1149905.pdf
+$ENDCMP
+#
+$CMP DS1881
+F https://datasheets.maximintegrated.com/en/ds/DS1881.pdf#page=7
 $ENDCMP
 #
 $CMP DSC6003JI2A
@@ -154,6 +174,24 @@ $ENDCMP
 #
 $CMP MEM2061-01-188-00-A
 F https://gct.co/files/drawings/mem2061.pdf
+$ENDCMP
+#
+$CMP R_100kR_0603_copy
+D Resistor, US symbol
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP R_16R_0603
+D Resistor, US symbol
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP R_50kR_0603
+D Resistor, US symbol
+K R res resistor
+F ~
 $ENDCMP
 #
 $CMP SW_Push
