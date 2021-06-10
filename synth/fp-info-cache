@@ -1,4 +1,4 @@
-43797990035828
+45421240651282
 up5k-synth
 BatteryHolder_Keystone_1043_1x18650
 Battery holder for 18650 cylindrical cells http://www.keyelco.com/product.cfm/product_id/918
@@ -52,6 +52,13 @@ up5k-synth
 LED_Cree-PLCC4_3.2x2.8mm_CCW
 3.2mm x 2.8mm PLCC4 LED, http://www.cree.com/led-components/media/documents/CLV1AFKB(874).pdf
 LED Cree PLCC-4
+0
+4
+4
+up5k-synth
+LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm
+https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
+LED RGB NeoPixel
 0
 4
 4

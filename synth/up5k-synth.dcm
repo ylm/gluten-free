@@ -160,6 +160,10 @@ $CMP DS1881
 F https://datasheets.maximintegrated.com/en/ds/DS1881.pdf#page=7
 $ENDCMP
 #
+$CMP DS2745
+F https://datasheets.maximintegrated.com/en/ds/DS2745.pdf
+$ENDCMP
+#
 $CMP DSC6003JI2A
 F https://www.mouser.ca/datasheet/2/268/20005625B-1149229.pdf
 $ENDCMP
@@ -176,7 +180,7 @@ $CMP MEM2061-01-188-00-A
 F https://gct.co/files/drawings/mem2061.pdf
 $ENDCMP
 #
-$CMP R_100kR_0603_copy
+$CMP R_100kR_0603
 D Resistor, US symbol
 K R res resistor
 F ~
@@ -188,9 +192,27 @@ K R res resistor
 F ~
 $ENDCMP
 #
+$CMP R_20mR_0603
+D Resistor, US symbol
+K R res resistor
+F ~
+$ENDCMP
+#
 $CMP R_50kR_0603
 D Resistor, US symbol
 K R res resistor
+F ~
+$ENDCMP
+#
+$CMP SW_DPDT_x2
+D Switch, dual pole double throw, separate symbols
+K switch dual-pole double-throw DPDT spdt ON-ON
+F ~
+$ENDCMP
+#
+$CMP SW_DPDT_x2_MFS201N−16−Z
+D Switch, dual pole double throw, separate symbols
+K switch dual-pole double-throw DPDT spdt ON-ON
 F ~
 $ENDCMP
 #

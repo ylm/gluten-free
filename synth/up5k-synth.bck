@@ -160,6 +160,10 @@ $CMP DS1881
 F https://datasheets.maximintegrated.com/en/ds/DS1881.pdf#page=7
 $ENDCMP
 #
+$CMP DS2745
+F https://datasheets.maximintegrated.com/en/ds/DS2745.pdf
+$ENDCMP
+#
 $CMP DSC6003JI2A
 F https://www.mouser.ca/datasheet/2/268/20005625B-1149229.pdf
 $ENDCMP
@@ -176,6 +180,12 @@ $CMP MEM2061-01-188-00-A
 F https://gct.co/files/drawings/mem2061.pdf
 $ENDCMP
 #
+$CMP R_100kR_0603
+D Resistor, US symbol
+K R res resistor
+F ~
+$ENDCMP
+#
 $CMP R_100kR_0603_copy
 D Resistor, US symbol
 K R res resistor
@@ -183,6 +193,12 @@ F ~
 $ENDCMP
 #
 $CMP R_16R_0603
+D Resistor, US symbol
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP R_20mR_0603
 D Resistor, US symbol
 K R res resistor
 F ~
@@ -206,6 +222,12 @@ $ENDCMP
 #
 $CMP TPS63031
 F https://www.ti.com/lit/ds/symlink/tps63031.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1621624572273
+$ENDCMP
+#
+$CMP WS2812B
+D RGB LED with integrated controller
+K RGB LED NeoPixel addressable
+F https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
 $ENDCMP
 #
 $CMP rot_encoder_switch
