@@ -39,6 +39,7 @@
 * Improve PS design for battery monitoring
 * Add power switch
 * Might replace ws2812b with SK9822
+* Finish up5k supply
 
 ## Issues
 

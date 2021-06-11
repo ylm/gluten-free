@@ -186,12 +186,6 @@ K R res resistor
 F ~
 $ENDCMP
 #
-$CMP R_100kR_0603_copy
-D Resistor, US symbol
-K R res resistor
-F ~
-$ENDCMP
-#
 $CMP R_16R_0603
 D Resistor, US symbol
 K R res resistor
@@ -207,6 +201,18 @@ $ENDCMP
 $CMP R_50kR_0603
 D Resistor, US symbol
 K R res resistor
+F ~
+$ENDCMP
+#
+$CMP SW_DPDT_x2
+D Switch, dual pole double throw, separate symbols
+K switch dual-pole double-throw DPDT spdt ON-ON
+F ~
+$ENDCMP
+#
+$CMP SW_DPDT_x2_MFS201N−16−Z
+D Switch, dual pole double throw, separate symbols
+K switch dual-pole double-throw DPDT spdt ON-ON
 F ~
 $ENDCMP
 #
