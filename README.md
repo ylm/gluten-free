@@ -31,15 +31,8 @@
 
 ##TODO
 
-* Select push buttons and more LEDs for interface
-** Chose how many buttons (on top of the keypads)
-** Chose how many LEDs
 * Make a decision on synth interface
-* Design DAC LPF
-* Improve PS design for battery monitoring
-* Add power switch
 * Might replace ws2812b with SK9822
-* Finish up5k supply
 
 ## Issues
 
