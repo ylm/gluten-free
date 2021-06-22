@@ -1,3 +1,7 @@
+20210622
+	Worked a bit on the layout
+	Added I2C screen
+	Things are going well I think....
 20210621
 	Added pull-down on rotary encoder switch
 	Scaled the board to 250x100mm (can scale down later)
