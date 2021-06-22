@@ -1216,7 +1216,7 @@ U 1 1 60D23413
 P 11500 975
 F 0 "J4" H 11500 1300 50  0000 C CNN
 F 1 "debug_conn" H 11500 1209 50  0000 C CNN
-F 2 "" H 11350 925 50  0001 C CNN
+F 2 "up5k-synth:PinHeader_2x03_P2.54mm_Vertical" H 11350 925 50  0001 C CNN
 F 3 "" H 11350 925 50  0001 C CNN
 	1    11500 975 
 	1    0    0    -1  
@@ -6994,4 +6994,152 @@ Wire Wire Line
 	11650 3975 12300 3975
 Text Label 11650 3975 0    50   ~ 0
 LED_DATA
+Text Label 8150 9175 0    50   ~ 0
+ADC1IN[11]
+Text Label 8150 8825 0    50   ~ 0
+ADC1IN[10]
+Text Label 8150 5275 0    50   ~ 0
+ADC0IN[0]
+Text Label 8150 5625 0    50   ~ 0
+ADC0IN[1]
+Text Label 8150 5975 0    50   ~ 0
+ADC0IN[4]
+Text Label 8150 6325 0    50   ~ 0
+ADC0IN[5]
+Text Label 8150 6675 0    50   ~ 0
+ADC0IN[6]
+Text Label 8150 7025 0    50   ~ 0
+ADC0IN[7]
+Text Label 8150 7375 0    50   ~ 0
+ADC0IN[8]
+Text Label 8150 7725 0    50   ~ 0
+ADC0IN[9]
+Text Label 8150 8125 0    50   ~ 0
+ADC0IN[10]
+Text Label 8150 8475 0    50   ~ 0
+ADC0IN[11]
+Text Label 9300 7725 0    50   ~ 0
+ADC1IN[9]
+Text Label 9300 7375 0    50   ~ 0
+ADC1IN[8]
+Text Label 9300 7025 0    50   ~ 0
+ADC1IN[7]
+Text Label 9300 6675 0    50   ~ 0
+ADC1IN[6]
+Text Label 9300 6325 0    50   ~ 0
+ADC0IN[15]
+Text Label 9300 9175 0    50   ~ 0
+ADC1IN[5]
+Text Label 9300 8825 0    50   ~ 0
+ADC1IN[4]
+Text Label 9300 8125 0    50   ~ 0
+ADC0IN[2]
+Text Label 9300 8475 0    50   ~ 0
+ADC0IN[3]
+Text Label 9300 5975 0    50   ~ 0
+ADC0IN[14]
+Text Label 9300 5625 0    50   ~ 0
+ADC0IN[13]
+Text Label 9300 5275 0    50   ~ 0
+ADC0IN[12]
+Text Label 7175 7050 0    50   ~ 0
+ADC1IN[9]
+Text Label 7175 6700 0    50   ~ 0
+ADC1IN[8]
+Text Label 7175 6350 0    50   ~ 0
+ADC1IN[7]
+Text Label 7175 6000 0    50   ~ 0
+ADC1IN[6]
+Text Label 7175 5650 0    50   ~ 0
+ADC0IN[15]
+Text Label 7175 8450 0    50   ~ 0
+ADC1IN[5]
+Text Label 7175 8100 0    50   ~ 0
+ADC1IN[4]
+Text Label 7175 7400 0    50   ~ 0
+ADC0IN[2]
+Text Label 7175 7750 0    50   ~ 0
+ADC0IN[3]
+Text Label 7175 5300 0    50   ~ 0
+ADC0IN[14]
+Text Label 7175 4950 0    50   ~ 0
+ADC0IN[13]
+Text Label 7175 4600 0    50   ~ 0
+ADC0IN[12]
+Text Label 6025 8450 0    50   ~ 0
+ADC1IN[11]
+Text Label 6025 8100 0    50   ~ 0
+ADC1IN[10]
+Text Label 6025 4600 0    50   ~ 0
+ADC0IN[0]
+Text Label 6025 4950 0    50   ~ 0
+ADC0IN[1]
+Text Label 6025 5300 0    50   ~ 0
+ADC0IN[4]
+Text Label 6025 5650 0    50   ~ 0
+ADC0IN[5]
+Text Label 6025 6000 0    50   ~ 0
+ADC0IN[6]
+Text Label 6025 6350 0    50   ~ 0
+ADC0IN[7]
+Text Label 6025 6700 0    50   ~ 0
+ADC0IN[8]
+Text Label 6025 7050 0    50   ~ 0
+ADC0IN[9]
+Text Label 6025 7400 0    50   ~ 0
+ADC0IN[10]
+Text Label 6025 7750 0    50   ~ 0
+ADC0IN[11]
+$Comp
+L up5k-synth:360kR R?
+U 1 1 6130C370
+P 9900 7875
+F 0 "R?" V 9854 7963 50  0000 L CNN
+F 1 "360kR" V 9945 7963 50  0000 L CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9900 7625 50  0001 C CNN
+F 3 "" H 9900 7875 50  0001 C CNN
+	1    9900 7875
+	0    1    1    0   
+$EndComp
+Text Label 9900 7725 0    50   ~ 0
+SW_ENC1
+Wire Wire Line
+	10175 7725 9900 7725
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 61415486
+P 9900 8025
+F 0 "#PWR?" H 9900 7825 50  0001 C CNN
+F 1 "GNDPWR" H 9904 7871 50  0000 C CNN
+F 2 "" H 9900 7975 50  0001 C CNN
+F 3 "" H 9900 7975 50  0001 C CNN
+	1    9900 8025
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:360kR R?
+U 1 1 61418AD2
+P 9900 8475
+F 0 "R?" V 9854 8563 50  0000 L CNN
+F 1 "360kR" V 9945 8563 50  0000 L CNN
+F 2 "up5k-synth:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9900 8225 50  0001 C CNN
+F 3 "" H 9900 8475 50  0001 C CNN
+	1    9900 8475
+	0    1    1    0   
+$EndComp
+Text Label 9900 8325 0    50   ~ 0
+SW_ENC1
+Wire Wire Line
+	10175 8325 9900 8325
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 61418ADA
+P 9900 8625
+F 0 "#PWR?" H 9900 8425 50  0001 C CNN
+F 1 "GNDPWR" H 9904 8471 50  0000 C CNN
+F 2 "" H 9900 8575 50  0001 C CNN
+F 3 "" H 9900 8575 50  0001 C CNN
+	1    9900 8625
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

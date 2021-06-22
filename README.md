@@ -31,8 +31,7 @@
 
 ##TODO
 
-* Make a decision on synth interface
-* Might replace ws2812b with SK9822
+* Replace Neopixels with hd107s/apa102
 
 ## Issues
 
