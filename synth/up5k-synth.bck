@@ -192,12 +192,6 @@ K R res resistor
 F ~
 $ENDCMP
 #
-$CMP R_33kR_0603
-D Resistor, US symbol
-K R res resistor
-F ~
-$ENDCMP
-#
 $CMP R_36kR_0603
 D Resistor, US symbol
 K R res resistor
@@ -208,6 +202,12 @@ $CMP R_50kR_0603
 D Resistor, US symbol
 K R res resistor
 F ~
+$ENDCMP
+#
+$CMP STP16CPC26PTR
+D 16-bit constant current LED sink driver
+K Shift Register LED driver 16 bit
+F https://www.st.com/resource/en/datasheet/stp16cp05.pdf
 $ENDCMP
 #
 $CMP SW_DPDT_x2_MFS201N−16−Z

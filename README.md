@@ -31,7 +31,11 @@
 
 ##TODO
 
+* Upgrade the buttons for thru-holes (in progress)
+* Move all connectors to the top (in progress)
+* Partition the schematic into hierarchical sheets (in progress)
 * Replace Neopixels with hd107s/apa102
+* Replace aluminium caps for MLCC ones
 
 ## Issues
 
