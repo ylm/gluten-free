@@ -36,6 +36,7 @@
 * Partition the schematic into hierarchical sheets (in progress)
 * Replace Neopixels with hd107s/apa102
 * Replace aluminium caps for MLCC ones
+* Add decoupling caps to digitalpots
 
 ## Issues
 

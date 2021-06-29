@@ -198,6 +198,12 @@ K R res resistor
 F ~
 $ENDCMP
 #
+$CMP R_4k3R_0603
+D Resistor, US symbol
+K R res resistor
+F ~
+$ENDCMP
+#
 $CMP R_50kR_0603
 D Resistor, US symbol
 K R res resistor
