@@ -1,4 +1,4 @@
-update=2021-06-21 7:49:26 PM
+update=2021-07-01 1:06:07 PM
 version=1
 last_client=kicad
 [general]
@@ -22,7 +22,7 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.2
+MinTrackWidth=0.127
 MinViaDiameter=0.4
 MinViaDrill=0.3
 MinMicroViaDiameter=0.2
@@ -227,8 +227,41 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.127
 TrackWidth=0.25
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=MII interface
+Clearance=0.127
+TrackWidth=0.127
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=USB Data
+Clearance=0.1524
+TrackWidth=0.2
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.4
+dPairGap=0.1524
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
+Name=config spi bus
+Clearance=0.127
+TrackWidth=0.127
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
