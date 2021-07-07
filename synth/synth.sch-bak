@@ -1587,7 +1587,7 @@ L up5k-synth:0.1uF_10V_0603 C1
 U 1 1 60BB82B1
 P 13875 1000
 F 0 "C1" H 13725 1050 50  0000 C CNN
-F 1 "0.1uF_10V_0603" H 13875 1134 50  0000 C CNN
+F 1 "0.1uF_10V_0603" H 13750 925 50  0000 C CNN
 F 2 "up5k-synth:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 13875 900 50  0001 C CNN
 F 3 "" H 13875 1000 50  0001 C CNN
 	1    13875 1000
@@ -2896,7 +2896,7 @@ Text Label 9700 7250 0    50   ~ 0
 ADC1IN[6]
 Text Label 9700 6900 0    50   ~ 0
 ADC0IN[15]
-Text Label 9700 9750 0    50   ~ 0
+Text Label 9725 5850 0    50   ~ 0
 ADC1IN[5]
 Text Label 9700 9400 0    50   ~ 0
 ADC1IN[4]
@@ -2908,7 +2908,7 @@ Text Label 9700 6550 0    50   ~ 0
 ADC0IN[14]
 Text Label 9700 6200 0    50   ~ 0
 ADC0IN[13]
-Text Label 9700 5850 0    50   ~ 0
+Text Label 9700 9750 0    50   ~ 0
 ADC0IN[12]
 Text Label 6750 8350 0    50   ~ 0
 ADC1IN[9]

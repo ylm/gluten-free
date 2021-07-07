@@ -2862,9 +2862,9 @@ Wire Wire Line
 	13650 6850 14300 6850
 Text Label 13650 6850 0    50   ~ 0
 LED_DATA
-Text Label 8125 9750 0    50   ~ 0
+Text Label 9700 6200 0    50   ~ 0
 ADC1IN[11]
-Text Label 8125 9400 0    50   ~ 0
+Text Label 9700 6900 0    50   ~ 0
 ADC1IN[10]
 Text Label 8125 5850 0    50   ~ 0
 ADC0IN[0]
@@ -2894,21 +2894,21 @@ Text Label 9700 7600 0    50   ~ 0
 ADC1IN[7]
 Text Label 9700 7250 0    50   ~ 0
 ADC1IN[6]
-Text Label 9700 6900 0    50   ~ 0
+Text Label 8125 9400 0    50   ~ 0
 ADC0IN[15]
-Text Label 9700 9750 0    50   ~ 0
+Text Label 9725 5850 0    50   ~ 0
 ADC1IN[5]
-Text Label 9700 9400 0    50   ~ 0
+Text Label 9700 6550 0    50   ~ 0
 ADC1IN[4]
 Text Label 9700 8700 0    50   ~ 0
 ADC0IN[2]
 Text Label 9700 9050 0    50   ~ 0
 ADC0IN[3]
-Text Label 9700 6550 0    50   ~ 0
+Text Label 9700 9400 0    50   ~ 0
 ADC0IN[14]
-Text Label 9700 6200 0    50   ~ 0
+Text Label 8125 9750 0    50   ~ 0
 ADC0IN[13]
-Text Label 9700 5850 0    50   ~ 0
+Text Label 9700 9750 0    50   ~ 0
 ADC0IN[12]
 Text Label 6750 8350 0    50   ~ 0
 ADC1IN[9]
