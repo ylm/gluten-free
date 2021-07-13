@@ -195,19 +195,6 @@ F 3 "~" H 6025 4600 50  0001 C CNN
 $EndComp
 Connection ~ 6175 4600
 $Comp
-L up5k-synth:CP_270uF_10v_PXF C?
-U 1 1 61C23BA5
-P 5725 4600
-AR Path="/61C23BA5" Ref="C?"  Part="1" 
-AR Path="/61BD42FB/61C23BA5" Ref="C51"  Part="1" 
-F 0 "C51" V 5473 4600 50  0000 C CNN
-F 1 "CP_270uF_10v_PXF" V 5564 4600 50  0000 C CNN
-F 2 "up5k-synth:CP_Elec_6.3x5.8" H 5725 4600 50  0001 C CNN
-F 3 "~" H 5725 4600 50  0001 C CNN
-	1    5725 4600
-	0    1    1    0   
-$EndComp
-$Comp
 L up5k-synth:R_50kR_0603 R?
 U 1 1 61C23BAB
 P 5575 4750
@@ -284,19 +271,6 @@ F 3 "~" H 2825 4625 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L up5k-synth:CP_270uF_10v_PXF C?
-U 1 1 61C23BCF
-P 2525 4625
-AR Path="/61C23BCF" Ref="C?"  Part="1" 
-AR Path="/61BD42FB/61C23BCF" Ref="C52"  Part="1" 
-F 0 "C52" V 2273 4625 50  0000 C CNN
-F 1 "CP_270uF_10v_PXF" V 2364 4625 50  0000 C CNN
-F 2 "up5k-synth:CP_Elec_6.3x5.8" H 2525 4625 50  0001 C CNN
-F 3 "~" H 2525 4625 50  0001 C CNN
-	1    2525 4625
-	0    1    1    0   
-$EndComp
-$Comp
 L up5k-synth:R_50kR_0603 R?
 U 1 1 61C23BD5
 P 2375 4775
@@ -336,19 +310,6 @@ F 3 "~" H 2725 6025 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L up5k-synth:CP_270uF_10v_PXF C?
-U 1 1 61C23BE7
-P 2425 6025
-AR Path="/61C23BE7" Ref="C?"  Part="1" 
-AR Path="/61BD42FB/61C23BE7" Ref="C55"  Part="1" 
-F 0 "C55" V 2173 6025 50  0000 C CNN
-F 1 "CP_270uF_10v_PXF" V 2264 6025 50  0000 C CNN
-F 2 "up5k-synth:CP_Elec_6.3x5.8" H 2425 6025 50  0001 C CNN
-F 3 "~" H 2425 6025 50  0001 C CNN
-	1    2425 6025
-	0    1    1    0   
-$EndComp
-$Comp
 L up5k-synth:R_50kR_0603 R?
 U 1 1 61C23BED
 P 2275 6175
@@ -385,19 +346,6 @@ F 1 "R_16R_0603" V 6150 5850 50  0000 C CNN
 F 2 "up5k-synth:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6115 5865 50  0001 C CNN
 F 3 "~" H 6075 5875 50  0001 C CNN
 	1    6075 5875
-	0    1    1    0   
-$EndComp
-$Comp
-L up5k-synth:CP_270uF_10v_PXF C?
-U 1 1 61C23BFF
-P 5775 5875
-AR Path="/61C23BFF" Ref="C?"  Part="1" 
-AR Path="/61BD42FB/61C23BFF" Ref="C54"  Part="1" 
-F 0 "C54" V 5523 5875 50  0000 C CNN
-F 1 "CP_270uF_10v_PXF" V 5614 5875 50  0000 C CNN
-F 2 "up5k-synth:CP_Elec_6.3x5.8" H 5775 5875 50  0001 C CNN
-F 3 "~" H 5775 5875 50  0001 C CNN
-	1    5775 5875
 	0    1    1    0   
 $EndComp
 $Comp
@@ -455,16 +403,12 @@ Text Label 5400 5875 0    50   ~ 0
 OUT1_L
 Wire Wire Line
 	5400 5875 5625 5875
-Connection ~ 5625 5875
 Wire Wire Line
 	5300 4600 5575 4600
-Connection ~ 5575 4600
 Wire Wire Line
 	2075 4625 2375 4625
-Connection ~ 2375 4625
 Wire Wire Line
 	2075 6025 2275 6025
-Connection ~ 2275 6025
 $Comp
 L up5k-synth:R_36kR_0603 R?
 U 1 1 61C23C28
@@ -959,25 +903,25 @@ Text Label 8525 5275 0    50   ~ 0
 F_PDM0_L
 Text Label 8525 5625 0    50   ~ 0
 F_PDM0_R
-Text Label 8525 4500 0    50   ~ 0
-F_PDM1_L
 Text Label 8525 4850 0    50   ~ 0
+F_PDM1_L
+Text Label 8525 4500 0    50   ~ 0
 F_PDM1_R
-Wire Wire Line
-	8525 4500 8875 4500
 Wire Wire Line
 	8525 4850 8875 4850
 Wire Wire Line
-	8525 4600 8875 4600
+	8525 4500 8875 4500
 Wire Wire Line
 	8525 4950 8875 4950
+Wire Wire Line
+	8525 4600 8875 4600
 Text Label 8525 5725 0    50   ~ 0
 BUF0_R
 Text Label 8525 5375 0    50   ~ 0
 BUF0_L
-Text Label 8525 4600 0    50   ~ 0
-BUF1_L
 Text Label 8525 4950 0    50   ~ 0
+BUF1_L
+Text Label 8525 4600 0    50   ~ 0
 BUF1_R
 $Comp
 L up5k-synth:R_36kR_0603 R?
@@ -1117,6 +1061,182 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/DS1881.pdf#page=7" H 7110 2735
 	1    7200 2725
 	1    0    0    -1  
 $EndComp
-Text Notes 6200 950  0    50   ~ 0
-Add decoupling caps to the digipots!\n
+$Comp
+L up5k-synth:0.1uF_10V_0603 C19
+U 1 1 60F337F7
+P 8500 1975
+F 0 "C19" V 8454 2063 50  0000 L CNN
+F 1 "0.1uF_10V_0603" V 8545 2063 50  0000 L CNN
+F 2 "up5k-synth:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8500 1875 50  0001 C CNN
+F 3 "" H 8500 1975 50  0001 C CNN
+	1    8500 1975
+	0    1    1    0   
+$EndComp
+$Comp
+L up5k-synth:0.1uF_10V_0603 C22
+U 1 1 60F35B5C
+P 8525 2875
+F 0 "C22" V 8479 2963 50  0000 L CNN
+F 1 "0.1uF_10V_0603" V 8570 2963 50  0000 L CNN
+F 2 "up5k-synth:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8525 2775 50  0001 C CNN
+F 3 "" H 8525 2875 50  0001 C CNN
+	1    8525 2875
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0161
+U 1 1 60F3751E
+P 8525 2725
+F 0 "#PWR0161" H 8525 2575 50  0001 C CNN
+F 1 "+3V3" H 8540 2898 50  0000 C CNN
+F 2 "" H 8525 2725 50  0001 C CNN
+F 3 "" H 8525 2725 50  0001 C CNN
+	1    8525 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0159
+U 1 1 60F37B9B
+P 8500 1825
+F 0 "#PWR0159" H 8500 1675 50  0001 C CNN
+F 1 "+3V3" H 8515 1998 50  0000 C CNN
+F 2 "" H 8500 1825 50  0001 C CNN
+F 3 "" H 8500 1825 50  0001 C CNN
+	1    8500 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0160
+U 1 1 60F383BB
+P 8500 2125
+F 0 "#PWR0160" H 8500 1925 50  0001 C CNN
+F 1 "GNDPWR" H 8504 1971 50  0000 C CNN
+F 2 "" H 8500 2075 50  0001 C CNN
+F 3 "" H 8500 2075 50  0001 C CNN
+	1    8500 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0162
+U 1 1 60F3920B
+P 8525 3025
+F 0 "#PWR0162" H 8525 2825 50  0001 C CNN
+F 1 "GNDPWR" H 8529 2871 50  0000 C CNN
+F 2 "" H 8525 2975 50  0001 C CNN
+F 3 "" H 8525 2975 50  0001 C CNN
+	1    8525 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:C_220uF_1206 C32
+U 1 1 60F76F98
+P 2525 4625
+F 0 "C32" H 2525 4525 50  0000 C CNN
+F 1 "C_220uF_1206" V 2600 4325 50  0000 C CNN
+F 2 "up5k-synth:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2525 4625 50  0001 C CNN
+F 3 "" H 2525 4625 50  0001 C CNN
+	1    2525 4625
+	1    0    0    -1  
+$EndComp
+Connection ~ 2375 4625
+$Comp
+L up5k-synth:C_220uF_1206 C38
+U 1 1 60F7754D
+P 2425 6025
+F 0 "C38" H 2400 5925 50  0000 C CNN
+F 1 "C_220uF_1206" V 2500 5725 50  0000 C CNN
+F 2 "up5k-synth:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2425 6025 50  0001 C CNN
+F 3 "" H 2425 6025 50  0001 C CNN
+	1    2425 6025
+	1    0    0    -1  
+$EndComp
+Connection ~ 2275 6025
+$Comp
+L up5k-synth:C_220uF_1206 C30
+U 1 1 60F77F50
+P 5725 4600
+F 0 "C30" H 5675 4500 50  0000 C CNN
+F 1 "C_220uF_1206" V 5775 4275 50  0000 C CNN
+F 2 "up5k-synth:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5725 4600 50  0001 C CNN
+F 3 "" H 5725 4600 50  0001 C CNN
+	1    5725 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5575 4600
+$Comp
+L up5k-synth:C_220uF_1206 C37
+U 1 1 60F78707
+P 5775 5875
+F 0 "C37" H 5775 5775 50  0000 C CNN
+F 1 "C_220uF_1206" V 5900 5500 50  0000 C CNN
+F 2 "up5k-synth:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5775 5875 50  0001 C CNN
+F 3 "" H 5775 5875 50  0001 C CNN
+	1    5775 5875
+	1    0    0    -1  
+$EndComp
+Connection ~ 5625 5875
+$Comp
+L up5k-synth:C_47uF_0805 C27
+U 1 1 60F7CAF0
+P 2525 4475
+F 0 "C27" H 2525 4700 50  0000 C CNN
+F 1 "C_47uF_0805" H 2525 4609 50  0000 C CNN
+F 2 "up5k-synth:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2525 4475 50  0001 C CNN
+F 3 "" H 2525 4475 50  0001 C CNN
+	1    2525 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2375 4475 2375 4625
+Wire Wire Line
+	2675 4475 2675 4625
+Connection ~ 2675 4625
+$Comp
+L up5k-synth:C_47uF_0805 C28
+U 1 1 60F83B0B
+P 5725 4475
+F 0 "C28" H 5725 4700 50  0000 C CNN
+F 1 "C_47uF_0805" H 5725 4609 50  0000 C CNN
+F 2 "up5k-synth:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5725 4475 50  0001 C CNN
+F 3 "" H 5725 4475 50  0001 C CNN
+	1    5725 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 4475 5575 4600
+Wire Wire Line
+	5875 4475 5875 4600
+Connection ~ 5875 4600
+$Comp
+L up5k-synth:C_47uF_0805 C33
+U 1 1 60F89DBB
+P 5775 5725
+F 0 "C33" H 5775 5950 50  0000 C CNN
+F 1 "C_47uF_0805" H 5775 5859 50  0000 C CNN
+F 2 "up5k-synth:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5775 5725 50  0001 C CNN
+F 3 "" H 5775 5725 50  0001 C CNN
+	1    5775 5725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5625 5725 5625 5875
+Wire Wire Line
+	5925 5725 5925 5875
+Connection ~ 5925 5875
+$Comp
+L up5k-synth:C_47uF_0805 C35
+U 1 1 60F8F662
+P 2425 5875
+F 0 "C35" H 2425 6100 50  0000 C CNN
+F 1 "C_47uF_0805" H 2425 6009 50  0000 C CNN
+F 2 "up5k-synth:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2425 5875 50  0001 C CNN
+F 3 "" H 2425 5875 50  0001 C CNN
+	1    2425 5875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2275 5875 2275 6025
+Wire Wire Line
+	2575 5875 2575 6025
+Connection ~ 2575 6025
 $EndSCHEMATC

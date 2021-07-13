@@ -3113,4 +3113,20 @@ Wire Wire Line
 	11075 5725 10575 5725
 Wire Wire Line
 	13225 5725 12725 5725
+Text Label 1450 6225 0    50   ~ 0
+SEQ_DATA
+Text Label 1450 6300 0    50   ~ 0
+SEQ_CLK
+Text Label 1450 6375 0    50   ~ 0
+SEQ_LE
+Text Label 1450 6450 0    50   ~ 0
+SEQ_OE
+Text Label 12750 5725 0    50   ~ 0
+SEQ_CLK
+Text Label 10575 5725 0    50   ~ 0
+SEQ_DATA
+Text Label 15075 6750 0    50   ~ 0
+SEQ_OE
+Text Label 15075 6850 0    50   ~ 0
+SEQ_LE
 $EndSCHEMATC

@@ -1,3 +1,7 @@
+20210713
+	Formalised the netlist
+	Reworked the jack placement
+	Started audio output layout
 20210712
 	Top components are now all properly placed
 	Might still need to re-visit some connections
