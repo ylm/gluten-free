@@ -1,3 +1,8 @@
+20210715
+	Added Card Detect for SD Card
+	Still have to check Word Protect of the SD Card
+	Routed the I2C signals
+	Routed the display too
 20210713
 	Formalised the netlist
 	Reworked the jack placement

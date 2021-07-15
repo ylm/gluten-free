@@ -158,7 +158,7 @@ $EndComp
 Wire Wire Line
 	6875 4950 7175 4950
 Wire Wire Line
-	6775 4700 7150 4700
+	3575 4725 3950 4725
 Wire Wire Line
 	6175 4600 6175 4225
 Wire Wire Line
@@ -383,19 +383,19 @@ Wire Wire Line
 Wire Wire Line
 	3575 4325 3575 4525
 Connection ~ 2975 4625
-Text Label 6825 4700 0    50   ~ 0
+Text Label 3625 4725 0    50   ~ 0
 BUF0_L
 Text Label 6850 5975 0    50   ~ 0
 BUF1_L
-Text Label 3600 4725 0    50   ~ 0
+Text Label 6800 4700 0    50   ~ 0
 BUF0_R
 Text Label 3500 6125 0    50   ~ 0
 BUF1_R
 Wire Wire Line
-	3575 4725 3800 4725
-Text Label 5300 4600 0    50   ~ 0
+	6775 4700 7000 4700
+Text Label 2100 4625 0    50   ~ 0
 OUT0_L
-Text Label 2075 4625 0    50   ~ 0
+Text Label 5275 4600 0    50   ~ 0
 OUT0_R
 Text Label 2075 6025 0    50   ~ 0
 OUT1_R
@@ -404,9 +404,9 @@ OUT1_L
 Wire Wire Line
 	5400 5875 5625 5875
 Wire Wire Line
-	5300 4600 5575 4600
+	2100 4625 2375 4625
 Wire Wire Line
-	2075 4625 2375 4625
+	5275 4600 5575 4600
 Wire Wire Line
 	2075 6025 2275 6025
 $Comp
@@ -899,9 +899,9 @@ F 3 "" H 8575 4650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8575 4700 8875 4700
-Text Label 8525 5275 0    50   ~ 0
-F_PDM0_L
 Text Label 8525 5625 0    50   ~ 0
+F_PDM0_L
+Text Label 8525 5275 0    50   ~ 0
 F_PDM0_R
 Text Label 8525 4850 0    50   ~ 0
 F_PDM1_L
@@ -915,9 +915,9 @@ Wire Wire Line
 	8525 4950 8875 4950
 Wire Wire Line
 	8525 4600 8875 4600
-Text Label 8525 5725 0    50   ~ 0
-BUF0_R
 Text Label 8525 5375 0    50   ~ 0
+BUF0_R
+Text Label 8525 5725 0    50   ~ 0
 BUF0_L
 Text Label 8525 4950 0    50   ~ 0
 BUF1_L
@@ -954,13 +954,13 @@ Wire Wire Line
 Text Label 2075 1850 0    50   ~ 0
 PDM0_R
 Wire Wire Line
-	8525 5275 8875 5275
-Wire Wire Line
-	8525 5375 8875 5375
-Wire Wire Line
 	8525 5625 8875 5625
 Wire Wire Line
 	8525 5725 8875 5725
+Wire Wire Line
+	8525 5275 8875 5275
+Wire Wire Line
+	8525 5375 8875 5375
 Text Label 1725 1850 2    50   ~ 0
 F_PDM0_R
 Wire Wire Line
@@ -1040,11 +1040,11 @@ Text HLabel 4375 1925 2    50   Input ~ 0
 PDM1_R
 Text HLabel 4425 2600 2    50   Input ~ 0
 PDM1_L
-Text HLabel 2075 4625 0    50   Input ~ 0
+Text HLabel 5275 4600 0    50   Input ~ 0
 OUT0_R
 Text HLabel 2075 6025 0    50   Input ~ 0
 OUT1_R
-Text HLabel 5300 4600 0    50   Input ~ 0
+Text HLabel 2100 4625 0    50   Input ~ 0
 OUT0_L
 Text HLabel 5400 5875 0    50   Input ~ 0
 OUT1_L
