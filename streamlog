@@ -1,3 +1,7 @@
+20210716
+	Routed half of the switches and LEDs
+	Started to look at the SD Card pull-ups
+	Opened discussion about licensing the project
 20210715
 	Added Card Detect for SD Card
 	Still have to check Word Protect of the SD Card

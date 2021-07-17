@@ -2838,18 +2838,16 @@ Text Label 2725 5950 0    50   ~ 0
 SW_DATA
 Wire Wire Line
 	2725 5950 3050 5950
-Text Label 14775 3925 0    50   ~ 0
+Text Label 15025 6150 0    50   ~ 0
 SW_DATA
 Wire Wire Line
-	14775 3925 15100 3925
-Text Label 15975 5850 0    50   ~ 0
+	15000 6150 15475 6150
+Text Label 15025 6750 0    50   ~ 0
 SW_CLK
-Wire Wire Line
-	15975 5850 16625 5850
-Text Label 13900 6150 0    50   ~ 0
+Text Label 15025 6850 0    50   ~ 0
 SW_LOAD
 Wire Wire Line
-	13900 6150 14300 6150
+	15000 6850 15475 6850
 Wire Wire Line
 	2775 9250 3100 9250
 Text Label 2825 9250 0    50   ~ 0
@@ -3070,7 +3068,7 @@ Wire Wire Line
 Text Label 3625 975  2    50   ~ 0
 SC4_SCK_PAD[1]
 Wire Wire Line
-	14300 6450 13900 6450
+	14300 6550 13900 6550
 Text Label 14250 6350 2    50   ~ 0
 DISPLAY_CS
 Wire Wire Line
@@ -3079,8 +3077,6 @@ Text Label 3625 1075 2    50   ~ 0
 SC4_PAD[0]
 Wire Wire Line
 	14300 6350 13900 6350
-Text Label 15075 7175 0    50   ~ 0
-DISPLAY_RST
 Text Label 3625 1275 2    50   ~ 0
 DISPLAY_CMD
 Wire Wire Line
@@ -3093,12 +3089,12 @@ Text Label 3625 1375 2    50   ~ 0
 DISPLAY_CS
 Wire Wire Line
 	3675 1375 3425 1375
-Text Label 14250 6450 2    50   ~ 0
+Text Label 14250 6550 2    50   ~ 0
 DISPLAY_RST
 Wire Wire Line
-	15000 6750 15400 6750
+	12725 5525 13125 5525
 Wire Wire Line
-	15000 6850 15400 6850
+	12725 5625 13125 5625
 Wire Wire Line
 	1800 6225 1450 6225
 Wire Wire Line
@@ -3109,8 +3105,6 @@ Wire Wire Line
 	1800 6450 1450 6450
 Wire Wire Line
 	11075 5725 10575 5725
-Wire Wire Line
-	13225 5725 12725 5725
 Text Label 1450 6225 0    50   ~ 0
 SEQ_DATA
 Text Label 1450 6300 0    50   ~ 0
@@ -3123,9 +3117,9 @@ Text Label 12750 5725 0    50   ~ 0
 SEQ_CLK
 Text Label 10575 5725 0    50   ~ 0
 SEQ_DATA
-Text Label 15075 6750 0    50   ~ 0
+Text Label 12800 5525 0    50   ~ 0
 SEQ_OE
-Text Label 15075 6850 0    50   ~ 0
+Text Label 12800 5625 0    50   ~ 0
 SEQ_LE
 $Comp
 L power:GNDPWR #PWR0163
@@ -3140,8 +3134,14 @@ F 3 "" H 2250 1250 50  0001 C CNN
 $EndComp
 Text Label 2050 1200 0    50   ~ 0
 SDHC1_SDCD
-Text Label 14250 6550 2    50   ~ 0
+Text Label 14250 6450 2    50   ~ 0
 DISPLAY_CMD
 Wire Wire Line
-	14300 6550 13900 6550
+	14300 6450 13900 6450
+Text Notes 11650 2300 0    50   ~ 0
+mcu_core is the output of the\ninternal supply voltage regulator.\nAn external decoupling cap is required.
+Wire Wire Line
+	12725 5725 13200 5725
+Wire Wire Line
+	15000 6750 15475 6750
 $EndSCHEMATC
