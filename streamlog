@@ -1,3 +1,7 @@
+20210719
+	Routed the other half of the switches and LEDs
+	Started routing the "serial signals"
+	Fixed past DRC issues
 20210716
 	Routed half of the switches and LEDs
 	Started to look at the SD Card pull-ups
