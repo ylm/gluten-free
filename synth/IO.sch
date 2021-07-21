@@ -1614,7 +1614,7 @@ F 3 "" H 7350 5325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 7350 5175 0    50   ~ 0
-SW_ENC1
+SW_ENC2
 Wire Wire Line
 	7625 5175 7350 5175
 $Comp
