@@ -827,4 +827,6 @@ Wire Wire Line
 Connection ~ 8050 2325
 Wire Wire Line
 	8050 2325 7900 2325
+Text HLabel 3950 3600 2    50   Input ~ 0
+Vout
 $EndSCHEMATC

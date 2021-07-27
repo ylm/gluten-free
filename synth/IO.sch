@@ -170,58 +170,6 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8075 1375 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L up5k-synth:WS2812B D?
-U 1 1 618CD81C
-P 8575 1750
-AR Path="/618CD81C" Ref="D?"  Part="1" 
-AR Path="/618B27CF/618CD81C" Ref="D15"  Part="1" 
-F 0 "D15" H 8375 2000 50  0000 L CNN
-F 1 "WS2812B" H 8625 2000 50  0000 L CNN
-F 2 "up5k-synth:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8625 1450 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8675 1375 50  0001 L TNN
-	1    8575 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L up5k-synth:WS2812B D?
-U 1 1 618CD822
-P 9175 1750
-AR Path="/618CD822" Ref="D?"  Part="1" 
-AR Path="/618B27CF/618CD822" Ref="D16"  Part="1" 
-F 0 "D16" H 8975 2000 50  0000 L CNN
-F 1 "WS2812B" H 9225 2000 50  0000 L CNN
-F 2 "up5k-synth:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9225 1450 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9275 1375 50  0001 L TNN
-	1    9175 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L up5k-synth:WS2812B D?
-U 1 1 618CD828
-P 9775 1750
-AR Path="/618CD828" Ref="D?"  Part="1" 
-AR Path="/618B27CF/618CD828" Ref="D17"  Part="1" 
-F 0 "D17" H 9575 2000 50  0000 L CNN
-F 1 "WS2812B" H 9825 2000 50  0000 L CNN
-F 2 "up5k-synth:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9825 1450 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9875 1375 50  0001 L TNN
-	1    9775 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L up5k-synth:WS2812B D?
-U 1 1 618CD82E
-P 10375 1750
-AR Path="/618CD82E" Ref="D?"  Part="1" 
-AR Path="/618B27CF/618CD82E" Ref="D18"  Part="1" 
-F 0 "D18" H 10175 2000 50  0000 L CNN
-F 1 "WS2812B" H 10425 2000 50  0000 L CNN
-F 2 "up5k-synth:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 10425 1450 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 10475 1375 50  0001 L TNN
-	1    10375 1750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR?
 U 1 1 618CD834
 P 5775 725
@@ -263,14 +211,14 @@ $EndComp
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 618CD846
-P 10650 2050
+P 7975 2050
 AR Path="/618CD846" Ref="#PWR?"  Part="1" 
 AR Path="/618B27CF/618CD846" Ref="#PWR045"  Part="1" 
-F 0 "#PWR045" H 10650 1850 50  0001 C CNN
-F 1 "GNDPWR" H 10654 1896 50  0000 C CNN
-F 2 "" H 10650 2000 50  0001 C CNN
-F 3 "" H 10650 2000 50  0001 C CNN
-	1    10650 2050
+F 0 "#PWR045" H 7975 1850 50  0001 C CNN
+F 1 "GNDPWR" H 7979 1896 50  0000 C CNN
+F 2 "" H 7975 2000 50  0001 C CNN
+F 3 "" H 7975 2000 50  0001 C CNN
+	1    7975 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -307,18 +255,6 @@ Wire Wire Line
 Connection ~ 7375 1450
 Wire Wire Line
 	7375 1450 7975 1450
-Connection ~ 7975 1450
-Wire Wire Line
-	7975 1450 8575 1450
-Connection ~ 8575 1450
-Wire Wire Line
-	8575 1450 9175 1450
-Connection ~ 9175 1450
-Wire Wire Line
-	9175 1450 9775 1450
-Connection ~ 9775 1450
-Wire Wire Line
-	9775 1450 10375 1450
 Wire Wire Line
 	6175 2050 6775 2050
 Connection ~ 6775 2050
@@ -327,21 +263,6 @@ Wire Wire Line
 Connection ~ 7375 2050
 Wire Wire Line
 	7375 2050 7975 2050
-Connection ~ 7975 2050
-Wire Wire Line
-	7975 2050 8575 2050
-Connection ~ 8575 2050
-Wire Wire Line
-	8575 2050 9175 2050
-Connection ~ 9175 2050
-Wire Wire Line
-	9175 2050 9775 2050
-Connection ~ 9775 2050
-Wire Wire Line
-	9775 2050 10375 2050
-Connection ~ 10375 2050
-Wire Wire Line
-	10375 2050 10650 2050
 Wire Wire Line
 	6175 1325 6775 1325
 Connection ~ 6775 1325
@@ -1472,18 +1393,14 @@ Wire Wire Line
 	3325 5825 3700 5825
 Wire Wire Line
 	4700 5825 5075 5825
-Text Label 4725 5925 0    50   ~ 0
-SW_ENC1
-Text Label 4725 6025 0    50   ~ 0
-ENC1_A
-Text Label 4725 6125 0    50   ~ 0
-ENC1_B
 Text Label 4725 6325 0    50   ~ 0
-SW_ENC2
-Text Label 4725 6425 0    50   ~ 0
-ENC2_A
+SW_ENC1
 Text Label 4725 6525 0    50   ~ 0
-ENC2_B
+ENC1_A
+Text Label 4725 6425 0    50   ~ 0
+ENC1_B
+Text Label 4725 5925 0    50   ~ 0
+SW_ENC2
 $Comp
 L up5k-synth:rot_encoder_switch ENC?
 U 1 1 63A6DF29
@@ -3320,4 +3237,9 @@ Text Label 3450 5175 0    50   ~ 0
 SEQ_CLK
 Text Label 3450 5250 0    50   ~ 0
 SEQ_LE
+Connection ~ 7975 2050
+Text Label 4725 6025 0    50   ~ 0
+ENC2_B
+Text Label 4725 6125 0    50   ~ 0
+ENC2_A
 $EndSCHEMATC
