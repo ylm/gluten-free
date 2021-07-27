@@ -641,7 +641,7 @@ U 1 1 60FF659B
 P 1500 1900
 F 0 "J3" H 1500 2325 50  0000 C CNN
 F 1 "PMOD_conn" H 1500 2234 50  0000 C CNN
-F 2 "up5k-synth:PinHeader_2x06_P2.54mm_Horizontal" H 1500 1900 50  0001 C CNN
+F 2 "up5k-synth:PinHeader_2x06_P2.54mm_Vertical" H 1500 1900 50  0001 C CNN
 F 3 "" H 1500 1900 50  0001 C CNN
 	1    1500 1900
 	1    0    0    -1  
@@ -985,17 +985,6 @@ Wire Wire Line
 Connection ~ 13000 4550
 Wire Wire Line
 	13000 4550 13100 4550
-$Comp
-L power:GNDPWR #PWR0103
-U 1 1 60F73D6B
-P 1250 1300
-F 0 "#PWR0103" H 1250 1100 50  0001 C CNN
-F 1 "GNDPWR" H 1254 1146 50  0000 C CNN
-F 2 "" H 1250 1250 50  0001 C CNN
-F 3 "" H 1250 1250 50  0001 C CNN
-	1    1250 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2050 1200 2250 1200
 Wire Wire Line
@@ -3149,4 +3138,11 @@ Wire Wire Line
 	3100 7475 2725 7475
 Text Label 2800 7475 0    50   ~ 0
 Vout
+Wire Wire Line
+	850  3800 1225 3800
+Wire Wire Line
+	1225 3800 1225 3600
+Wire Wire Line
+	1225 3600 1500 3600
+NoConn ~ 1250 1300
 $EndSCHEMATC

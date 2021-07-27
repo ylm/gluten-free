@@ -1053,7 +1053,7 @@ ENDDEF
 DEF PMOD_conn J 0 40 Y Y 1 F N
 F0 "J" -100 300 50 H V C CNN
 F1 "PMOD_conn" 0 -400 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
+F2 "up5k-synth:PinHeader_2x06_P2.54mm_Vertical" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 S -150 250 150 -350 0 1 0 N

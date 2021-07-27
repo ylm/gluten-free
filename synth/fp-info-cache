@@ -1,4 +1,4 @@
-3287738078955311
+3289366596959884
 Button_Switch_SMD
 Nidec_Copal_SH-7010A
 4-bit rotary coded switch, J-hook, https://www.nidec-copal-electronics.com/e/catalog/switch/sh-7000.pdf
@@ -14046,8 +14046,8 @@ PEC12R-4xxxF-Sxx
 
 
 0
-7
-7
+5
+5
 up5k-synth
 PinHeader_2x03_P2.54mm_Vertical
 Through hole straight pin header, 2x03, 2.54mm pitch, double rows
@@ -14059,6 +14059,13 @@ up5k-synth
 PinHeader_2x06_P2.54mm_Horizontal
 Through hole angled pin header, 2x06, 2.54mm pitch, 6mm pin length, double rows
 Through hole angled pin header THT 2x06 2.54mm double row
+0
+12
+12
+up5k-synth
+PinHeader_2x06_P2.54mm_Vertical
+Through hole straight pin header, 2x06, 2.54mm pitch, double rows
+Through hole pin header THT 2x06 2.54mm double row
 0
 12
 12

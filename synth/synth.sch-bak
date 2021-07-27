@@ -515,7 +515,7 @@ Wire Wire Line
 	10100 4350 10700 4350
 Wire Wire Line
 	10100 4450 10700 4450
-Text Label 3750 2750 0    50   ~ 0
+Text Label 3575 2750 0    50   ~ 0
 Vout
 Wire Wire Line
 	15000 6350 15400 6350
@@ -641,7 +641,7 @@ U 1 1 60FF659B
 P 1500 1900
 F 0 "J3" H 1500 2325 50  0000 C CNN
 F 1 "PMOD_conn" H 1500 2234 50  0000 C CNN
-F 2 "up5k-synth:PinHeader_2x06_P2.54mm_Horizontal" H 1500 1900 50  0001 C CNN
+F 2 "up5k-synth:PinHeader_2x06_P2.54mm_Vertical" H 1500 1900 50  0001 C CNN
 F 3 "" H 1500 1900 50  0001 C CNN
 	1    1500 1900
 	1    0    0    -1  
@@ -3050,6 +3050,7 @@ F1 "Power Supply.sch" 50
 F2 "SCO_SCL_PAD[1]" I L 1950 7275 50 
 F3 "SCO_SDA_PAD[0]" I L 1950 7375 50 
 F4 "PSU_EN" I L 1950 7525 50 
+F5 "Vout" I R 2725 7475 50 
 $EndSheet
 Text Label 1950 7275 2    50   ~ 0
 SC0_SCL_PAD[1]
@@ -3144,4 +3145,14 @@ Wire Wire Line
 	12725 5725 13200 5725
 Wire Wire Line
 	15000 6850 15475 6850
+Wire Wire Line
+	3100 7475 2725 7475
+Text Label 2800 7475 0    50   ~ 0
+Vout
+Wire Wire Line
+	850  3800 1225 3800
+Wire Wire Line
+	1225 3800 1225 3600
+Wire Wire Line
+	1225 3600 1500 3600
 $EndSCHEMATC
