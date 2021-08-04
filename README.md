@@ -5,16 +5,12 @@
 * Stereo Sigma-Delta DAC
 * 3.5mm headphone jack
 * Multiple output jacks for different levels of output: headphone vs line out for live.
-* Price target: ~50$CAN
-* I2S DAC?
 * Powered by: USB! Battery!
 * Connectors: USB! PMOD and some debug
 * Communication: USB!
 * FPGA Configuration: Host! On SD Card
 * Clock source?
-* Input protection
-* Expansion Header
-* Screen?
+* Screen
 * SD Card
 * AD8531 for op-amp and DS1881 as digital pot
 

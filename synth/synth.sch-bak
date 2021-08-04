@@ -768,7 +768,7 @@ Connection ~ 2050 3600
 Wire Wire Line
 	5000 1150 5150 1150
 Connection ~ 5150 1150
-Text Label 7150 2000 0    50   ~ 0
+Text Label 7150 3850 0    50   ~ 0
 MII_GRXCK
 Text Label 7150 2600 0    50   ~ 0
 MII_GRX[0]
@@ -780,17 +780,17 @@ Text Label 7150 2300 0    50   ~ 0
 MII_GRX[3]
 Text Label 7150 2700 0    50   ~ 0
 MII_GRXER
-Text Label 7150 3450 0    50   ~ 0
+Text Label 7150 3150 0    50   ~ 0
 MII_GTEN
-Text Label 7150 3550 0    50   ~ 0
+Text Label 7150 3450 0    50   ~ 0
 MII_GTX[0]
-Text Label 7150 3650 0    50   ~ 0
+Text Label 7150 3550 0    50   ~ 0
 MII_GTX[1]
-Text Label 7150 3750 0    50   ~ 0
+Text Label 7150 3650 0    50   ~ 0
 MII_GTX[2]
-Text Label 7150 3850 0    50   ~ 0
+Text Label 7150 3750 0    50   ~ 0
 MII_GTX[3]
-Text Label 7150 3250 0    50   ~ 0
+Text Label 7150 2800 0    50   ~ 0
 MII_GTXER
 Text Label 7150 2200 0    50   ~ 0
 MII_GMDC
@@ -985,17 +985,6 @@ Wire Wire Line
 Connection ~ 13000 4550
 Wire Wire Line
 	13000 4550 13100 4550
-$Comp
-L power:GNDPWR #PWR0103
-U 1 1 60F73D6B
-P 1250 1300
-F 0 "#PWR0103" H 1250 1100 50  0001 C CNN
-F 1 "GNDPWR" H 1254 1146 50  0000 C CNN
-F 2 "" H 1250 1250 50  0001 C CNN
-F 3 "" H 1250 1250 50  0001 C CNN
-	1    1250 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2050 1200 2250 1200
 Wire Wire Line
@@ -2709,7 +2698,7 @@ Text Label 7150 1900 0    50   ~ 0
 MII_GCOL
 Text Label 7150 3050 0    50   ~ 0
 MII_GRDV
-Text Label 7150 3150 0    50   ~ 0
+Text Label 7150 3250 0    50   ~ 0
 MII_GCRS
 Wire Wire Line
 	5150 1150 5150 1350
@@ -3155,4 +3144,5 @@ Wire Wire Line
 	1225 3800 1225 3600
 Wire Wire Line
 	1225 3600 1500 3600
+NoConn ~ 1250 1300
 $EndSCHEMATC

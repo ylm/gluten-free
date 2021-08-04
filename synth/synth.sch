@@ -768,7 +768,7 @@ Connection ~ 2050 3600
 Wire Wire Line
 	5000 1150 5150 1150
 Connection ~ 5150 1150
-Text Label 7150 2000 0    50   ~ 0
+Text Label 7150 3850 0    50   ~ 0
 MII_GRXCK
 Text Label 7150 2600 0    50   ~ 0
 MII_GRX[0]
@@ -780,17 +780,17 @@ Text Label 7150 2300 0    50   ~ 0
 MII_GRX[3]
 Text Label 7150 2700 0    50   ~ 0
 MII_GRXER
-Text Label 7150 3450 0    50   ~ 0
+Text Label 7150 3150 0    50   ~ 0
 MII_GTEN
-Text Label 7150 3550 0    50   ~ 0
+Text Label 7150 3450 0    50   ~ 0
 MII_GTX[0]
-Text Label 7150 3650 0    50   ~ 0
+Text Label 7150 3550 0    50   ~ 0
 MII_GTX[1]
-Text Label 7150 3750 0    50   ~ 0
+Text Label 7150 3650 0    50   ~ 0
 MII_GTX[2]
-Text Label 7150 3850 0    50   ~ 0
+Text Label 7150 3750 0    50   ~ 0
 MII_GTX[3]
-Text Label 7150 3250 0    50   ~ 0
+Text Label 7150 2800 0    50   ~ 0
 MII_GTXER
 Text Label 7150 2200 0    50   ~ 0
 MII_GMDC
@@ -2698,7 +2698,7 @@ Text Label 7150 1900 0    50   ~ 0
 MII_GCOL
 Text Label 7150 3050 0    50   ~ 0
 MII_GRDV
-Text Label 7150 3150 0    50   ~ 0
+Text Label 7150 3250 0    50   ~ 0
 MII_GCRS
 Wire Wire Line
 	5150 1150 5150 1350
@@ -3145,4 +3145,8 @@ Wire Wire Line
 Wire Wire Line
 	1225 3600 1500 3600
 NoConn ~ 1250 1300
+Text Label 13775 6750 0    50   ~ 0
+CFG_RESET_B
+Wire Wire Line
+	13775 6750 14300 6750
 $EndSCHEMATC
