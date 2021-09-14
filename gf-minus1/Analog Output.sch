@@ -899,9 +899,9 @@ F 3 "" H 8575 4650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8575 4700 8875 4700
-Text Label 8525 5625 0    50   ~ 0
-F_PDM0_L
 Text Label 8525 5275 0    50   ~ 0
+F_PDM0_L
+Text Label 8525 5625 0    50   ~ 0
 F_PDM0_R
 Text Label 8525 4850 0    50   ~ 0
 F_PDM1_L
@@ -915,9 +915,9 @@ Wire Wire Line
 	8525 4950 8875 4950
 Wire Wire Line
 	8525 4600 8875 4600
-Text Label 8525 5375 0    50   ~ 0
-BUF0_R
 Text Label 8525 5725 0    50   ~ 0
+BUF0_R
+Text Label 8525 5375 0    50   ~ 0
 BUF0_L
 Text Label 8525 4950 0    50   ~ 0
 BUF1_L
@@ -951,7 +951,7 @@ F 3 "" H 1725 2000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2025 1850 2350 1850
-Text Label 2075 1850 0    50   ~ 0
+Text Label 2050 2550 0    50   ~ 0
 PDM0_R
 Wire Wire Line
 	8525 5625 8875 5625
@@ -961,7 +961,7 @@ Wire Wire Line
 	8525 5275 8875 5275
 Wire Wire Line
 	8525 5375 8875 5375
-Text Label 1725 1850 2    50   ~ 0
+Text Label 1700 2550 2    50   ~ 0
 F_PDM0_R
 Wire Wire Line
 	1375 1850 1725 1850
@@ -1007,9 +1007,9 @@ F 3 "" H 1700 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2000 2550 2325 2550
-Text Label 2050 2550 0    50   ~ 0
+Text Label 2075 1850 0    50   ~ 0
 PDM0_L
-Text Label 1700 2550 2    50   ~ 0
+Text Label 1725 1850 2    50   ~ 0
 F_PDM0_L
 Wire Wire Line
 	1350 2550 1700 2550
@@ -1032,9 +1032,9 @@ Text HLabel 8150 1375 2    50   Input ~ 0
 SC0_SDA_PAD[0]
 Text HLabel 8150 1475 2    50   Input ~ 0
 SC0_SCL_PAD[1]
-Text HLabel 2350 1850 2    50   Input ~ 0
-PDM0_R
 Text HLabel 2325 2550 2    50   Input ~ 0
+PDM0_R
+Text HLabel 2350 1850 2    50   Input ~ 0
 PDM0_L
 Text HLabel 4375 1925 2    50   Input ~ 0
 PDM1_R

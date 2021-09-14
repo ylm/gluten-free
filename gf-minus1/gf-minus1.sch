@@ -105,12 +105,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR019
 U 1 1 608FE190
-P 7600 3350
-F 0 "#PWR019" H 7600 3200 50  0001 C CNN
-F 1 "+3.3V" H 7615 3523 50  0000 C CNN
-F 2 "" H 7600 3350 50  0001 C CNN
-F 3 "" H 7600 3350 50  0001 C CNN
-	1    7600 3350
+P 7650 3350
+F 0 "#PWR019" H 7650 3200 50  0001 C CNN
+F 1 "+3.3V" H 7665 3523 50  0000 C CNN
+F 2 "" H 7650 3350 50  0001 C CNN
+F 3 "" H 7650 3350 50  0001 C CNN
+	1    7650 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -201,8 +201,6 @@ Wire Wire Line
 	7100 3150 7350 3150
 Wire Wire Line
 	7100 3250 7350 3250
-Wire Wire Line
-	7100 3350 7600 3350
 Wire Wire Line
 	7100 3550 7350 3550
 Wire Wire Line
@@ -305,9 +303,6 @@ F 3 "" H 950 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 3350 7800 3350
-Connection ~ 7600 3350
-Wire Wire Line
 	5100 1900 5100 1550
 $Comp
 L power:GNDPWR #PWR06
@@ -405,9 +400,9 @@ Text Label 4850 3000 0    50   ~ 0
 PMOD[6]
 Text Label 4850 2750 0    50   ~ 0
 PMOD[7]
-Text Label 4850 2650 0    50   ~ 0
-PDM0_L
 Text Label 4850 2550 0    50   ~ 0
+PDM0_L
+Text Label 4850 2650 0    50   ~ 0
 PDM0_R
 Text Label 7150 1650 0    50   ~ 0
 CFG_RESET_B
@@ -779,22 +774,22 @@ MII_GRX[2]
 Text Label 7150 2300 0    50   ~ 0
 MII_GRX[3]
 Text Label 7150 2700 0    50   ~ 0
-MII_GRXER
-Text Label 7150 3150 0    50   ~ 0
-MII_GTEN
-Text Label 7150 3450 0    50   ~ 0
-MII_GTX[0]
-Text Label 7150 3550 0    50   ~ 0
-MII_GTX[1]
+MII_GTXCK
 Text Label 7150 3650 0    50   ~ 0
+MII_GTEN
+Text Label 7150 3550 0    50   ~ 0
+MII_GTX[0]
+Text Label 7150 3450 0    50   ~ 0
+MII_GTX[1]
+Text Label 7150 3250 0    50   ~ 0
 MII_GTX[2]
-Text Label 7150 3750 0    50   ~ 0
+Text Label 7150 3150 0    50   ~ 0
 MII_GTX[3]
 Text Label 7150 2800 0    50   ~ 0
 MII_GTXER
-Text Label 7150 2200 0    50   ~ 0
-MII_GMDC
 Text Label 7150 2100 0    50   ~ 0
+MII_GMDC
+Text Label 7150 2200 0    50   ~ 0
 MII_GMDIO
 Wire Wire Line
 	1500 3600 1700 3600
@@ -1798,19 +1793,13 @@ Text Label 7150 1900 0    50   ~ 0
 MII_GCOL
 Text Label 7150 3050 0    50   ~ 0
 MII_GRDV
-Text Label 7150 3250 0    50   ~ 0
+Text Label 7150 3750 0    50   ~ 0
 MII_GCRS
 Wire Wire Line
 	5150 1150 5150 1350
 Wire Wire Line
 	5150 1150 5300 1150
 Connection ~ 5100 1550
-Text Label 14150 5475 0    50   ~ 0
-MII_GRXCK
-Text Label 14675 5475 0    50   ~ 0
-MII_GTXCK
-Wire Wire Line
-	14150 5475 15050 5475
 $Comp
 L up5k-synth:DSC6003JI2A U13
 U 1 1 612FD510
@@ -2096,4 +2085,9 @@ Text Label 13775 6750 0    50   ~ 0
 CFG_RESET_B
 Wire Wire Line
 	13775 6750 14300 6750
+Connection ~ 7650 3350
+Wire Wire Line
+	7650 3350 7800 3350
+Wire Wire Line
+	7100 3350 7650 3350
 $EndSCHEMATC
