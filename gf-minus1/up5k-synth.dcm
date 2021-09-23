@@ -146,6 +146,18 @@ $CMP CSTNE24M0VH3C000R0
 F https://www.mouser.com/datasheet/2/281/SPEC_CSTNE24M0VH3C000R0-1923846.pdf
 $ENDCMP
 #
+$CMP Conn_02x05_Odd_Even
+D Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_02x14_Odd_Even
+D Generic connector, double row, 02x14, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP DRA818_iCE40-UP5K-SG48
 F https://www.mouser.com/datasheet/2/225/iCE40%20UltraPlus%20Family%20Data%20Sheet-1149905.pdf
 $ENDCMP
