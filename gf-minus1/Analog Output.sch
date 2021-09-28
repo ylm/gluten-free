@@ -397,7 +397,7 @@ Text Label 2100 4625 0    50   ~ 0
 OUT0_L
 Text Label 5275 4600 0    50   ~ 0
 OUT0_R
-Text Label 2075 6025 0    50   ~ 0
+Text Label 2050 6025 0    50   ~ 0
 OUT1_R
 Text Label 5400 5875 0    50   ~ 0
 OUT1_L
@@ -407,8 +407,6 @@ Wire Wire Line
 	2100 4625 2375 4625
 Wire Wire Line
 	5275 4600 5575 4600
-Wire Wire Line
-	2075 6025 2275 6025
 $Comp
 L up5k-synth:R_36kR_0603 R?
 U 1 1 61C23C28
@@ -436,14 +434,13 @@ F 3 "" H 3750 2075 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4050 1925 4375 1925
-Text Label 4100 1925 0    50   ~ 0
+	4100 2600 4425 2600
+Text Label 4150 2600 0    50   ~ 0
 PDM1_R
-Text Label 3750 1925 2    50   ~ 0
+Text Label 3800 2600 2    50   ~ 0
 F_PDM1_R
 Wire Wire Line
-	3400 1925 3750 1925
-Connection ~ 3750 1925
+	3450 2600 3800 2600
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 61C23C39
@@ -484,14 +481,13 @@ F 3 "" H 3800 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4100 2600 4425 2600
-Text Label 4150 2600 0    50   ~ 0
+	4050 1925 4375 1925
+Text Label 4100 1925 0    50   ~ 0
 PDM1_L
-Text Label 3800 2600 2    50   ~ 0
+Text Label 3750 1925 2    50   ~ 0
 F_PDM1_L
 Wire Wire Line
-	3450 2600 3800 2600
-Connection ~ 3800 2600
+	3400 1925 3750 1925
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 61C23C50
@@ -905,24 +901,16 @@ Text Label 8525 5625 0    50   ~ 0
 F_PDM0_R
 Text Label 8525 4850 0    50   ~ 0
 F_PDM1_L
-Text Label 8525 4500 0    50   ~ 0
-F_PDM1_R
 Wire Wire Line
 	8525 4850 8875 4850
 Wire Wire Line
-	8525 4500 8875 4500
-Wire Wire Line
 	8525 4950 8875 4950
-Wire Wire Line
-	8525 4600 8875 4600
 Text Label 8525 5725 0    50   ~ 0
 BUF0_R
 Text Label 8525 5375 0    50   ~ 0
 BUF0_L
 Text Label 8525 4950 0    50   ~ 0
 BUF1_L
-Text Label 8525 4600 0    50   ~ 0
-BUF1_R
 $Comp
 L up5k-synth:R_36kR_0603 R?
 U 1 1 61E507EF
@@ -1036,13 +1024,13 @@ Text HLabel 2325 2550 2    50   Input ~ 0
 PDM0_R
 Text HLabel 2350 1850 2    50   Input ~ 0
 PDM0_L
-Text HLabel 4375 1925 2    50   Input ~ 0
-PDM1_R
 Text HLabel 4425 2600 2    50   Input ~ 0
+PDM1_R
+Text HLabel 4375 1925 2    50   Input ~ 0
 PDM1_L
 Text HLabel 5275 4600 0    50   Input ~ 0
 OUT0_R
-Text HLabel 2075 6025 0    50   Input ~ 0
+Text HLabel 2050 6025 0    50   Input ~ 0
 OUT1_R
 Text HLabel 2100 4625 0    50   Input ~ 0
 OUT0_L
@@ -1239,4 +1227,128 @@ Wire Wire Line
 Wire Wire Line
 	2575 5875 2575 6025
 Connection ~ 2575 6025
+Wire Wire Line
+	2050 6025 2275 6025
+Text Label 8525 4600 0    50   ~ 0
+BUF1_R
+Wire Wire Line
+	8525 4600 8875 4600
+Wire Wire Line
+	8525 4500 8875 4500
+Text Label 8525 4500 0    50   ~ 0
+F_PDM1_R
+Connection ~ 3750 1925
+Connection ~ 3800 2600
+$Comp
+L up5k-synth:R_100kR_0603 R6
+U 1 1 616394B4
+P 9325 1450
+F 0 "R6" H 9393 1496 50  0000 L CNN
+F 1 "R_100kR_0603" V 9200 1275 50  0000 L CNN
+F 2 "up5k-synth:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9365 1440 50  0001 C CNN
+F 3 "~" H 9325 1450 50  0001 C CNN
+	1    9325 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:R_100kR_0603 R7
+U 1 1 6163B52D
+P 9700 1450
+F 0 "R7" H 9768 1496 50  0000 L CNN
+F 1 "R_100kR_0603" V 9575 1275 50  0000 L CNN
+F 2 "up5k-synth:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9740 1440 50  0001 C CNN
+F 3 "~" H 9700 1450 50  0001 C CNN
+	1    9700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:R_100kR_0603 R8
+U 1 1 6163BD72
+P 9625 2600
+F 0 "R8" H 9700 2750 50  0000 L CNN
+F 1 "R_100kR_0603" V 9475 2425 50  0000 L CNN
+F 2 "up5k-synth:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9665 2590 50  0001 C CNN
+F 3 "~" H 9625 2600 50  0001 C CNN
+	1    9625 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:R_100kR_0603 R9
+U 1 1 6163CD1D
+P 9975 2600
+F 0 "R9" H 10050 2750 50  0000 L CNN
+F 1 "R_100kR_0603" V 9850 2425 50  0000 L CNN
+F 2 "up5k-synth:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10015 2590 50  0001 C CNN
+F 3 "~" H 9975 2600 50  0001 C CNN
+	1    9975 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR024
+U 1 1 6163E46A
+P 9325 1300
+F 0 "#PWR024" H 9325 1150 50  0001 C CNN
+F 1 "+3.3V" H 9340 1473 50  0000 C CNN
+F 2 "" H 9325 1300 50  0001 C CNN
+F 3 "" H 9325 1300 50  0001 C CNN
+	1    9325 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR025
+U 1 1 6163E57D
+P 9700 1300
+F 0 "#PWR025" H 9700 1150 50  0001 C CNN
+F 1 "+3.3V" H 9715 1473 50  0000 C CNN
+F 2 "" H 9700 1300 50  0001 C CNN
+F 3 "" H 9700 1300 50  0001 C CNN
+	1    9700 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR026
+U 1 1 6163EF46
+P 9625 2450
+F 0 "#PWR026" H 9625 2300 50  0001 C CNN
+F 1 "+3.3V" H 9640 2623 50  0000 C CNN
+F 2 "" H 9625 2450 50  0001 C CNN
+F 3 "" H 9625 2450 50  0001 C CNN
+	1    9625 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR027
+U 1 1 6163F7E8
+P 9975 2450
+F 0 "#PWR027" H 9975 2300 50  0001 C CNN
+F 1 "+3.3V" H 9990 2623 50  0000 C CNN
+F 2 "" H 9975 2450 50  0001 C CNN
+F 3 "" H 9975 2450 50  0001 C CNN
+	1    9975 2450
+	1    0    0    -1  
+$EndComp
+Text Label 9350 1750 0    50   ~ 0
+SC0_SCL_PAD[1]
+Text Label 9725 1650 0    50   ~ 0
+SC0_SDA_PAD[0]
+Text Label 9625 2900 0    50   ~ 0
+SC0_SCL_PAD[1]
+Wire Wire Line
+	9625 2900 10275 2900
+Text Label 10000 2800 0    50   ~ 0
+SC0_SDA_PAD[0]
+Wire Wire Line
+	9700 1600 9700 1650
+Wire Wire Line
+	9700 1650 10375 1650
+Wire Wire Line
+	9325 1750 9325 1600
+Wire Wire Line
+	9325 1750 10000 1750
+Wire Wire Line
+	9625 2750 9625 2900
+Wire Wire Line
+	9975 2750 9975 2800
+Wire Wire Line
+	9975 2800 10650 2800
 $EndSCHEMATC

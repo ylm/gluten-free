@@ -249,9 +249,9 @@ F 3 "" H 6200 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 2050 5300 2050
-Wire Wire Line
 	4800 2150 5300 2150
+Wire Wire Line
+	4800 2050 5300 2050
 Wire Wire Line
 	4800 2250 5300 2250
 Wire Wire Line
@@ -1659,9 +1659,9 @@ F 3 "http://anacapa.kycon.com/Pub_Eng_Draw/STX-3120-5B.pdf" H 975 5250 50  0001 
 	1    975  5250
 	1    0    0    -1  
 $EndComp
-Text Label 4850 2050 0    50   ~ 0
-PDM1_R
 Text Label 4850 2150 0    50   ~ 0
+PDM1_R
+Text Label 4850 2050 0    50   ~ 0
 PDM1_L
 Text Label 2775 9125 0    50   ~ 0
 SC0_SCL_PAD[1]
@@ -1763,11 +1763,11 @@ F 3 "~" H 3375 3100 50  0001 C CNN
 	1    3375 3100
 	1    0    0    -1  
 $EndComp
-Text Label 7150 1900 0    50   ~ 0
+Text Label 7150 3750 0    50   ~ 0
 MII_GCOL
 Text Label 7150 2800 0    50   ~ 0
 MII_GRDV
-Text Label 7150 3750 0    50   ~ 0
+Text Label 7150 2000 0    50   ~ 0
 MII_GCRS
 Wire Wire Line
 	5150 1150 5150 1350
@@ -2305,7 +2305,72 @@ NoConn ~ 4800 2250
 NoConn ~ 4800 2350
 NoConn ~ 4800 2450
 NoConn ~ 4800 3750
-NoConn ~ 7350 2000
 Wire Wire Line
 	8750 7250 9150 7250
+Text Label 7150 1900 0    50   ~ 0
+MII_GRXER
+$Comp
+L up5k-synth:R_100kR_0603 R?
+U 1 1 616823AE
+P 12175 6675
+AR Path="/61BD42FB/616823AE" Ref="R?"  Part="1" 
+AR Path="/616823AE" Ref="R3"  Part="1" 
+F 0 "R3" H 12250 6825 50  0000 L CNN
+F 1 "R_100kR_0603" V 12025 6500 50  0000 L CNN
+F 2 "up5k-synth:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12215 6665 50  0001 C CNN
+F 3 "~" H 12175 6675 50  0001 C CNN
+	1    12175 6675
+	1    0    0    -1  
+$EndComp
+$Comp
+L up5k-synth:R_100kR_0603 R?
+U 1 1 616823B4
+P 12525 6675
+AR Path="/61BD42FB/616823B4" Ref="R?"  Part="1" 
+AR Path="/616823B4" Ref="R5"  Part="1" 
+F 0 "R5" H 12600 6825 50  0000 L CNN
+F 1 "R_100kR_0603" V 12400 6500 50  0000 L CNN
+F 2 "up5k-synth:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12565 6665 50  0001 C CNN
+F 3 "~" H 12525 6675 50  0001 C CNN
+	1    12525 6675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 616823BA
+P 12175 6525
+AR Path="/61BD42FB/616823BA" Ref="#PWR?"  Part="1" 
+AR Path="/616823BA" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 12175 6375 50  0001 C CNN
+F 1 "+3.3V" H 12190 6698 50  0000 C CNN
+F 2 "" H 12175 6525 50  0001 C CNN
+F 3 "" H 12175 6525 50  0001 C CNN
+	1    12175 6525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 616823C0
+P 12525 6525
+AR Path="/61BD42FB/616823C0" Ref="#PWR?"  Part="1" 
+AR Path="/616823C0" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 12525 6375 50  0001 C CNN
+F 1 "+3.3V" H 12540 6698 50  0000 C CNN
+F 2 "" H 12525 6525 50  0001 C CNN
+F 3 "" H 12525 6525 50  0001 C CNN
+	1    12525 6525
+	1    0    0    -1  
+$EndComp
+Text Label 12175 6975 0    50   ~ 0
+SC0_SCL_PAD[1]
+Wire Wire Line
+	12175 6975 12825 6975
+Text Label 12550 6875 0    50   ~ 0
+SC0_SDA_PAD[0]
+Wire Wire Line
+	12175 6825 12175 6975
+Wire Wire Line
+	12525 6825 12525 6875
+Wire Wire Line
+	12525 6875 13200 6875
 $EndSCHEMATC
