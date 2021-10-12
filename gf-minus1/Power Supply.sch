@@ -548,8 +548,6 @@ $EndComp
 Connection ~ 1450 3500
 Wire Wire Line
 	1450 3500 1350 3500
-Text Notes 6725 4475 0    50   ~ 0
-The 3v3 can be switched \nto the Vout power instead
 $Comp
 L up5k-synth:LMS33460 U14
 U 1 1 60F908C0
@@ -808,7 +806,7 @@ F 3 "" H 2975 1825 50  0001 C CNN
 	1    2975 1825
 	0    1    1    0   
 $EndComp
-Text Label 7625 2375 0    50   ~ 0
+Text Label 7600 2375 0    50   ~ 0
 PSU_EN
 Connection ~ 3850 3225
 Wire Wire Line
@@ -904,4 +902,6 @@ Wire Wire Line
 	4075 1750 4075 1800
 Wire Wire Line
 	4075 1800 4750 1800
+NoConn ~ 2450 3900
+NoConn ~ 1775 1725
 $EndSCHEMATC
