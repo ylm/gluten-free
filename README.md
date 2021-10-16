@@ -28,7 +28,7 @@ Gluten-Free is looking to expend the DIY synthesizer community and its userbase.
 
 ## How to get involved?
 
-We are most on our [Discord channel](https://discord.gg/mgb9C5ZK), so feel free to join and ask questions, offer suggestions, etc. The development is mostly done live on [gatin00b's Twitch channel](www.twitch.tv/gatin00b) is also a great place for discussion.
+We are most on our [Discord channel](https://discord.gg/bngMxeF9Fw), so feel free to join and ask questions, offer suggestions, etc. The development is mostly done live on [gatin00b's Twitch channel](www.twitch.tv/gatin00b) is also a great place for discussion.
 
 ## Who's working on Gluten-Free?
 
