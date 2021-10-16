@@ -28,11 +28,11 @@ Gluten-Free is looking to expend the DIY synthesizer community and its userbase.
 
 ## How to get involved?
 
-We are most on our [Discord channel] (https://discord.gg/mgb9C5ZK), so feel free to join and ask questions, offer suggestions, etc. The development is mostly done live on [gatin00b's Twitch channel] (www.twitch.tv/gatin00b) is also a great place for discussion.
+We are most on our [Discord channel](https://discord.gg/mgb9C5ZK), so feel free to join and ask questions, offer suggestions, etc. The development is mostly done live on [gatin00b's Twitch channel](www.twitch.tv/gatin00b) is also a great place for discussion.
 
 ## Who's working on Gluten-Free?
 
-* [@gatin00b] (www.twitter.com/gatin00b) started the initial design. 
-* [@overtinkerer] () provided help with documentation and support of the Gluten-Free platform.
-* [@vmttmv] () provided guidance on microcontroller selection.
-* [@BlindVia] (https://www.twitch.tv/BlindVia) provided guidance for manufacturing and a full review of Gluten-Free
+* [@gatin00b](www.twitter.com/gatin00b) started the initial design. 
+* [@overtinkerer]() provided help with documentation and support of the Gluten-Free platform.
+* [@vmttmv]() provided guidance on microcontroller selection.
+* [@BlindVia](https://www.twitch.tv/BlindVia) provided guidance for manufacturing and a full review of Gluten-Free
