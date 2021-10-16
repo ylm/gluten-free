@@ -1,34 +1,38 @@
-#README
+# Gluten-Free Project
 
-##Board features
+## What is the Gluten-Free Project?
 
-* Stereo Sigma-Delta DAC
-* 3.5mm headphone jack
-* Multiple output jacks for different levels of output: headphone vs line out for live.
-* Powered by: USB! Battery!
-* Connectors: USB! PMOD and some debug
-* Communication: USB!
-* FPGA Configuration: Host! On SD Card
-* Clock source?
-* Screen
-* SD Card
-* AD8531 for op-amp and DS1881 as digital pot
+Gluten-Free Project is an open-source platform aimed at makers and musicians for real-time audio synthesis in a live setup.
 
-##Featured ICs
+It is meant to be portable, battery powered, small form factor self-contained and highly reconfigurable synthesizer.
 
-* ice40up5k SG48I (8.72) `https://www.digikey.ca/en/products/detail/lattice-semiconductor-corporation/ICE40UP5K-SG48I/7785190`
-* BQ24074 (2.05) `https://www.ti.com/product/BQ24074`
-* TPS63031 (1.78) `https://www.ti.com/product/TPS63031`
-* DMG1016V-7 (0.662) `https://www.mouser.ca/ProductDetail/Diodes-Incorporated/DMG1016V-7`
-* TPS62120DCNR (1.03) `https://www.digikey.ca/en/products/detail/texas-instruments/TPS62120DCNR/2407326`
-* USB Conn: 10118194-0001LF (0.66) `https://www.digikey.ca/en/products/detail/amphenol-icc-fci/10118194-0001LF/2785389`
-* SD Card connector (1.56) `https://www.digikey.ca/en/products/detail/gct/MEM2061-01-188-00-A/9859612`
-* Clock (1.23) `https://www.mouser.ca/ProductDetail/Microchip-Technology/DSC6003JI2A-0480000?qs=sGAEpiMZZMsBj6bBr9Q9aa53dfhiSZy6HyD2biU23IhN9DU7PpWSmA%3D%3D`
+GF-MINUS1 is the first iteration of the core of Gluten-Free. It features a low-power FPGA as its fully customizable soundchip and a SAME53 for high-speed communication. The soundchip provides two independant stereo outputs as well as a PMOD expansion interface. It is a bare-bone version designed to interface with expansion boards.
 
-##TODO
+## Why Gluten-Free?
 
-* TBD
+Gluten-Free was initiated to push the boundaries of what was available to makers with a music inclination.
 
-## Issues
+It is also a platform meant to learn about digital design on a platform including an FPGA connected through an high-speed interface to a microcontroller.
 
-TBD
+## What can I do with Gluten-Free?
+
+### GF-MINUS1
+
+![Overview of GF-MINUS1 PCB](docs/gf-minus1_board.png)
+
+GF-MINUS1 is still in active development. As development progresses, the list of its capabilities is going to be expanded.
+
+## Where is Gluten-Free Project going?
+
+Gluten-Free is looking to expend the DIY synthesizer community and its userbase. The goal is to provide a powerful platform able to provide the computing power required for modern synthesizers for makers to focus on their desired implementation.
+
+## How to get involved?
+
+We are most on our [Discord channel] (https://discord.gg/mgb9C5ZK), so feel free to join and ask questions, offer suggestions, etc. The development is mostly done live on [gatin00b's Twitch channel] (www.twitch.tv/gatin00b) is also a great place for discussion.
+
+## Who's working on Gluten-Free?
+
+* [@gatin00b] (www.twitter.com/gatin00b) started the initial design. 
+* [@overtinkerer] () provided help with documentation and support of the Gluten-Free platform.
+* [@vmttmv] () provided guidance on microcontroller selection.
+* [@BlindVia] (https://www.twitch.tv/BlindVia) provided guidance for manufacturing and a full review of Gluten-Free
