@@ -8,7 +8,7 @@
   (lib (name dk_Logic-Buffers-Drivers-Receivers-Transceivers)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-symbols/dk_Logic-Buffers-Drivers-Receivers-Transceivers.lib)(options "")(descr "")(disabled))
   (lib (name dk_USB-DVI-HDMI-Connectors)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-symbols/dk_USB-DVI-HDMI-Connectors.lib)(options "")(descr "")(disabled))
   (lib (name TinyFPGA-UP-cache)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/TinyFPGA-UP/TinyFPGA-UP-cache.lib)(options "")(descr "")(disabled))
-  (lib (name up5k-synth)(type Legacy)(uri ${KIPRJMOD}/up5k-synth.lib)(options "")(descr ""))
+  (lib (name up5k-synth)(type Legacy)(uri ${KIPRJMOD}/../../symbols/gluten-free.lib)(options "")(descr ""))
   (lib (name dk_Clock-Timing-Clock-Generators-PLLs-Frequency-Synthesizers)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-symbols/dk_Clock-Timing-Clock-Generators-PLLs-Frequency-Synthesizers.lib)(options "")(descr "")(disabled))
   (lib (name dk_Clock-Timing-Programmable-Timers-and-Oscillators)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-symbols/dk_Clock-Timing-Programmable-Timers-and-Oscillators.lib)(options "")(descr "")(disabled))
   (lib (name dk_Clock-Timing-Real-Time-Clocks)(type Legacy)(uri /home/ylamarre/Documents/code/fpgadev/digikey-kicad-library/digikey-symbols/dk_Clock-Timing-Real-Time-Clocks.lib)(options "")(descr "")(disabled))
