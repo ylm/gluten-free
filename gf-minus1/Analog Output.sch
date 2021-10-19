@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 2 3
+Title "GF-MINUS1"
+Date "2021-10-19"
+Rev "A"
+Comp "gatin00b"
 Comment1 ""
 Comment2 ""
 Comment3 ""

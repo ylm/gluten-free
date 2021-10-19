@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 4
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 1 3
+Title "GF-MINUS1"
+Date "2021-10-19"
+Rev "A"
+Comp "gatin00b"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -1871,18 +1871,6 @@ F 3 "" H 3750 2500 50  0001 C CNN
 	1    3750 2550
 	0    -1   -1   0   
 $EndComp
-Text Label 1575 6350 0    50   ~ 0
-SW_LOAD
-Wire Wire Line
-	1575 6350 1925 6350
-Text Label 1575 6425 0    50   ~ 0
-SW_CLK
-Wire Wire Line
-	1575 6425 1925 6425
-Text Label 2850 6375 0    50   ~ 0
-SW_DATA
-Wire Wire Line
-	2850 6375 3175 6375
 Wire Wire Line
 	2775 9250 3100 9250
 Text Label 2825 9250 0    50   ~ 0
@@ -1891,21 +1879,6 @@ Wire Wire Line
 	2775 9325 3100 9325
 Text Label 2825 9325 0    50   ~ 0
 PDM0_L
-$Sheet
-S 1925 6300 925  700 
-U 618B27CF
-F0 "IO" 50
-F1 "IO.sch" 50
-F2 "LED_DATA" I L 1925 6550 50 
-F3 "LED_OUT" I R 2850 6475 50 
-F4 "SW_LOAD" I L 1925 6350 50 
-F5 "SW_CLK" I L 1925 6425 50 
-F6 "SW_DATA" I R 2850 6375 50 
-F7 "SEQ_DATA" I L 1925 6650 50 
-F8 "SEQ_CLK" I L 1925 6725 50 
-F9 "SEQ_LE" I L 1925 6800 50 
-F10 "SEQ_OE" I L 1925 6875 50 
-$EndSheet
 $Sheet
 S 1625 9000 1150 550 
 U 61BD42FB
@@ -1932,14 +1905,6 @@ Wire Wire Line
 	2775 9500 3100 9500
 Text Label 2825 9500 0    50   ~ 0
 PDM1_L
-Wire Wire Line
-	1925 6550 1575 6550
-Text Label 1575 6550 0    50   ~ 0
-LED_DATA
-Wire Wire Line
-	2850 6475 3175 6475
-Text Label 2875 6475 0    50   ~ 0
-LED_OUT
 $Sheet
 S 1950 7225 775  350 
 U 60EEFAC8
@@ -1966,22 +1931,6 @@ Wire Wire Line
 	12725 5525 13200 5525
 Wire Wire Line
 	12725 5625 13200 5625
-Wire Wire Line
-	1925 6650 1575 6650
-Wire Wire Line
-	1925 6725 1575 6725
-Wire Wire Line
-	1925 6800 1575 6800
-Wire Wire Line
-	1925 6875 1575 6875
-Text Label 1575 6650 0    50   ~ 0
-SEQ_DATA
-Text Label 1575 6725 0    50   ~ 0
-SEQ_CLK
-Text Label 1575 6800 0    50   ~ 0
-SEQ_LE
-Text Label 1575 6875 0    50   ~ 0
-SEQ_OE
 $Comp
 L power:GNDPWR #PWR0163
 U 1 1 60F5B926
