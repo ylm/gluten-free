@@ -1,0 +1,35 @@
+set_io pmod[0] 25
+set_io pmod[1] 26
+set_io pmod[2] 27
+set_io pmod[3] 28
+set_io pmod[4] 31
+set_io pmod[5] 32
+set_io pmod[6] 34
+set_io pmod[7] 36
+set_io clk48m 35
+
+set_io mii_grxck 44
+set_io mii_grx[0] 10
+set_io mii_grx[1] 11
+set_io mii_grx[2] 12
+set_io mii_grx[3] 13
+set_io mii_grdv 6
+set_io mii_grxer 21
+set_io mii_gcrs 20
+
+set_io mii_gtxck 9
+set_io mii_gtx[0] 3
+set_io mii_gtx[1] 2
+set_io mii_gtx[2] 48
+set_io mii_gtx[3] 47
+set_io mii_gten 4
+set_io mii_gtxer 46
+set_io mii_gcol 45
+
+set_io mii_gmdio 18
+set_io mii_gmdc 19
+
+set_io pdm0_l 38
+set_io pdm0_r 37
+set_io pdm1_l 43
+set_io pdm1_r 42
