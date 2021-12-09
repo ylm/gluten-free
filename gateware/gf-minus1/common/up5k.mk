@@ -85,7 +85,7 @@ endif
 	rm -rf defines.v
 	touch defines.v
 	for x in $(DEFS); do echo '`define' $$x >> defines.v; done
-	yosys -p "synth_ice40 -abc9 -json $@ -top $(FPGA_TOP)" $(SYN_FILES_REL) defines.v
+	yosys -p "scratchpad -copy abc9.script.flow3 abc9.script; synth_ice40 -device u -dsp -abc9 -dff -json $@ -top $(FPGA_TOP)" $(SYN_FILES_REL) defines.v
 
 
 %.asc: %.json $(PCF_FILES_REL) $(CLK_FILES_REL)

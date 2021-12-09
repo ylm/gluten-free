@@ -1,6 +1,6 @@
 /*
 
-Copyright (c) 2014-2018 Alex Forencich
+Copyright (c) 2021 gatin00b
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -30,12 +30,25 @@ THE SOFTWARE.
  * FPGA top-level module
  */
 module fpga (
+
+	input wire clk48m,
+	inout wire mii_gmdio,
+	inout wire mii_gmdc,
+
+	/*
+	* Sigma-Delta Interfaces
+	*/
+	output wire pdm0_l,
+	output wire pdm0_r,
+	output wire pdm1_l,
+	output wire pdm1_r,
+
     /*
      * GPIO
      */
     output wire [7:0] pmod,
     /*
-     * Ethernet: 1000BASE-T RGMII
+     * Ethernet: 1000BASE-T MII
      */
     input  wire       mii_grxck,
     input  wire [3:0] mii_grx,
@@ -49,63 +62,20 @@ module fpga (
     output wire       mii_gcol
 );
 
-wire       ledu;
-wire       ledl;
-wire       ledd;
-wire       ledr;
-wire       ledc;
-
-// GPIO
-wire btnu_int;
-wire btnl_int;
-wire btnd_int;
-wire btnr_int;
-wire btnc_int;
-wire [7:0] sw_int;
-
-wire ledu_int;
-wire ledl_int;
-wire ledd_int;
-wire ledr_int;
-wire ledc_int;
-wire [7:0] led_int;
-
-wire uart_rxd_int;
-wire uart_txd_int;
-
-debounce_switch #(
-    .WIDTH(13),
-    .N(4),
-    .RATE(125000)
-)
-debounce_switch_inst (
-    .clk(clk_125mhz_int),
-    .rst(rst_125mhz_int),
-    .in({1'b0,
-        1'b0,
-        1'b0,
-        1'b0,
-        1'b0,
-        8'b0}),
-    .out({btnu_int,
-        btnl_int,
-        btnd_int,
-        btnr_int,
-        btnc_int,
-        sw_int})
-);
-
-assign ledu = ledu_int;
-assign ledl = ledl_int;
-assign ledd = ledd_int;
-assign ledr = ledr_int;
-assign ledc = ledc_int;
-assign led = led_int;
-
-assign uart_rxd = 1'b0;
+assign mii_gmdio = 1'b0;
+assign mii_gmdc = 1'b0;
 
 fpga_core
 core_inst (
+	.clk48m(clk48m),
+
+	/*
+	 * Sigma-Delta Interfaces
+	 */
+	.pdm0_l(pdm0_l),
+	.pdm0_r(pdm0_r),
+	.pdm1_l(pdm1_l),
+	.pdm1_r(pdm1_r),
     /*
      * GPIO
      */

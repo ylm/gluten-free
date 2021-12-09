@@ -1,6 +1,6 @@
 /*
 
-Copyright (c) 2014-2018 Alex Forencich
+Copyright (c) 2021 gatin00b
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -34,6 +34,14 @@ module fpga_core #
     parameter TARGET = "UP5K"
 )
 (
+	input wire clk48m,
+	/*
+	* Sigma-Delta Interfaces
+	*/
+	output wire pdm0_l,
+	output wire pdm0_r,
+	output wire pdm1_l,
+	output wire pdm1_r,
     /*
      * GPIO
      */
@@ -559,22 +567,11 @@ udp_complete_inst (
     .clear_arp_cache(0)
 );
 
-axis_fifo #(
-    .DEPTH(4096),
-    .DATA_WIDTH(8),
-    .KEEP_ENABLE(0),
-    .ID_ENABLE(0),
-    .DEST_ENABLE(0),
-    .USER_ENABLE(1),
-    .USER_WIDTH(1),
-    .FRAME_FIFO(0)
-)
-udp_payload_fifo (
-    .clk(mii_grxck),
-    .rst(rst_125mhz),
+axis_dac inst_axis_dac (
+	.clk(clk48m),
+	.rst(1'b0),
 
-    // AXI input
-    .s_axis_tdata(rx_fifo_udp_payload_axis_tdata),
+	.s_axis_tdata(rx_fifo_udp_payload_axis_tdata),
     .s_axis_tkeep(0),
     .s_axis_tvalid(rx_fifo_udp_payload_axis_tvalid),
     .s_axis_tready(rx_fifo_udp_payload_axis_tready),
@@ -583,20 +580,8 @@ udp_payload_fifo (
     .s_axis_tdest(0),
     .s_axis_tuser(rx_fifo_udp_payload_axis_tuser),
 
-    // AXI output
-    .m_axis_tdata(tx_fifo_udp_payload_axis_tdata),
-    .m_axis_tkeep(),
-    .m_axis_tvalid(tx_fifo_udp_payload_axis_tvalid),
-    .m_axis_tready(tx_fifo_udp_payload_axis_tready),
-    .m_axis_tlast(tx_fifo_udp_payload_axis_tlast),
-    .m_axis_tid(),
-    .m_axis_tdest(),
-    .m_axis_tuser(tx_fifo_udp_payload_axis_tuser),
-
-    // Status
-    .status_overflow(),
-    .status_bad_frame(),
-    .status_good_frame()
+	.dac_out(pdm0_l)
 );
+
 
 endmodule

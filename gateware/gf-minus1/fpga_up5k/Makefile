@@ -6,10 +6,14 @@ FPGA_ARCH = up5k
 
 # Files for synthesis
 SYN_FILES = rtl/fpga.v
-SYN_FILES += rtl/fpga_core.v
+SYN_FILES += rtl/axis_dac.v
+SYN_FILES += rtl/clock_divider.v
 SYN_FILES += rtl/debounce_switch.v
-SYN_FILES += rtl/sync_signal.v
+SYN_FILES += rtl/fpga_core.v
 SYN_FILES += rtl/pll.v
+SYN_FILES += rtl/so_pdm.v
+SYN_FILES += rtl/pdm.v
+SYN_FILES += rtl/sync_signal.v
 SYN_FILES += ip/eth/rtl/iddr.v
 SYN_FILES += ip/eth/rtl/oddr.v
 SYN_FILES += ip/eth/rtl/ssio_sdr_in.v
@@ -46,6 +50,7 @@ SYN_FILES += ip/eth/lib/axis/rtl/axis_fifo.v
 SYN_FILES += ip/eth/lib/axis/rtl/axis_async_fifo.v
 SYN_FILES += ip/eth/lib/axis/rtl/axis_async_fifo_adapter.v
 SYN_FILES += ip/eth/lib/axis/rtl/sync_reset.v
+SYN_FILES += ip/sd_dac/second_order_dac.v
 
 # UCF files
 PCF_FILES = pcf/gf-minus1.pcf
@@ -55,6 +60,9 @@ CLK_FILES = pcf/timing.py
 BITGEN_OPTIONS = -g StartupClk:Cclk -g ConfigRate:26
 
 include ../common/up5k.mk
+
+test: $(SYN_FILES) tb/so_pdm_tb.v
+	iverilog $<
 
 program: $(FPGA_TOP).bin
 	echo "setmode -bscan" > program.cmd
