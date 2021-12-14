@@ -27,7 +27,7 @@ clock_divider #(
 );
 
 axis_fifo #(
-    .DEPTH(4096),
+    .DEPTH(4096), // TODO: Actual depth to be rounded up to BRAM size
     .DATA_WIDTH(8),
     .KEEP_ENABLE(0),
     .ID_ENABLE(0),

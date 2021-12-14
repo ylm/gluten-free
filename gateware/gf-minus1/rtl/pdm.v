@@ -11,18 +11,15 @@ output wire dac_out
 );
 
 reg [INPUT_WIDTH:0] accumulator;
-reg out_value;
+reg [INPUT_WIDTH-1:0] u_sample = 0;
 
-assign dac_out = accumulator[8];
+assign dac_out = accumulator[8]; // DAC outputs the result of the overflow
 
 always @(posedge clk) begin
-	accumulator <= {1'b0, accumulator[INPUT_WIDTH-1:0]} + sample[INPUT_WIDTH-1:0];
-	if (~(&sample[INPUT_WIDTH-1:INPUT_WIDTH-1])) begin // Make sure not to overflow
-		out_value <= sample[INPUT_WIDTH-1:INPUT_WIDTH-1] + accumulator[INPUT_WIDTH];
-	end
+	u_sample <= sample + 8'h7F; // Converts signed domain data to unsigned domain
+	accumulator <= {1'b0, accumulator[INPUT_WIDTH-1:0]} + u_sample[INPUT_WIDTH-1:0]; // Accumulates to overflow
 	if (reset) begin
 		accumulator <= {1'b1,{INPUT_WIDTH-1{1'b0}}};
-		out_value <= 1'b0;
 	end
 end
 
