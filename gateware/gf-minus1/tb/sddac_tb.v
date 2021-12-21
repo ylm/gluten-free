@@ -1,4 +1,4 @@
-module so_pdm_tb ();
+module sddac_tb ();
 
 reg clk;
 reg rst;
@@ -10,7 +10,7 @@ reg [15:0] sine_signal_r = 0;
 
 initial begin
 	$dumpfile("test.vcd");
-	$dumpvars(0,so_pdm_tb);
+	$dumpvars(0,sddac_tb);
 end
 
 // Clock generator
@@ -74,16 +74,27 @@ sinegen i_sinegen(
 
 always @(posedge clk) begin
 	if (pulse_48k) begin
-		sine_signal_r <= {sine_signal, 8'h00};
+		// Sign extension + bus padding
+		sine_signal_r <= {sine_signal[7], sine_signal, 7'h0};
 	end
 end
 
-second_order_dac i_so_pdm (
-	.i_clk(clk),
-	.i_res(~rst),
-	.i_ce(1'b1),
-	.i_func(sine_signal_r),
-	.o_DAC(dac_out)
+//From apicula project
+sddac i_so_pdm (
+	.clk(clk),
+	.rst_n(~rst),
+	.sig_in(sine_signal_r),
+	.sd_out(dac_out)
 );
+
+//so_pdm #(
+	//.INPUT_WIDTH(8)
+//) i_so_pdm (
+	//.i_clk(clk),
+	//.i_res(rst),
+	//.i_ce(1'b1),
+	//.i_func(sine_signal_r),
+	//.o_DAC(dac_out)
+//);
 
 endmodule
