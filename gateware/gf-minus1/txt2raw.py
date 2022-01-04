@@ -6,6 +6,7 @@ i_file.close()
 
 for idx in range(len(text)):
     text[idx] = int(text[idx])
+    #text[idx] = int(text[idx],16)
 
 with open('myfile.raw', 'wb') as w:
     for idx in range(len(text)):

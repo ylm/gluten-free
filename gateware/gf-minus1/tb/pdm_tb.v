@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module so_pdm_tb ();
 
 reg clk;
@@ -7,6 +9,7 @@ reg pulse_48k;
 reg pulse_sine;
 wire [7:0] sine_signal;
 reg [7:0] sine_signal_r = 0;
+reg [7:0] sine_signal_r2 = 0;
 
 initial begin
 	$dumpfile("test.vcd");
@@ -46,7 +49,7 @@ always begin
 end
 
 initial begin
-  for (i = 0; i<2048; i=i+1) begin
+  for (i = 0; i<4096; i=i+1) begin
 	  @(posedge pulse_48k);
   end
 end
@@ -56,8 +59,9 @@ initial begin
 
   @(negedge rst); //Wait for reset to be released
 
-  while (i<2048) begin
+  while (i<4096) begin
 	  @(posedge clk);   //Wait for first clock out of reset
+	  //$fwrite(f,"%d\n",sine_signal);
 	  $fwrite(f,"%d\n",{8{dac_out}});
   end
 
@@ -65,16 +69,19 @@ initial begin
   $finish();
 end
 
-sinegen i_sinegen(
+rom_wavegen i_sinegen(
 	.clk(clk),
 	.reset(rst),
-	.clk_en(pulse_sine),
-	.sine_out(sine_signal)
+	.enable_pulse(pulse_sine),
+	.step(12'b1),
+	.wave_out(sine_signal)
 );
 
 always @(posedge clk) begin
+	//sine_signal_r <= 8'h7F;
+	sine_signal_r2 <= sine_signal_r[7:1] + sine_signal_r2[7:1];
 	if (pulse_48k) begin
-		sine_signal_r <= sine_signal;
+		sine_signal_r <= sine_signal + 8'h7F;
 	end
 end
 
@@ -83,7 +90,7 @@ pdm #(
 ) i_so_pdm (
 	.clk(clk),
 	.reset(rst),
-	.sample(sine_signal_r),
+	.sample(sine_signal),
 	.dac_out(dac_out)
 );
 

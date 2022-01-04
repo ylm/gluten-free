@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module sddac_tb ();
 
 reg clk;
@@ -46,7 +47,7 @@ always begin
 end
 
 initial begin
-  for (i = 0; i<2048; i=i+1) begin
+  for (i = 0; i<4096; i=i+1) begin
 	  @(posedge pulse_48k);
   end
 end
@@ -56,7 +57,7 @@ initial begin
 
   @(negedge rst); //Wait for reset to be released
 
-  while (i<2048) begin
+  while (i<4096) begin
 	  @(posedge clk);   //Wait for first clock out of reset
 	  $fwrite(f,"%d\n",{8{dac_out}});
   end
@@ -65,11 +66,12 @@ initial begin
   $finish();
 end
 
-sinegen i_sinegen(
+rom_wavegen i_sinegen(
 	.clk(clk),
 	.reset(rst),
-	.clk_en(pulse_sine),
-	.sine_out(sine_signal)
+	.enable_pulse(pulse_sine),
+	.step(12'b1),
+	.wave_out(sine_signal)
 );
 
 always @(posedge clk) begin
@@ -83,7 +85,7 @@ end
 sddac i_so_pdm (
 	.clk(clk),
 	.rst_n(~rst),
-	.sig_in(sine_signal_r),
+	.sig_in({sine_signal[7], sine_signal, 7'h0}),
 	.sd_out(dac_out)
 );
 
