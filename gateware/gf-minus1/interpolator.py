@@ -25,7 +25,7 @@ def kaiser(phase, beta=math.pi, M=2488):
         #print('%X' % round( 256.0 - math.fabs(round(127 * kaiser(idx)))))
     #else:
         #print(tmp)
-for idx in range(-1244,1244):
+for idx in range(-10,10):
     tmp = '%X' % round(127 * kaiser(idx) * sinc(idx/10))
     if tmp[0] == '-':
         print('%X' % round( 256.0 - math.fabs(round(127 * kaiser(idx) * sinc(idx/10)))))
