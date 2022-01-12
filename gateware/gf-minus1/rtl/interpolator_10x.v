@@ -36,22 +36,22 @@ module interpolator_10x (
 
 reg msb_stage = 1'b0;
 
-reg [3:0] cycle_count = 4'd0;
+reg [2:0] cycle_count = 3'd0;
 
 always @(posedge clk) begin
 	if (clk_en_10x) begin
 		msb_stage <= 1'b0;
 		end_stage <= 1'b0;
-		cycle_count <= cycle_count + 4'b1;
-		if (cycle_count == 4'd7) begin
+		cycle_count <= cycle_count + 3'b1;
+		if (cycle_count == 3'd6) begin
 			msb_stage <= 1'b1;
 		end
-		if (cycle_count == 4'd8) begin
+		if (cycle_count == 3'd7) begin
 			end_stage <= 1'b1;
 		end
 	end
 	if (clk_en) begin
-		cycle_count <= 4'b0;
+		cycle_count <= 3'b0;
 	end
 end
 

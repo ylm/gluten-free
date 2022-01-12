@@ -1,6 +1,6 @@
 #!python3
 
-i_file = open("output.txt", 'r')
+i_file = open("480k_output.txt", 'r')
 text = i_file.readlines()
 i_file.close()
 

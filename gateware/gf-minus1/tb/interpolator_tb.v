@@ -43,20 +43,32 @@ rst = 0;
 end
 
 real x;
-integer f,i,f_48k,f_480k;
+integer f,i,f_48k,f_480k,idx_48k,idx_480k;
 
 // 48KHz pulse train
 always begin
 	pulse_48k = 0;
-	#20811.168 pulse_48k = 1;
-	#20.832 pulse_48k = 0;
+	for (idx_48k= 0; idx_48k<999; idx_48k=idx_48k+1) begin
+		@(posedge clk);
+	end
+	@(negedge clk);
+	pulse_48k = 1;
+	@(negedge clk);
+	//#20811.168 pulse_48k = 1;
+	//#20.832 pulse_48k = 0;
 end
 
 // 480KHz pulse train
 always begin
 	pulse_480k = 0;
-	#2062.500 pulse_480k = 1;
-	#20.832 pulse_480k = 0;
+	for (idx_480k= 0; idx_480k<99; idx_480k=idx_480k+1) begin
+		@(posedge clk);
+	end
+	@(negedge clk);
+	pulse_480k = 1;
+	@(negedge clk);
+	//#2062.500 pulse_480k = 1;
+	//#20.832 pulse_480k = 0;
 end
 
 // sine pulse train
@@ -86,6 +98,7 @@ initial begin
 	@(negedge rst); //Wait for reset to be released
 	for (i = 0; i<4096; i=i+1) begin
 		@(posedge end_stage);
+		@(posedge clk);
 		@(posedge clk);
 		$fwrite(f_480k,"%d\n",sample_y0);
 		$fwrite(f_480k,"%d\n",sample_y1);
