@@ -175,8 +175,8 @@ atom_interpolator_10x #(
 );
 
 atom_interpolator_10x #(
-	.coef0('h6D),
-	.coef1('h2F)
+	.coef0('h2F),
+	.coef1('h6D)
 ) interpolator_sample_y7 (
 	.clk(clk),
 	.reset(reset),
@@ -209,8 +209,8 @@ atom_interpolator_10x #(
 );
 
 atom_interpolator_10x #(
-	.coef0('h7D),
-	.coef1('h0E)
+	.coef0('h0E),
+	.coef1('h7D)
 ) interpolator_sample_y9 (
 	.clk(clk),
 	.reset(reset),

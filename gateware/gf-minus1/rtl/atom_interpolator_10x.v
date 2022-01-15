@@ -39,16 +39,16 @@ always @(posedge clk) begin
 		if (msb_stage) begin
 			case({tmp_sample_x1[0], tmp_sample_x0[0]})
 				2'b00: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]};
-				2'b01: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]} - (coef0*256);
-				2'b10: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]} - (coef1*256);
-				2'b11: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]} - (coef0 + coef1)*256;
+				2'b01: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]} - (coef0*128);
+				2'b10: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]} - (coef1*128);
+				2'b11: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]} - (coef0 + coef1)*128;
 			endcase
 		end else begin
 			case({tmp_sample_x1[0], tmp_sample_x0[0]})
 				2'b00: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]};
-				2'b01: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]} + coef0*256;
-				2'b10: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]} + coef1*256;
-				2'b11: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]} + (coef0 + coef1)*256;
+				2'b01: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]} + coef0*128;
+				2'b10: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]} + coef1*128;
+				2'b11: tmp_sample_y0 <= {1'b0, tmp_sample_y0[15:1]} + (coef0 + coef1)*128;
 			endcase
 		end
 	end
