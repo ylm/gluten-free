@@ -55,6 +55,7 @@ always @(posedge clk) begin
 	end
 end
 
+// XXX: THIS STAGE IS USELESS... JUST USE THE INPUT SAMPLE!!!!
 atom_interpolator_10x #(
 	.coef0('h7f),
 	.coef1('h00)

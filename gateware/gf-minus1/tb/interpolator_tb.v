@@ -76,6 +76,12 @@ always begin
 	pulse_sine = 0;
 	#20.832 pulse_sine = 0;
 	#20.832 pulse_sine = 0;
+	#20.832 pulse_sine = 0;
+	#20.832 pulse_sine = 0;
+	#20.832 pulse_sine = 0;
+	#20.832 pulse_sine = 0;
+	#20.832 pulse_sine = 0;
+	#20.832 pulse_sine = 0;
 	#20.832 pulse_sine = 1;
 	#20.832 pulse_sine = 0;
 end
