@@ -1,14 +1,18 @@
 /*
  * Copyright goes here
  *
- * Computes the interpolated sample for a 21 taps 10x upsample
+ * Computes the interpolated samples from two samples
  *
- * clk_en and clk_en_10x are phase aligned
+ * clk_en and clk_en_10x are phase aligned and are asserted in a ratio of 1:10
  * A cycle happens on a rising edge of clk when clk_en_10x is high.
- * coef0 and coef1 are the filter coefficients 
+ * sample_x0 and sample_x1 are the samples gtting interpolated
+ * sample_x0 is "older" than sample_x1. Refer to interpolator_tb.v for sample
+ * ordering. When the cycle starts again, x1 becomes x0, and the next sample becomes x1
  * msb_stage is asserted (high) when the MSB is processed (8 cycles after clk_en)
  * end_stage is asserted (high) on the last "idle" processing cycle (9 cycles after
  * clk_en)
+ *
+ * sample_y* are valid one cycle after end_stage is asserted.
 */
 
 module interpolator_10x (

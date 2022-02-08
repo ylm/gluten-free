@@ -5,6 +5,7 @@ reg clk;
 reg rst;
 wire dac_out;
 reg pulse_48k;
+reg pulse_24M;
 reg pulse_sine;
 wire [7:0] sine_signal;
 reg [7:0] sine_signal_r = 0;
@@ -29,6 +30,13 @@ end
 
 real x;
 integer f,i;
+
+// 24MHz pulse train
+always begin
+	pulse_24M = 0;
+	#20.832 pulse_24M = 1;
+	#20.832 pulse_24M = 0;
+end
 
 // 48KHz pulse train
 always begin
@@ -59,7 +67,8 @@ initial begin
 
   while (i<4096) begin
 	  @(posedge clk);   //Wait for first clock out of reset
-	  $fwrite(f,"%d\n",{8{dac_out}});
+	  $fwrite(f,"%d\n",sine_signal_r);
+	  //$fwrite(f,"%d\n",{8{dac_out}});
   end
 
   $fclose(f);  
@@ -75,7 +84,8 @@ rom_wavegen i_sinegen(
 );
 
 always @(posedge clk) begin
-	if (pulse_48k) begin
+	sine_signal_r <= 8'h00;
+	if (pulse_24M) begin
 		sine_signal_r <= sine_signal;
 	end
 end
