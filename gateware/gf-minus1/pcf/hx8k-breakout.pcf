@@ -1,0 +1,22 @@
+set_io pmod[0] R15
+set_io pmod[1] P15
+set_io pmod[2] M15
+set_io pmod[3] L16
+set_io pmod[4] K16
+set_io pmod[5] N16
+set_io pmod[6] M16
+set_io pmod[7] K15
+
+set_io clk12m J3
+
+set_io SCK G15
+set_io MCLK H16
+set_io LRCLK F15
+set_io SDATA E14
+
+set_io out_clk P16
+
+set_io pdm0_l D15
+set_io pdm0_r E16
+set_io pdm1_l B16
+set_io pdm1_r C16

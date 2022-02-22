@@ -2,7 +2,7 @@
 TARGETS:=
 
 # Subdirectories
-SUBDIRS = fpga_up5k
+SUBDIRS = fpga_hx8k
 SUBDIRS_CLEAN = $(patsubst %,%.clean,$(SUBDIRS))
 
 # Rules

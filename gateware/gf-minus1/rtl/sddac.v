@@ -10,11 +10,11 @@
 `include "constants.vams"
 `endif
 
-module sddac(clk, rst_n, sig_in, sd_out);
+module sddac(clk, rst, sig_in, sd_out);
 
     // inputs
     input clk;                          // clock
-    input rst_n;                        // synchronous reset, active low
+    input rst;                        // synchronous reset, active low
     input signed [15:0] sig_in;         // 16 bits in Q(1,15) format
 
     // outputs
@@ -49,7 +49,7 @@ module sddac(clk, rst_n, sig_in, sd_out);
     // clocked process
     always @(posedge clk)
     begin
-        if (rst_n == 1'b0)
+        if (rst == 1'b1)
         begin
             state1 <= 0;
             state2 <= 0;

@@ -15,19 +15,22 @@ module axis_dac (
 );
 
 wire [7:0] dac_data;
-reg [7:0] dac_data_reg;
-wire sample_tick;
+reg [7:0] dac_data_reg = 8'd0;
+reg [7:0] dac_data_reg_r2 = 8'd0;
+reg [7:0] dac_data_reg_r3 = 8'd0;
+reg [9:0] divider_48k = 10'd0;
+reg sample_tick = 1'b0;
 
-clock_divider #(
-	.DIVIDER_LOG2(10)
-) sample_enable (
-	.clk(clk),
-	.reset(rst),
-	.enable_pulse(sample_tick)
-);
-
+always @(posedge clk) begin
+	sample_tick <= 1'b0;
+	divider_48k <= divider_48k + 10'd1;
+	if (divider_48k == 10'd999) begin
+		sample_tick <= 1'b1;
+		divider_48k <= 10'd0;
+	end
+end
 axis_fifo #(
-    .DEPTH(4096), // TODO: Actual depth to be rounded up to BRAM size
+    .DEPTH(512), // TODO: Actual depth to be rounded up to BRAM size
     .DATA_WIDTH(8),
     .KEEP_ENABLE(0),
     .ID_ENABLE(0),
@@ -68,8 +71,33 @@ udp_payload_fifo (
 
 always @(posedge clk) begin
 	dac_data_reg <= dac_data;
+	dac_data_reg_r3 <= dac_data_reg_r2;
+	if (sample_tick) begin
+		dac_data_reg_r2 <= dac_data_reg;
+	end
 end
 
+wire [7:0] signal_48M;
+
+interpolator_1000x u_interpolator_1000x (
+	.clk(clk),
+	.rst(rst),
+
+	.signal_x0(dac_data_reg_r3),
+	.signal_x1(dac_data_reg),
+	.signal_48M(signal_48M)
+);
+
+/*
+sddac inst_sddac (
+	.clk(clk),
+	.rst(rst),
+	.sig_in(signal_48M),
+	.sd_out(dac_out)
+);
+*/
+
+/*
 so_pdm inst_dac (
   .i_clk(clk),
   .i_res(1'b0),
@@ -77,13 +105,12 @@ so_pdm inst_dac (
   .i_func(dac_data_reg), 
   .o_DAC(dac_out)
 );
-/*
+*/
 pdm inst_dac (
 	.clk(clk),
 	.reset(rst),
-	.sample(dac_data_reg),
+	.sample(signal_48M),
 	.dac_out(dac_out)
 );
-*/
 
 endmodule
