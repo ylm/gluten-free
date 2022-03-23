@@ -18,6 +18,20 @@ module hx8k_poc (
 wire clk48m;
 wire pll_locked; //TODO: Hold logic in reset until pll is locked.
 
+assign out_clk = clk48m;
+
+wire [7:0] i2s_l_axis_tdata;
+wire i2s_l_axis_tvalid;
+wire i2s_l_axis_tready;
+wire i2s_l_axis_tlast;
+wire i2s_l_axis_tuser;
+
+wire [7:0] i2s_r_axis_tdata;
+wire i2s_r_axis_tvalid;
+wire i2s_r_axis_tready;
+wire i2s_r_axis_tlast;
+wire i2s_r_axis_tuser;
+
 hx8k_pll u_hx8k_pll(
 	.clock_in(clk12m),
 	.clock_out(clk48m),
@@ -29,7 +43,7 @@ always @(posedge clk12m) begin
 	sys_reset <= ~pll_locked;
 end
 
-i2s_placeholder u_i2s_rx (
+i2s_receiver u_i2s_rx (
 	.sys_clk(clk12m),
 	.SCK(SCK),
 	.MCLK(MCLK),

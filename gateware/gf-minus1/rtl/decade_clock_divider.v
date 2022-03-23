@@ -4,7 +4,7 @@ module decade_clock_divider (
 	
 	output reg pulse_48k = 1'b0,
 	output reg pulse_480k = 1'b0,
-	output reg pulse_4M8 = 1'b0,
+	output reg pulse_4M8 = 1'b0
 );
 
 reg [9:0] divider_48k = 10'd0;
